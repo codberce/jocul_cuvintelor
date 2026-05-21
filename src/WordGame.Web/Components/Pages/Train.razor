@@ -104,6 +104,7 @@
     private string? _selectionError;
     private List<string> _selectedSubjectSlugs = SubjectCatalog.Subjects.Select(x => x.Slug).ToList();
     private bool _focusFirstEmpty;
+    private int? _lastWarningSecond;
 
     protected override async Task OnInitializedAsync()
     {
@@ -142,6 +143,8 @@
             _session = await TrainingService.StartSessionAsync(new StartTrainingRequest(_selectedSubjectSlugs), _cts.Token);
             SyncLetters();
             _focusFirstEmpty = true;
+            _lastWarningSecond = null;
+            await PlaySoundAsync("start");
         }
         catch (Exception ex)
         {
@@ -162,6 +165,10 @@
             await TrainingService.SubmitAnswerAsync(_session.SessionId, _session.CurrentQuestion.QuestionId, CurrentAnswer(), _cts.Token);
             _session = TrainingService.GetCurrentSession();
             SyncLetters();
+            if (_session?.LastFeedback is not null)
+            {
+                await PlaySoundAsync(_session.LastFeedback.IsCorrect ? "correct" : "wrong");
+            }
         }
         catch (Exception ex)
         {
@@ -176,6 +183,8 @@
             _session = TrainingService.NextQuestion(_session.SessionId);
             SyncLetters(true);
             _focusFirstEmpty = _session.Status == SinglePlayerSessionStatus.InProgress;
+            _lastWarningSecond = null;
+            _ = PlaySoundAsync(_session.Status == SinglePlayerSessionStatus.Finished ? "finish" : "question");
         }
 
         return Task.CompletedTask;
@@ -191,6 +200,7 @@
                 _session = TrainingService.RequestLetter(_session.SessionId);
                 SyncLetters();
                 _focusFirstEmpty = true;
+                _ = PlaySoundAsync("reveal");
             }
         }
         catch (Exception ex)
@@ -307,7 +317,14 @@
         {
             if (_session?.CurrentQuestion is not null && _session.Status == SinglePlayerSessionStatus.InProgress)
             {
-                if (RemainingSeconds() <= 0)
+                var remaining = RemainingSeconds();
+                if (remaining is 10 or 5 or 3 or 2 or 1 && _lastWarningSecond != remaining)
+                {
+                    _lastWarningSecond = remaining;
+                    await InvokeAsync(() => PlaySoundAsync("tick"));
+                }
+
+                if (remaining <= 0)
                 {
                     await SubmitAsync();
                 }
@@ -321,5 +338,19 @@
         _cts.Cancel();
         _cts.Dispose();
         return ValueTask.CompletedTask;
+    }
+
+    private async Task PlaySoundAsync(string soundName)
+    {
+        try
+        {
+            await JsRuntime.InvokeVoidAsync("wordGame.playSound", soundName);
+        }
+        catch (JSException)
+        {
+        }
+        catch (InvalidOperationException)
+        {
+        }
     }
 }

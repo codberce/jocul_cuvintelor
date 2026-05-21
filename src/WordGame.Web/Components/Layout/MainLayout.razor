@@ -1,7 +1,22 @@
 @inherits LayoutComponentBase
+@inject IJSRuntime JsRuntime
 
 <header class="topbar">
     <a class="show-logo top-logo" href="/">Jocul cuvintelor</a>
+    <label class="volume-control" title="Volum efecte sonore">
+        <span>Volum</span>
+        <input data-volume-slider type="range" min="0" max="100" step="1" aria-label="Volum efecte sonore" />
+    </label>
 </header>
 
 @Body
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JsRuntime.InvokeVoidAsync("wordGame.initializeSoundControls");
+        }
+    }
+}

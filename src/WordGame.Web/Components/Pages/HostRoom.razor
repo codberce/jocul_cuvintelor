@@ -3,6 +3,7 @@
 @inject IGameRoomService GameService
 @inject IQrCodeService QrCodeService
 @inject IHubContext<GameHub> HubContext
+@inject IJSRuntime JsRuntime
 
 <main class="host-screen">
     @if (_error is not null)
@@ -103,6 +104,9 @@
     private string? _error;
     private bool _endingExpiredQuestion;
     private readonly CancellationTokenSource _cts = new();
+    private GameStatus? _lastSoundStatus;
+    private Guid? _lastSoundQuestionId;
+    private int? _lastWarningSecond;
 
     protected override async Task OnInitializedAsync()
     {
@@ -117,8 +121,24 @@
         while (await timer.WaitForNextTickAsync(_cts.Token))
         {
             await RefreshAsync();
+            await PlayWarningTickAsync();
             await EndExpiredQuestionAsync();
             await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private async Task PlayWarningTickAsync()
+    {
+        if (_snapshot?.Status != GameStatus.Playing || _snapshot.CurrentQuestion is null)
+        {
+            return;
+        }
+
+        var remaining = RemainingSeconds();
+        if (remaining is 10 or 5 or 3 or 2 or 1 && _lastWarningSecond != remaining)
+        {
+            _lastWarningSecond = remaining;
+            await InvokeAsync(() => PlaySoundAsync("tick"));
         }
     }
 
@@ -149,6 +169,25 @@
         {
             var snapshot = await GameService.GetSnapshotAsync(RoomCode, _cts.Token);
             _snapshot = snapshot;
+            if (_lastSoundStatus != snapshot.Status)
+            {
+                _lastSoundStatus = snapshot.Status;
+                if (snapshot.Status == GameStatus.QuestionResults)
+                {
+                    await InvokeAsync(() => PlaySoundAsync("result"));
+                }
+                else if (snapshot.Status == GameStatus.Finished)
+                {
+                    await InvokeAsync(() => PlaySoundAsync("finish"));
+                }
+            }
+
+            if (snapshot.CurrentQuestion is not null && _lastSoundQuestionId != snapshot.CurrentQuestion.QuestionId)
+            {
+                _lastSoundQuestionId = snapshot.CurrentQuestion.QuestionId;
+                _lastWarningSecond = null;
+                await InvokeAsync(() => PlaySoundAsync("question"));
+            }
         }
         catch (Exception ex)
         {
@@ -183,7 +222,9 @@
         var question = await GameService.StartGameAsync(RoomCode, _snapshot!.HostUserId, _cts.Token);
         await HubContext.Clients.Group(GameHub.RoomGroup(RoomCode)).SendAsync("GameStarted", RoomCode, _cts.Token);
         await HubContext.Clients.Group(GameHub.RoomGroup(RoomCode)).SendAsync("QuestionStarted", question, _cts.Token);
+        _lastSoundQuestionId = question.QuestionId;
         await RefreshAsync();
+        await PlaySoundAsync("start");
     }
 
     private async Task EndQuestion()
@@ -219,5 +260,19 @@
         _cts.Cancel();
         _cts.Dispose();
         return ValueTask.CompletedTask;
+    }
+
+    private async Task PlaySoundAsync(string soundName)
+    {
+        try
+        {
+            await JsRuntime.InvokeVoidAsync("wordGame.playSound", soundName);
+        }
+        catch (JSException)
+        {
+        }
+        catch (InvalidOperationException)
+        {
+        }
     }
 }
