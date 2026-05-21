@@ -1,0 +1,59 @@
+@page "/admin/categories"
+@attribute [Authorize(Roles = "Admin")]
+@inject IDbContextFactory<ApplicationDbContext> DbFactory
+
+<main class="page narrow">
+    <h1>Categorii</h1>
+    <EditForm Model="_category" OnValidSubmit="SaveAsync" class="form-panel">
+        <input @bind="_category.Name" placeholder="Nume categorie" />
+        <input @bind="_category.Slug" placeholder="slug" />
+        <label class="check"><input type="checkbox" @bind="_category.IsActive" /> Activa</label>
+        <button class="button primary" type="submit">Salveaza</button>
+    </EditForm>
+
+    @foreach (var category in _categories)
+    {
+        <div class="list-row">
+            <strong>@category.Name</strong>
+            <span>@category.Slug</span>
+            <button class="button small" @onclick="() => Edit(category)">Editeaza</button>
+        </div>
+    }
+</main>
+
+@code {
+    private List<Category> _categories = [];
+    private Category _category = new() { IsActive = true };
+
+    protected override async Task OnInitializedAsync() => await LoadAsync();
+
+    private async Task LoadAsync()
+    {
+        await using var db = await DbFactory.CreateDbContextAsync();
+        _categories = await db.Categories.AsNoTracking().OrderBy(x => x.Name).ToListAsync();
+    }
+
+    private void Edit(Category category)
+    {
+        _category = new Category { Id = category.Id, Name = category.Name, Slug = category.Slug, IsActive = category.IsActive };
+    }
+
+    private async Task SaveAsync()
+    {
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var existing = await db.Categories.FindAsync(_category.Id);
+        if (existing is null)
+        {
+            db.Categories.Add(_category);
+        }
+        else
+        {
+            existing.Name = _category.Name;
+            existing.Slug = _category.Slug;
+            existing.IsActive = _category.IsActive;
+        }
+        await db.SaveChangesAsync();
+        _category = new Category { IsActive = true };
+        await LoadAsync();
+    }
+}

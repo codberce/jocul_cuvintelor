@@ -1,0 +1,40 @@
+@page "/host"
+@page "/multiplayer"
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IAntiforgery Antiforgery
+
+<main class="menu-page">
+    <section class="main-menu multiplayer-menu">
+        <span class="show-logo">Multiplayer</span>
+        <h1>Joaca impreuna</h1>
+        <div class="multiplayer-grid">
+            <form class="show-panel" method="post" action="/host/create">
+                <input type="hidden" name="__RequestVerificationToken" value="@_token" />
+                <input name="MaxPlayers" type="hidden" value="50" />
+                <h2>Joc nou</h2>
+                <SubjectSelection @bind-SelectedSubjectSlugs="_selectedSubjectSlugs" FieldName="SubjectSlugs" />
+                <button class="button primary wide menu-button" type="submit" disabled="@(_selectedSubjectSlugs.Count == 0)">Creeaza joc</button>
+            </form>
+
+            <div class="show-panel">
+                <h2>Intra cu cod</h2>
+                <input id="room" maxlength="6" pattern="[0-9]{6}" inputmode="numeric" placeholder="482913" />
+                <button class="button accent wide menu-button" type="button" onclick="location.href='/join/' + document.getElementById('room').value">Intra</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+@code {
+    private string? _token;
+    private List<string> _selectedSubjectSlugs = SubjectCatalog.Subjects.Select(x => x.Slug).ToList();
+
+    protected override void OnInitialized()
+    {
+        var context = HttpContextAccessor.HttpContext;
+        if (context is not null)
+        {
+            _token = Antiforgery.GetAndStoreTokens(context).RequestToken;
+        }
+    }
+}

@@ -1,0 +1,325 @@
+@page "/singleplayer"
+@implements IAsyncDisposable
+@inject ISinglePlayerTrainingService TrainingService
+@inject IJSRuntime JsRuntime
+
+<main class="train-page">
+    <section class="train-shell">
+        @if (_error is not null)
+        {
+            <div class="alert error">@_error</div>
+            <button class="button primary" @onclick="StartAsync">Restart</button>
+        }
+        else if (_session is null)
+        {
+            <div class="train-start">
+                <span class="show-logo">Singleplayer</span>
+                <h1>Antrenament solo</h1>
+                <p>14 definitii, 4 minute, cuvinte de 4 pana la 10 litere.</p>
+                <SubjectSelection @bind-SelectedSubjectSlugs="_selectedSubjectSlugs" />
+                @if (_selectionError is not null)
+                {
+                    <div class="alert error">@_selectionError</div>
+                }
+                <button class="button primary wide" @onclick="StartAsync" disabled="@(_selectedSubjectSlugs.Count == 0)">Start</button>
+            </div>
+        }
+        else if (_session.Status == SinglePlayerSessionStatus.Finished && _session.Summary is not null)
+        {
+            <div class="train-summary">
+                <span class="eyebrow">Final</span>
+                <h1>@_session.Summary.TotalScore puncte</h1>
+                <div class="summary-grid">
+                    <div><strong>@_session.Summary.CorrectCount</strong><span>corecte</span></div>
+                    <div><strong>@_session.Summary.WrongCount</strong><span>gresite</span></div>
+                    <div><strong>@_session.Summary.AverageResponseTimeMs ms</strong><span>timp mediu</span></div>
+                    <div><strong>@_session.Summary.TotalQuestions</strong><span>intrebari</span></div>
+                </div>
+                <button class="button primary wide" @onclick="StartAsync">Restart training</button>
+            </div>
+        }
+        else if (_session.CurrentQuestion is not null)
+        {
+            <div class="train-top">
+                <span>@_session.CurrentQuestion.QuestionIndex / @_session.CurrentQuestion.TotalQuestions</span>
+                <strong>@RemainingTimeText()</strong>
+            </div>
+            <div class="score-strip">
+                <span>Scor: @_session.Score</span>
+                <span>Cuvant: @_session.CurrentQuestion.PotentialScore</span>
+            </div>
+            <article class="train-question">
+                <span>@_session.CurrentQuestion.Subject · @_session.CurrentQuestion.Category · @_session.CurrentQuestion.Difficulty · @_session.CurrentQuestion.LetterCount litere</span>
+                <h1>@_session.CurrentQuestion.Definition</h1>
+            </article>
+            <div class="letter-board" data-word-board="@_boardId" aria-label="@_session.CurrentQuestion.LetterCount litere">
+                @foreach (var index in Enumerable.Range(0, _session.CurrentQuestion.LetterCount))
+                {
+                    <input class="hex-cell-input @(IsRevealed(index) ? "revealed" : null)"
+                           data-word-cell
+                           data-cell-index="@index"
+                           aria-label="Litera @(index + 1)"
+                           autocomplete="off"
+                           autocapitalize="characters"
+                           autocorrect="off"
+                           inputmode="text"
+                           spellcheck="false"
+                           maxlength="1"
+                           value="@CellValue(index)"
+                           disabled="@IsRevealed(index)"
+                           @onkeydown="HandleCellKeyDown"
+                           @oninput="eventArgs => SetLetterAsync(index, eventArgs.Value?.ToString())" />
+                }
+            </div>
+
+            @if (_session.LastFeedback is not null && _session.Status == SinglePlayerSessionStatus.Answered)
+            {
+                <div class="feedback @(_session.LastFeedback.IsCorrect ? "ok" : "bad")">
+                    @_session.LastFeedback.Message<br />
+                    Raspuns corect: <strong>@_session.LastFeedback.CorrectAnswer</strong><br />
+                    @_session.LastFeedback.ScoreAwarded puncte
+                </div>
+                <button class="button primary wide" @onclick="NextAsync" @onkeydown="HandleNextKeyDown" autofocus>@NextButtonText()</button>
+            }
+            else
+            {
+                <EditForm Model="@this" OnSubmit="SubmitAsync">
+                    <div class="actions">
+                        <button class="button accent" type="button" @onclick="RequestLetter">Litera (-100)</button>
+                    </div>
+                    <button class="button primary wide" type="submit" disabled="@(!IsAnswerComplete())">Trimite</button>
+                </EditForm>
+            }
+        }
+    </section>
+</main>
+
+@code {
+    [SupplyParameterFromQuery(Name = "start")] public bool AutoStart { get; set; }
+    private readonly CancellationTokenSource _cts = new();
+    private readonly string _boardId = $"train-{Guid.NewGuid():N}";
+    private SinglePlayerSessionDto? _session;
+    private string[] _letters = [];
+    private string? _error;
+    private string? _selectionError;
+    private List<string> _selectedSubjectSlugs = SubjectCatalog.Subjects.Select(x => x.Slug).ToList();
+    private bool _focusFirstEmpty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _session = TrainingService.GetCurrentSession();
+        if (AutoStart && _session is null)
+        {
+            _session = await TrainingService.StartSessionAsync(new StartTrainingRequest(_selectedSubjectSlugs), _cts.Token);
+        }
+        SyncLetters();
+        _focusFirstEmpty = _session?.CurrentQuestion is not null && _session.Status == SinglePlayerSessionStatus.InProgress;
+        _ = RefreshLoopAsync();
+        await Task.CompletedTask;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (_focusFirstEmpty)
+        {
+            _focusFirstEmpty = false;
+            await JsRuntime.InvokeVoidAsync("wordGame.focusFirstEmptyHex", _boardId);
+        }
+    }
+
+    private async Task StartAsync()
+    {
+        try
+        {
+            _error = null;
+            _selectionError = null;
+            if (_selectedSubjectSlugs.Count == 0)
+            {
+                _selectionError = "Selecteaza cel putin o materie.";
+                return;
+            }
+
+            _session = await TrainingService.StartSessionAsync(new StartTrainingRequest(_selectedSubjectSlugs), _cts.Token);
+            SyncLetters();
+            _focusFirstEmpty = true;
+        }
+        catch (Exception ex)
+        {
+            _error = ex.Message;
+        }
+    }
+
+    private async Task SubmitAsync()
+    {
+        if (_session?.CurrentQuestion is null)
+        {
+            return;
+        }
+
+        try
+        {
+            _error = null;
+            await TrainingService.SubmitAnswerAsync(_session.SessionId, _session.CurrentQuestion.QuestionId, CurrentAnswer(), _cts.Token);
+            _session = TrainingService.GetCurrentSession();
+            SyncLetters();
+        }
+        catch (Exception ex)
+        {
+            _error = ex.Message;
+        }
+    }
+
+    private Task NextAsync()
+    {
+        if (_session is not null)
+        {
+            _session = TrainingService.NextQuestion(_session.SessionId);
+            SyncLetters(true);
+            _focusFirstEmpty = _session.Status == SinglePlayerSessionStatus.InProgress;
+        }
+
+        return Task.CompletedTask;
+    }
+
+    private Task RequestLetter()
+    {
+        try
+        {
+            if (_session is not null)
+            {
+                _error = null;
+                _session = TrainingService.RequestLetter(_session.SessionId);
+                SyncLetters();
+                _focusFirstEmpty = true;
+            }
+        }
+        catch (Exception ex)
+        {
+            _error = ex.Message;
+        }
+
+        return Task.CompletedTask;
+    }
+
+    private void SyncLetters(bool reset = false)
+    {
+        var question = _session?.CurrentQuestion;
+        if (question is null)
+        {
+            _letters = [];
+            return;
+        }
+
+        if (reset || _letters.Length != question.LetterCount)
+        {
+            _letters = Enumerable.Repeat(string.Empty, question.LetterCount).ToArray();
+        }
+
+        foreach (var revealed in question.RevealedLetters)
+        {
+            _letters[revealed.Key] = revealed.Value.ToString().ToUpperInvariant();
+        }
+    }
+
+    private bool IsRevealed(int index)
+    {
+        return _session?.CurrentQuestion?.RevealedLetters.ContainsKey(index) == true;
+    }
+
+    private string CellValue(int index)
+    {
+        return index < _letters.Length ? _letters[index] : string.Empty;
+    }
+
+    private Task SetLetterAsync(int index, string? value)
+    {
+        if (index >= _letters.Length || IsRevealed(index))
+        {
+            return Task.CompletedTask;
+        }
+
+        _letters[index] = string.IsNullOrWhiteSpace(value)
+            ? string.Empty
+            : value.Trim()[^1].ToString().ToUpperInvariant();
+
+        return Task.CompletedTask;
+    }
+
+    private async Task HandleCellKeyDown(KeyboardEventArgs eventArgs)
+    {
+        if (eventArgs.Key == "Enter" && IsAnswerComplete())
+        {
+            await SubmitAsync();
+        }
+    }
+
+    private async Task HandleNextKeyDown(KeyboardEventArgs eventArgs)
+    {
+        if (eventArgs.Key == "Enter")
+        {
+            await NextAsync();
+        }
+    }
+
+    private string CurrentAnswer()
+    {
+        return string.Concat(_letters);
+    }
+
+    private bool IsAnswerComplete()
+    {
+        return _letters.Length > 0 && _letters.All(letter => !string.IsNullOrWhiteSpace(letter));
+    }
+
+    private int RemainingSeconds()
+    {
+        var question = _session?.CurrentQuestion;
+        if (question is null)
+        {
+            return 0;
+        }
+
+        var remaining = question.ServerStartedAtUtc.AddSeconds(question.TimeLimitSeconds) - DateTimeOffset.UtcNow;
+        return Math.Max(0, (int)Math.Ceiling(remaining.TotalSeconds));
+    }
+
+    private string RemainingTimeText()
+    {
+        var remaining = RemainingSeconds();
+        return $"{remaining / 60}:{remaining % 60:00}";
+    }
+
+    private string NextButtonText()
+    {
+        var question = _session?.CurrentQuestion;
+        if (question is null)
+        {
+            return "Continua";
+        }
+
+        return question.QuestionIndex >= question.TotalQuestions ? "Vezi rezultatul final" : "Urmatoarea intrebare";
+    }
+
+    private async Task RefreshLoopAsync()
+    {
+        using var timer = new PeriodicTimer(TimeSpan.FromSeconds(1));
+        while (await timer.WaitForNextTickAsync(_cts.Token))
+        {
+            if (_session?.CurrentQuestion is not null && _session.Status == SinglePlayerSessionStatus.InProgress)
+            {
+                if (RemainingSeconds() <= 0)
+                {
+                    await SubmitAsync();
+                }
+            }
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    public ValueTask DisposeAsync()
+    {
+        _cts.Cancel();
+        _cts.Dispose();
+        return ValueTask.CompletedTask;
+    }
+}

@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordGame.Domain", "src\WordGame.Domain\WordGame.Domain.csproj", "{496C89E4-0B47-4781-BE19-1D80E4F15801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordGame.Application", "src\WordGame.Application\WordGame.Application.csproj", "{8B63EA02-0BC7-4D29-9012-9A8E82F42A5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordGame.Infrastructure", "src\WordGame.Infrastructure\WordGame.Infrastructure.csproj", "{143FD5E5-E655-4505-B10A-77AE03CF8B8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordGame.Web", "src\WordGame.Web\WordGame.Web.csproj", "{76916C3E-E25C-4D12-B501-EBD16FE38F16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordGame.UnitTests", "tests\WordGame.UnitTests\WordGame.UnitTests.csproj", "{CF6D8970-C3DE-449A-8E85-A0560FA6114F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordGame.IntegrationTests", "tests\WordGame.IntegrationTests\WordGame.IntegrationTests.csproj", "{3A9E4C76-94F9-46CE-A16B-2B62D15E720C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{496C89E4-0B47-4781-BE19-1D80E4F15801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{496C89E4-0B47-4781-BE19-1D80E4F15801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{496C89E4-0B47-4781-BE19-1D80E4F15801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{496C89E4-0B47-4781-BE19-1D80E4F15801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B63EA02-0BC7-4D29-9012-9A8E82F42A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B63EA02-0BC7-4D29-9012-9A8E82F42A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B63EA02-0BC7-4D29-9012-9A8E82F42A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B63EA02-0BC7-4D29-9012-9A8E82F42A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143FD5E5-E655-4505-B10A-77AE03CF8B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143FD5E5-E655-4505-B10A-77AE03CF8B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143FD5E5-E655-4505-B10A-77AE03CF8B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143FD5E5-E655-4505-B10A-77AE03CF8B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76916C3E-E25C-4D12-B501-EBD16FE38F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76916C3E-E25C-4D12-B501-EBD16FE38F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76916C3E-E25C-4D12-B501-EBD16FE38F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76916C3E-E25C-4D12-B501-EBD16FE38F16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF6D8970-C3DE-449A-8E85-A0560FA6114F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF6D8970-C3DE-449A-8E85-A0560FA6114F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF6D8970-C3DE-449A-8E85-A0560FA6114F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF6D8970-C3DE-449A-8E85-A0560FA6114F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A9E4C76-94F9-46CE-A16B-2B62D15E720C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9E4C76-94F9-46CE-A16B-2B62D15E720C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9E4C76-94F9-46CE-A16B-2B62D15E720C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9E4C76-94F9-46CE-A16B-2B62D15E720C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

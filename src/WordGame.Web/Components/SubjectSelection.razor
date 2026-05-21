@@ -1,0 +1,42 @@
+<fieldset class="subject-selector">
+    <legend>Materii</legend>
+    <div class="subject-grid">
+        @foreach (var subject in SubjectCatalog.Subjects)
+        {
+            <label class="subject-option">
+                <input type="checkbox"
+                       name="@FieldName"
+                       value="@subject.Slug"
+                       checked="@IsSelected(subject.Slug)"
+                       @onchange="eventArgs => ToggleSubject(subject.Slug, eventArgs)" />
+                <span>@subject.Name</span>
+            </label>
+        }
+    </div>
+</fieldset>
+
+@code {
+    [Parameter] public List<string> SelectedSubjectSlugs { get; set; } = [];
+    [Parameter] public EventCallback<List<string>> SelectedSubjectSlugsChanged { get; set; }
+    [Parameter] public string FieldName { get; set; } = "SubjectSlugs";
+
+    private bool IsSelected(string slug)
+    {
+        return SelectedSubjectSlugs.Contains(slug, StringComparer.OrdinalIgnoreCase);
+    }
+
+    private async Task ToggleSubject(string slug, ChangeEventArgs eventArgs)
+    {
+        var selected = eventArgs.Value is true || string.Equals(eventArgs.Value?.ToString(), "true", StringComparison.OrdinalIgnoreCase);
+        if (selected && !IsSelected(slug))
+        {
+            SelectedSubjectSlugs.Add(slug);
+        }
+        else if (!selected)
+        {
+            SelectedSubjectSlugs.RemoveAll(x => string.Equals(x, slug, StringComparison.OrdinalIgnoreCase));
+        }
+
+        await SelectedSubjectSlugsChanged.InvokeAsync(SelectedSubjectSlugs);
+    }
+}

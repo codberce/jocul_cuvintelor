@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jocul Cuvintelor - Prezentare proiect</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #121522;
+      --muted: #596070;
+      --paper: #fffaf1;
+      --cream: #f6ebd6;
+      --navy: #06133b;
+      --blue: #1769e0;
+      --cyan: #20c7ea;
+      --red: #d61542;
+      --green: #109f79;
+      --gold: #f4b740;
+      --line: rgba(18, 21, 34, .14);
+      --shadow: 0 26px 70px rgba(18, 21, 34, .18);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; overflow: hidden; }
+    body {
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(32, 199, 234, .18), transparent 28%),
+        radial-gradient(circle at 88% 80%, rgba(214, 21, 66, .16), transparent 26%),
+        linear-gradient(135deg, #fffdf8 0%, #f4e6cc 48%, #d9eff7 100%);
+    }
+
+    button { font: inherit; }
+    .deck {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 22px;
+      padding: clamp(28px, 4vw, 64px);
+      opacity: 0;
+      transform: translateX(28px) scale(.985);
+      pointer-events: none;
+      transition: opacity .32s ease, transform .32s ease;
+    }
+
+    .slide.active {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      pointer-events: auto;
+    }
+
+    .kicker {
+      width: fit-content;
+      color: #fff;
+      background: linear-gradient(180deg, #e81a4c, #a20d33);
+      border: 2px solid var(--cyan);
+      padding: 9px 18px;
+      font-size: clamp(.8rem, 1.2vw, 1rem);
+      font-weight: 950;
+      text-transform: uppercase;
+      clip-path: polygon(9% 0, 100% 0, 91% 100%, 0 100%);
+      letter-spacing: 0;
+    }
+
+    h1, h2, h3, p { margin: 0; }
+    h1 {
+      max-width: 1050px;
+      color: var(--navy);
+      font-size: clamp(3.5rem, 8vw, 8.5rem);
+      line-height: .9;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+    h2 {
+      color: var(--navy);
+      font-size: clamp(2.2rem, 5vw, 5.1rem);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    h3 {
+      color: var(--navy);
+      font-size: clamp(1.1rem, 2vw, 1.45rem);
+      line-height: 1.1;
+    }
+    p, li {
+      color: var(--muted);
+      font-size: clamp(1rem, 1.55vw, 1.35rem);
+      line-height: 1.45;
+    }
+    ul { margin: 0; padding-left: 1.1em; }
+    li + li { margin-top: .45em; }
+    code {
+      padding: .08em .34em;
+      border-radius: 6px;
+      color: var(--navy);
+      background: rgba(32, 199, 234, .16);
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: .92em;
+    }
+
+    .content {
+      width: min(1280px, 100%);
+      align-self: center;
+      justify-self: center;
+      display: grid;
+      gap: 28px;
+    }
+
+    .hero-layout {
+      grid-template-columns: minmax(0, 1.1fr) minmax(330px, .9fr);
+      align-items: center;
+    }
+    .hero-layout > * {
+      min-width: 0;
+    }
+    .hero-layout h1 {
+      font-size: clamp(3.2rem, 6.5vw, 7.2rem);
+    }
+
+    .lead {
+      max-width: 850px;
+      color: #313849;
+      font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .78);
+      box-shadow: var(--shadow);
+      padding: clamp(18px, 2.4vw, 30px);
+    }
+
+    .dark-panel {
+      color: #fff;
+      border-color: rgba(32, 199, 234, .75);
+      background:
+        radial-gradient(circle at 40% 0%, rgba(32, 199, 234, .23), transparent 34%),
+        linear-gradient(135deg, #071743 0%, #0d2c79 58%, #030817 100%);
+    }
+    .dark-panel h3,
+    .dark-panel p,
+    .dark-panel li { color: #eef7ff; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+
+    .stat {
+      min-height: 120px;
+      display: grid;
+      align-content: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--red);
+      border-radius: 8px;
+      background: rgba(255,255,255,.82);
+      padding: 18px;
+    }
+    .stat strong {
+      color: var(--navy);
+      font-size: clamp(1.6rem, 3vw, 2.8rem);
+      line-height: 1;
+    }
+
+    .badge-row { display: flex; flex-wrap: wrap; gap: 10px; }
+    .badge {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(6, 19, 59, .18);
+      border-radius: 999px;
+      background: rgba(255,255,255,.74);
+      color: var(--navy);
+      padding: 0 14px;
+      font-weight: 850;
+      font-size: clamp(.88rem, 1.2vw, 1rem);
+    }
+
+    .word-board {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(38px, 1fr));
+      gap: 12px;
+      max-width: 540px;
+      margin: auto;
+    }
+    .hex {
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      color: var(--navy);
+      background: linear-gradient(180deg, #e8ffff, #95e6f5);
+      border: 3px solid var(--cyan);
+      clip-path: polygon(25% 4%, 75% 4%, 98% 50%, 75% 96%, 25% 96%, 2% 50%);
+      font-size: clamp(1.15rem, 2vw, 2rem);
+      font-weight: 950;
+    }
+    .hex.hot { background: linear-gradient(180deg, #fff1a8, #f4b740); }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      align-items: stretch;
+    }
+    .step {
+      min-height: 132px;
+      display: grid;
+      align-content: center;
+      gap: 8px;
+      border-radius: 8px;
+      padding: 16px;
+      color: #fff;
+      background: var(--navy);
+      box-shadow: 0 12px 28px rgba(6, 19, 59, .18);
+      position: relative;
+    }
+    .step:nth-child(2) { background: #174ea6; }
+    .step:nth-child(3) { background: #0f8c7a; }
+    .step:nth-child(4) { background: #b52045; }
+    .step:nth-child(5) { background: #7b4c00; }
+    .step span {
+      color: rgba(255,255,255,.7);
+      font-size: .78rem;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+    .step strong { font-size: clamp(1rem, 1.6vw, 1.28rem); line-height: 1.08; }
+    .step p { color: rgba(255,255,255,.86); font-size: clamp(.9rem, 1.05vw, 1rem); }
+
+    .layers {
+      display: grid;
+      gap: 12px;
+    }
+    .layer {
+      display: grid;
+      grid-template-columns: 230px 1fr;
+      gap: 16px;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,.82);
+      padding: 16px 18px;
+    }
+    .layer strong {
+      color: #fff;
+      border-radius: 8px;
+      background: var(--navy);
+      padding: 12px 14px;
+      text-align: center;
+    }
+
+    .pipeline {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .line-list {
+      display: grid;
+      gap: 12px;
+    }
+    .line-item {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 12px;
+      align-items: start;
+    }
+    .num {
+      width: 42px;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--red);
+      font-weight: 950;
+    }
+
+    .schema {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .schema-box {
+      min-height: 98px;
+      display: grid;
+      align-content: center;
+      gap: 6px;
+      border: 1px solid rgba(6, 19, 59, .2);
+      border-top: 6px solid var(--cyan);
+      border-radius: 8px;
+      background: rgba(255,255,255,.78);
+      padding: 14px;
+    }
+    .schema-box b { color: var(--navy); font-size: 1.05rem; }
+    .schema-box span { color: var(--muted); line-height: 1.25; }
+
+    .browser-mock {
+      overflow: hidden;
+      border-radius: 8px;
+      border: 1px solid rgba(6, 19, 59, .2);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .browser-top {
+      height: 42px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 14px;
+      background: #e8edf4;
+    }
+    .dot { width: 10px; aspect-ratio: 1; border-radius: 50%; background: #bdc5d2; }
+    .url {
+      flex: 1;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--muted);
+      padding: 6px 12px;
+      font-size: .86rem;
+    }
+    .mock-body {
+      min-height: 270px;
+      display: grid;
+      align-content: center;
+      gap: 18px;
+      padding: 28px;
+      color: #fff;
+      background: linear-gradient(135deg, #071743, #10398d 58%, #030817);
+    }
+    .mock-title {
+      color: #fff;
+      font-size: clamp(2.1rem, 4vw, 4rem);
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+    .mock-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .mock-button {
+      border-radius: 8px;
+      background: #2071e8;
+      padding: 16px;
+      text-align: center;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+    .mock-button.alt { background: var(--green); }
+
+    .controls {
+      position: fixed;
+      left: 24px;
+      right: 24px;
+      bottom: 18px;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: auto 1fr auto auto;
+      align-items: center;
+      gap: 14px;
+    }
+    .nav-button {
+      min-width: 44px;
+      min-height: 44px;
+      border: 1px solid rgba(6, 19, 59, .18);
+      border-radius: 999px;
+      background: rgba(255,255,255,.86);
+      color: var(--navy);
+      font-weight: 950;
+      cursor: pointer;
+      box-shadow: 0 10px 22px rgba(18, 21, 34, .12);
+    }
+    .progress {
+      height: 10px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(6, 19, 59, .13);
+    }
+    .progress span {
+      display: block;
+      height: 100%;
+      width: 0;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--red), var(--gold), var(--cyan));
+      transition: width .25s ease;
+    }
+    .counter {
+      color: var(--navy);
+      font-weight: 950;
+      min-width: 64px;
+      text-align: right;
+    }
+
+    .hint {
+      position: fixed;
+      top: 18px;
+      right: 24px;
+      color: rgba(6, 19, 59, .58);
+      font-size: .9rem;
+      font-weight: 760;
+      z-index: 20;
+    }
+
+    @media (max-width: 980px) {
+      html, body { overflow: auto; }
+      .deck { height: auto; min-height: 100vh; }
+      .slide {
+        position: relative;
+        min-height: 100vh;
+        display: none;
+      }
+      .slide.active { display: grid; }
+      .hero-layout,
+      .grid-2,
+      .grid-3,
+      .grid-4,
+      .pipeline,
+      .flow,
+      .schema { grid-template-columns: 1fr; }
+      .layer { grid-template-columns: 1fr; }
+      .controls { left: 14px; right: 14px; }
+      .hint { display: none; }
+    }
+
+    @media print {
+      html, body { overflow: visible; background: #fff; }
+      .deck { height: auto; }
+      .slide {
+        position: relative;
+        min-height: 100vh;
+        page-break-after: always;
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+      }
+      .controls, .hint { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="deck" id="deck">
+    <section class="slide active">
+      <span class="kicker">Prezentare proiect</span>
+      <div class="content hero-layout">
+        <div>
+          <h1>Jocul Cuvintelor</h1>
+          <p class="lead">Aplicație educațională web pentru întrebări pe materii, construită cu .NET 10, Blazor Server, SignalR, PostgreSQL, Redis, Docker și Cloudflare Tunnel.</p>
+        </div>
+        <div class="browser-mock" aria-label="Previzualizare aplicație">
+          <div class="browser-top">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="url">gravital.space</span>
+          </div>
+          <div class="mock-body">
+            <span class="kicker">Jocul Cuvintelor</span>
+            <div class="mock-title">Joacă și învață</div>
+            <div class="mock-actions">
+              <div class="mock-button">Singleplayer</div>
+              <div class="mock-button alt">Multiplayer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Ideea</span>
+      <div class="content">
+        <h2>Un joc de vocabular cu ritm de concurs</h2>
+        <div class="grid-3">
+          <div class="stat"><strong>13</strong><p>materii selectabile: matematică, română, informatică, științe, limbi străine și altele.</p></div>
+          <div class="stat"><strong>14</strong><p>întrebări într-o rundă standard, alese aleator doar din materiile bifate.</p></div>
+          <div class="stat"><strong>4 min</strong><p>limită de timp pentru antrenamentul solo, cu punctaj bazat pe răspuns și ajutor folosit.</p></div>
+        </div>
+        <p class="lead">Scopul proiectului este să transforme definițiile din programa de liceu într-un format rapid, competitiv și ușor de folosit pe telefon sau desktop.</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Cum se joacă</span>
+      <div class="content hero-layout">
+        <div class="panel">
+          <h2>Mecanica jocului</h2>
+          <ul>
+            <li>Jucătorul primește o definiție și trebuie să ghicească termenul corect.</li>
+            <li>Răspunsul se scrie literă cu literă în căsuțe hexagonale.</li>
+            <li>Se pot cere litere ajutătoare, dar punctajul scade.</li>
+            <li>Normalizarea ignoră diferențe care nu ar trebui să blocheze răspunsul.</li>
+          </ul>
+        </div>
+        <div class="dark-panel panel">
+          <h3>Exemplu vizual</h3>
+          <p>Definiție: „Unitatea structurală și funcțională a organismelor vii.”</p>
+          <div class="word-board">
+            <div class="hex hot">C</div>
+            <div class="hex">E</div>
+            <div class="hex">L</div>
+            <div class="hex">U</div>
+            <div class="hex">L</div>
+            <div class="hex">Ă</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Fluxuri de joc</span>
+      <div class="content">
+        <h2>Singleplayer și multiplayer folosesc aceeași logică de întrebări</h2>
+        <div class="grid-2">
+          <div class="panel">
+            <h3>Singleplayer - <code>/singleplayer</code></h3>
+            <ul>
+              <li>Utilizatorul alege materiile.</li>
+              <li>Serviciul pornește o sesiune locală în memorie.</li>
+              <li>Întrebările vin din <code>QuestionSelector</code>, filtrate pe materii.</li>
+              <li>Scorul, literele cerute și feedbackul se calculează imediat.</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Multiplayer - <code>/multiplayer</code></h3>
+            <ul>
+              <li>Gazda creează o cameră cu materii selectate.</li>
+              <li>Jucătorii intră cu cod sau QR.</li>
+              <li>SignalR sincronizează lobby-ul, întrebarea, răspunsurile și clasamentul.</li>
+              <li>Redis păstrează starea activă, iar PostgreSQL păstrează rezultatele.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Materii și conținut</span>
+      <div class="content">
+        <h2>Filtrarea se face în backend, nu în interfață</h2>
+        <div class="badge-row">
+          <span class="badge">Matematică</span>
+          <span class="badge">Limba română</span>
+          <span class="badge">Informatică</span>
+          <span class="badge">Istorie</span>
+          <span class="badge">Fizică</span>
+          <span class="badge">Geografie</span>
+          <span class="badge">Biologie</span>
+          <span class="badge">Chimie</span>
+          <span class="badge">Religie</span>
+          <span class="badge">Economie</span>
+          <span class="badge">Engleză</span>
+          <span class="badge">Franceză</span>
+          <span class="badge">Germană</span>
+        </div>
+        <div class="flow">
+          <div class="step"><span>1</span><strong>Interfață</strong><p>Componenta <code>SubjectSelection</code> trimite slug-urile selectate.</p></div>
+          <div class="step"><span>2</span><strong>Validare</strong><p><code>SubjectCatalog</code> acceptă doar materii cunoscute.</p></div>
+          <div class="step"><span>3</span><strong>Sesiune</strong><p>Slug-urile sunt salvate în cameră sau sesiune.</p></div>
+          <div class="step"><span>4</span><strong>Selector</strong><p><code>QuestionSelector</code> interoghează doar întrebările active din materiile alese.</p></div>
+          <div class="step"><span>5</span><strong>Seeder</strong><p>Seed-ul creează materiile și întrebări pe teme de liceu.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Arhitectură</span>
+      <div class="content">
+        <h2>Proiect pe straturi clare</h2>
+        <div class="layers">
+          <div class="layer"><strong>Web</strong><p>Blazor Server, pagini Razor, SignalR hub, middleware, endpoint-uri HTTP, CSS și JavaScript pentru experiența de joc.</p></div>
+          <div class="layer"><strong>Application</strong><p>DTO-uri, opțiuni, validatori, contracte și logica de joc care nu depinde direct de baza de date.</p></div>
+          <div class="layer"><strong>Infrastructure</strong><p>EF Core, PostgreSQL, Redis, Identity, QR, seeding, health checks și implementările serviciilor.</p></div>
+          <div class="layer"><strong>Domain</strong><p>Entitățile jocului: întrebări, materii, camere, sesiuni, jucători, răspunsuri și clasamente.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Flux server</span>
+      <div class="content">
+        <h2>Ce se întâmplă când pornește serverul</h2>
+        <div class="pipeline">
+          <div class="panel">
+            <div class="line-list">
+              <div class="line-item"><span class="num">1</span><p>Se configurează Serilog, Razor Components, SignalR, Identity, EF Core, Redis și serviciile de joc.</p></div>
+              <div class="line-item"><span class="num">2</span><p>Se activează antetele redirecționate pentru traficul venit prin Cloudflare Tunnel.</p></div>
+              <div class="line-item"><span class="num">3</span><p>Rate limiting protejează login, creare cameră, join și submit answer.</p></div>
+              <div class="line-item"><span class="num">4</span><p>Se mapează <code>/health</code>, <code>/gameHub</code>, <code>/host/create</code>, <code>/join/{roomCode}/enter</code> și exporturile admin.</p></div>
+              <div class="line-item"><span class="num">5</span><p>La startup, migrațiile și seed-ul pot rula automat pentru baza de date.</p></div>
+            </div>
+          </div>
+          <div class="dark-panel panel">
+            <h3>Flux HTTP</h3>
+            <ul>
+              <li>Cloudflare trimite cererea către containerul <code>web</code>.</li>
+              <li>ASP.NET Core aplică middleware: erori, static files, auth, rate limiting, antiforgery.</li>
+              <li>Razor Components livrează interfața, iar SignalR păstrează conexiunile live.</li>
+              <li>Serviciile de aplicație folosesc PostgreSQL și Redis prin infrastructură.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Multiplayer în timp real</span>
+      <div class="content">
+        <h2>Fluxul unei camere multiplayer</h2>
+        <div class="flow">
+          <div class="step"><span>Gazdă</span><strong>Creează camera</strong><p>Materii, număr maxim de jucători, cod și QR.</p></div>
+          <div class="step"><span>Redis</span><strong>Stare activă</strong><p>Lobby, jucători, întrebare curentă și timer.</p></div>
+          <div class="step"><span>SignalR</span><strong>Evenimente</strong><p><code>PlayerJoined</code>, <code>QuestionStarted</code>, <code>AnswerSubmitted</code>, <code>GameFinished</code>.</p></div>
+          <div class="step"><span>Fundal</span><strong>Cronometru</strong><p><code>GameTimerService</code> avansează jocul când expiră timpul.</p></div>
+          <div class="step"><span>PostgreSQL</span><strong>Istoric</strong><p>Sesiunea finală, răspunsurile și clasamentele sunt persistate.</p></div>
+        </div>
+        <p class="lead">Lock-urile distribuite din Redis evită modificările concurente asupra aceleiași camere.</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Date</span>
+      <div class="content">
+        <h2>Modelul principal de date</h2>
+        <div class="schema">
+          <div class="schema-box"><b>Subject</b><span>Materie, slug, stare activă, țintă de întrebări.</span></div>
+          <div class="schema-box"><b>Question</b><span>Răspuns, definiție, dificultate, categorie, materie.</span></div>
+          <div class="schema-box"><b>Category</b><span>Grupare tematică pentru întrebări.</span></div>
+          <div class="schema-box"><b>GameRoom</b><span>Cameră, cod, stare, gazdă, materii alese.</span></div>
+          <div class="schema-box"><b>Player</b><span>Nume, token invitat, status online și scor.</span></div>
+          <div class="schema-box"><b>PlayerAnswer</b><span>Răspuns, timp, corectitudine și puncte.</span></div>
+          <div class="schema-box"><b>GameSession</b><span>Rezumatul unei runde finalizate.</span></div>
+          <div class="schema-box"><b>LeaderboardEntry</b><span>Rezultate ordonate pentru afișare.</span></div>
+          <div class="schema-box"><b>GameEvent</b><span>Evenimente auditabile produse în timpul jocului.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Persistență</span>
+      <div class="content grid-2">
+        <div class="panel">
+          <h2>PostgreSQL</h2>
+          <ul>
+            <li>Schema este creată prin migrații EF Core.</li>
+            <li>Stochează utilizatori, întrebări, materii, camere, sesiuni și clasamente.</li>
+            <li>Seeder-ul creează date inițiale și actualizează materiile existente.</li>
+            <li>Exportul admin poate produce JSON sau CSV cu subiect, categorie și dificultate.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Redis</h2>
+          <ul>
+            <li>Păstrează starea camerelor active pentru viteză.</li>
+            <li>Oferă lock-uri distribuite pentru operații sensibile.</li>
+            <li>Poate fi backplane SignalR pentru mai multe instanțe web.</li>
+            <li>Rulează cu append-only persistence în Docker Compose.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Publicare</span>
+      <div class="content">
+        <h2>Cum ajunge aplicația la <code>gravital.space</code></h2>
+        <div class="flow">
+          <div class="step"><span>Construire</span><strong>Dockerfile</strong><p>SDK .NET 10 restaurează și publică aplicația.</p></div>
+          <div class="step"><span>Rulare</span><strong>ASP.NET</strong><p>Containerul expune aplicația pe portul 8080.</p></div>
+          <div class="step"><span>Compose</span><strong>Servicii</strong><p><code>postgres</code>, <code>redis</code>, <code>web</code>, <code>cloudflared</code> pornesc împreună.</p></div>
+          <div class="step"><span>Tunel</span><strong>Cloudflare</strong><p><code>cloudflared</code> conectează domeniul public la serverul local.</p></div>
+          <div class="step"><span>DNS</span><strong>gravital.space</strong><p>Traficul HTTPS intră prin Cloudflare și ajunge la container.</p></div>
+        </div>
+        <div class="panel">
+          <p><code>docker compose up -d --build web</code> reconstruiește aplicația, iar <code>/health</code> confirmă că serverul răspunde.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Securitate și administrare</span>
+      <div class="content grid-3">
+        <div class="panel">
+          <h3>Autentificare</h3>
+          <p>ASP.NET Core Identity gestionează conturile admin și gazdă, create din variabile de mediu.</p>
+        </div>
+        <div class="panel">
+          <h3>Protecții web</h3>
+          <p>Antiforgery, rate limiting, cookie-uri HTTP-only și header-e de securitate reduc riscurile de abuz.</p>
+        </div>
+        <div class="panel">
+          <h3>Administrare</h3>
+          <p>Pagini pentru întrebări, categorii, lecții, jocuri și clasamente; import/export JSON sau CSV.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Experiență</span>
+      <div class="content">
+        <h2>Interfață gândită pentru ritm rapid</h2>
+        <div class="grid-4">
+          <div class="stat"><strong>Telefon</strong><p>Focalizare instant între căsuțele de litere și ștergere naturală.</p></div>
+          <div class="stat"><strong>Desktop</strong><p>Layout amplu pentru gazdă, cod de intrare și selecție de materii.</p></div>
+          <div class="stat"><strong>QR</strong><p>Jucătorii pot intra direct în camera gazdei.</p></div>
+          <div class="stat"><strong>Feedback</strong><p>Răspuns corect, scor și clasament afișate fără refresh manual.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Calitate</span>
+      <div class="content grid-2">
+        <div class="panel">
+          <h2>Teste</h2>
+          <ul>
+            <li>Teste unitare pentru normalizare, scor, singleplayer și multiplayer.</li>
+            <li>Teste de integrare pentru paginile web, fluxuri și scripturile Blazor.</li>
+            <li>EF Core InMemory permite verificarea rapidă a logicii fără PostgreSQL real.</li>
+          </ul>
+        </div>
+        <div class="dark-panel panel">
+          <h2>Verificare finală</h2>
+          <ul>
+            <li>Containerul web se reconstruiește prin Docker Compose.</li>
+            <li>Migrațiile și seed-ul pregătesc baza de date.</li>
+            <li>Ruta <code>/health</code> confirmă starea aplicației.</li>
+            <li>Domeniul public este servit prin Cloudflare Tunnel.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Rezultat</span>
+      <div class="content">
+        <h2>Ce este important de înțeles</h2>
+        <div class="grid-3">
+          <div class="panel"><h3>Nu este doar interfață</h3><p>Filtrarea pe materii, scorul, validarea și selecția întrebărilor sunt în serviciile serverului.</p></div>
+          <div class="panel"><h3>Multiplayer real</h3><p>SignalR, Redis și worker-ul de timer fac ca gazda și jucătorii să vadă aceeași stare în timp real.</p></div>
+          <div class="panel"><h3>Publicare local-public</h3><p>Serverul rulează pe acest dispozitiv, iar Cloudflare Tunnel îl expune securizat la <code>gravital.space</code>.</p></div>
+        </div>
+        <p class="lead">Proiectul combină o arhitectură .NET pe straturi cu o interfață de joc rapidă și o infrastructură simplă, reproductibilă prin Docker.</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="hint">Folosește tastele ← / → sau Spațiu</div>
+  <div class="controls" aria-label="Navigare prezentare">
+    <button class="nav-button" id="prev" type="button" aria-label="Slide anterior">‹</button>
+    <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+    <button class="nav-button" id="next" type="button" aria-label="Slide următor">›</button>
+    <div class="counter" id="counter"></div>
+  </div>
+
+  <script>
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    const progress = document.getElementById('progress');
+    const counter = document.getElementById('counter');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    let index = 0;
+
+    function showSlide(nextIndex) {
+      index = Math.max(0, Math.min(slides.length - 1, nextIndex));
+      slides.forEach((slide, slideIndex) => {
+        slide.classList.toggle('active', slideIndex === index);
+      });
+      progress.style.width = `${((index + 1) / slides.length) * 100}%`;
+      counter.textContent = `${index + 1}/${slides.length}`;
+      prev.disabled = index === 0;
+      next.disabled = index === slides.length - 1;
+      location.hash = `slide-${index + 1}`;
+    }
+
+    prev.addEventListener('click', () => showSlide(index - 1));
+    next.addEventListener('click', () => showSlide(index + 1));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'ArrowRight' || event.key === ' ') {
+        event.preventDefault();
+        showSlide(index + 1);
+      }
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        showSlide(index - 1);
+      }
+      if (event.key === 'Home') {
+        event.preventDefault();
+        showSlide(0);
+      }
+      if (event.key === 'End') {
+        event.preventDefault();
+        showSlide(slides.length - 1);
+      }
+    });
+
+    const match = location.hash.match(/slide-(\d+)/);
+    showSlide(match ? Number(match[1]) - 1 : 0);
+  </script>
+</body>
+</html>

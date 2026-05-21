@@ -1,0 +1,70 @@
+services:
+  postgres:
+    image: postgres:18
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: wordgame
+      POSTGRES_USER: wordgame
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - postgres18-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U wordgame -d wordgame"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:8-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "127.0.0.1:56379:6379"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=wordgame;Username=wordgame;Password=${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      Redis__ConnectionString: redis:6379
+      Qr__PublicBaseUrl: https://gravital.space
+      AllowedHosts: gravital.space;www.gravital.space;localhost;127.0.0.1
+      Https__Redirect: "false"
+      Database__RunMigrationsOnStartup: "true"
+      SignalR__UseRedisBackplane: "true"
+      Security__AdminEmail: ${WORDGAME_ADMIN_EMAIL:?Set WORDGAME_ADMIN_EMAIL in .env}
+      Security__AdminPassword: ${WORDGAME_ADMIN_PASSWORD:?Set WORDGAME_ADMIN_PASSWORD in .env}
+      Security__HostEmail: ${WORDGAME_HOST_EMAIL:?Set WORDGAME_HOST_EMAIL in .env}
+      Security__HostPassword: ${WORDGAME_HOST_PASSWORD:?Set WORDGAME_HOST_PASSWORD in .env}
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run --token ${CLOUDFLARED_TOKEN:-}
+    depends_on:
+      - web
+
+volumes:
+  postgres18-data:
+  redis-data:

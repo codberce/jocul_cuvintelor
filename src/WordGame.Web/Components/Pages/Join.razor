@@ -1,0 +1,46 @@
+@page "/join/{RoomCode}"
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IAntiforgery Antiforgery
+@inject IGameRoomService GameService
+
+<main class="train-page join-page">
+    <section class="train-shell join-shell">
+        <span class="show-logo">Multiplayer</span>
+        <h1>Intra in joc</h1>
+        <div class="join-room-code">@RoomCode</div>
+        @if (_error is not null)
+        {
+            <div class="alert error">@_error</div>
+        }
+        <form class="join-form" method="post" action="/join/@RoomCode/enter">
+            <input type="hidden" name="__RequestVerificationToken" value="@_token" />
+            <label>Numele tau</label>
+            <input name="DisplayName" maxlength="32" autocomplete="nickname" required autofocus />
+            <button class="button primary wide" type="submit">Intra</button>
+        </form>
+    </section>
+</main>
+
+@code {
+    [Parameter] public string RoomCode { get; set; } = string.Empty;
+    private string? _token;
+    private string? _error;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var context = HttpContextAccessor.HttpContext;
+        if (context is not null)
+        {
+            _token = Antiforgery.GetAndStoreTokens(context).RequestToken;
+        }
+
+        try
+        {
+            await GameService.GetSnapshotAsync(RoomCode);
+        }
+        catch (Exception ex)
+        {
+            _error = ex.Message;
+        }
+    }
+}

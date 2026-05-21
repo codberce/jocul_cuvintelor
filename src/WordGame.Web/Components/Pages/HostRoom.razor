@@ -1,0 +1,223 @@
+@page "/host/{RoomCode}"
+@implements IAsyncDisposable
+@inject IGameRoomService GameService
+@inject IQrCodeService QrCodeService
+@inject IHubContext<GameHub> HubContext
+
+<main class="host-screen">
+    @if (_error is not null)
+    {
+        <div class="alert error">@_error</div>
+    }
+    else if (_snapshot is null)
+    {
+        <div class="loading">Se incarca...</div>
+    }
+    else
+    {
+        <section class="host-header">
+            <div>
+                <span class="eyebrow">Camera</span>
+                <h1>@RoomCode</h1>
+            </div>
+            <div class="host-actions">
+                @if (_snapshot.Status == GameStatus.Lobby)
+                {
+                    <button class="button primary" @onclick="StartGame">Start</button>
+                }
+                @if (_snapshot.Status == GameStatus.Playing)
+                {
+                    <button class="button" @onclick="EndQuestion">Inchide intrebarea</button>
+                }
+                @if (_snapshot.Status == GameStatus.QuestionResults)
+                {
+                    <button class="button primary" @onclick="NextQuestion">Next Question</button>
+                }
+                <button class="button danger" @onclick="EndGame">End Game</button>
+            </div>
+        </section>
+
+        @if (_snapshot.Status == GameStatus.Lobby)
+        {
+            <section class="lobby-grid">
+                <div class="qr-panel">
+                    <img src="@_qr" alt="QR code pentru intrare" />
+                    <p>@QrCodeService.BuildJoinUrl(RoomCode)</p>
+                </div>
+                <div>
+                    <h2>Jucatori conectati (@_snapshot.Players.Count)</h2>
+                    <div class="players-grid">
+                        @foreach (var player in _snapshot.Players)
+                        {
+                            <span class="player-pill @(player.Connected ? "online" : "offline")">@player.DisplayName</span>
+                        }
+                    </div>
+                </div>
+            </section>
+        }
+        else if (_snapshot.CurrentQuestion is not null)
+        {
+            <section class="question-stage">
+                <div class="progress">@_snapshot.CurrentQuestion.QuestionIndex / @_snapshot.CurrentQuestion.TotalQuestions</div>
+                <div class="timer">@RemainingSeconds()</div>
+                <div class="letter-board host-board" aria-label="@_snapshot.CurrentQuestion.LetterCount litere">
+                    @foreach (var _ in Enumerable.Range(0, _snapshot.CurrentQuestion.LetterCount))
+                    {
+                        <span class="hex-cell-display"></span>
+                    }
+                </div>
+                <article class="question-card">
+                    <span>@_snapshot.CurrentQuestion.Subject · @_snapshot.CurrentQuestion.Category · @_snapshot.CurrentQuestion.Difficulty · @_snapshot.CurrentQuestion.LetterCount litere</span>
+                    <h2>@_snapshot.CurrentQuestion.Definition</h2>
+                </article>
+                <div class="answer-count">Raspunsuri primite: @_snapshot.AnsweredCount / @_snapshot.TotalPlayers</div>
+            </section>
+        }
+        else if (_snapshot.LastQuestionResult is not null)
+        {
+            <section class="results-stage">
+                <h2>Raspuns corect: @_snapshot.LastQuestionResult.CorrectAnswer</h2>
+                <p>@_snapshot.LastQuestionResult.CorrectCount din @_snapshot.LastQuestionResult.TotalPlayers au raspuns corect.</p>
+                <p>Cel mai rapid: @FastestText()</p>
+            </section>
+        }
+
+        <section class="leaderboard">
+            <h2>Clasament live</h2>
+            @foreach (var entry in _snapshot.Leaderboard)
+            {
+                <div class="leader-row">
+                    <span>@entry.Rank</span>
+                    <strong>@entry.PlayerName</strong>
+                    <b>@entry.Score</b>
+                </div>
+            }
+        </section>
+    }
+</main>
+
+@code {
+    [Parameter] public string RoomCode { get; set; } = string.Empty;
+    private RoomSnapshotDto? _snapshot;
+    private string? _qr;
+    private string? _error;
+    private bool _endingExpiredQuestion;
+    private readonly CancellationTokenSource _cts = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _qr = QrCodeService.GenerateJoinQrDataUri(RoomCode);
+        await RefreshAsync();
+        _ = RefreshLoopAsync();
+    }
+
+    private async Task RefreshLoopAsync()
+    {
+        using var timer = new PeriodicTimer(TimeSpan.FromSeconds(1));
+        while (await timer.WaitForNextTickAsync(_cts.Token))
+        {
+            await RefreshAsync();
+            await EndExpiredQuestionAsync();
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private async Task EndExpiredQuestionAsync()
+    {
+        if (_endingExpiredQuestion ||
+            _snapshot?.Status != GameStatus.Playing ||
+            _snapshot.CurrentQuestion is null ||
+            RemainingSeconds() > 0)
+        {
+            return;
+        }
+
+        try
+        {
+            _endingExpiredQuestion = true;
+            await EndQuestion();
+        }
+        finally
+        {
+            _endingExpiredQuestion = false;
+        }
+    }
+
+    private async Task RefreshAsync()
+    {
+        try
+        {
+            var snapshot = await GameService.GetSnapshotAsync(RoomCode, _cts.Token);
+            _snapshot = snapshot;
+        }
+        catch (Exception ex)
+        {
+            _error = ex.Message;
+        }
+    }
+
+    private int RemainingSeconds()
+    {
+        var question = _snapshot?.CurrentQuestion;
+        if (question is null)
+        {
+            return 0;
+        }
+        var remaining = question.ServerStartedAtUtc.AddSeconds(question.TimeLimitSeconds) - DateTimeOffset.UtcNow;
+        return Math.Max(0, (int)Math.Ceiling(remaining.TotalSeconds));
+    }
+
+    private string FastestText()
+    {
+        var result = _snapshot?.LastQuestionResult;
+        if (result?.FastestCorrectPlayerName is null || result.FastestCorrectResponseMs is null)
+        {
+            return "-";
+        }
+
+        return $"{result.FastestCorrectPlayerName} ({result.FastestCorrectResponseMs} ms)";
+    }
+
+    private async Task StartGame()
+    {
+        var question = await GameService.StartGameAsync(RoomCode, _snapshot!.HostUserId, _cts.Token);
+        await HubContext.Clients.Group(GameHub.RoomGroup(RoomCode)).SendAsync("GameStarted", RoomCode, _cts.Token);
+        await HubContext.Clients.Group(GameHub.RoomGroup(RoomCode)).SendAsync("QuestionStarted", question, _cts.Token);
+        await RefreshAsync();
+    }
+
+    private async Task EndQuestion()
+    {
+        var ended = await GameService.EndQuestionAsync(RoomCode, _snapshot!.HostUserId, _cts.Token);
+        await HubContext.Clients.Group(GameHub.RoomGroup(RoomCode)).SendAsync("QuestionEnded", ended, _cts.Token);
+        await RefreshAsync();
+    }
+
+    private async Task NextQuestion()
+    {
+        var question = await GameService.NextQuestionAsync(RoomCode, _snapshot!.HostUserId, _cts.Token);
+        if (question is null)
+        {
+            await HubContext.Clients.Group(GameHub.RoomGroup(RoomCode)).SendAsync("GameEnded", RoomCode, _cts.Token);
+        }
+        else
+        {
+            await HubContext.Clients.Group(GameHub.RoomGroup(RoomCode)).SendAsync("QuestionStarted", question, _cts.Token);
+        }
+        await RefreshAsync();
+    }
+
+    private async Task EndGame()
+    {
+        var ended = await GameService.EndGameAsync(RoomCode, _snapshot!.HostUserId, _cts.Token);
+        await HubContext.Clients.Group(GameHub.RoomGroup(RoomCode)).SendAsync("GameEnded", ended, _cts.Token);
+        await RefreshAsync();
+    }
+
+    public ValueTask DisposeAsync()
+    {
+        _cts.Cancel();
+        _cts.Dispose();
+        return ValueTask.CompletedTask;
+    }
+}

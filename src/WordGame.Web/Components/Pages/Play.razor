@@ -1,0 +1,304 @@
+@page "/play/{RoomCode}"
+@implements IAsyncDisposable
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IGameRoomService GameService
+@inject IGuestSessionService GuestSessionService
+@inject IHubContext<GameHub> HubContext
+@inject IJSRuntime JsRuntime
+
+<main class="train-page player-game-page">
+    <section class="train-shell player-shell">
+        @if (_token is null)
+        {
+            <h1>Sesiune lipsa</h1>
+            <a class="button primary wide" href="/join/@RoomCode">Intra din nou</a>
+        }
+        else if (_snapshot is null)
+        {
+            <div class="loading">Se conecteaza...</div>
+        }
+        else if (_snapshot.Status == GameStatus.Lobby)
+        {
+            <span class="show-logo">Multiplayer</span>
+            <h1>Esti in lobby</h1>
+            <p>Asteapta ca gazda sa porneasca jocul.</p>
+            <div class="score-strip">
+                <span>Scor: @_ownScore</span>
+                <span>Camera: @RoomCode</span>
+            </div>
+        }
+        else if (_snapshot.Status == GameStatus.Playing && _snapshot.CurrentQuestion is not null)
+        {
+            <div class="train-top">
+                <span>@_snapshot.CurrentQuestion.QuestionIndex / @_snapshot.CurrentQuestion.TotalQuestions</span>
+                <strong>@RemainingSeconds()s</strong>
+            </div>
+            <div class="score-strip">
+                <span>Scor: @_ownScore</span>
+                <span>Camera: @RoomCode</span>
+            </div>
+            <article class="train-question">
+                <span>@_snapshot.CurrentQuestion.Subject · @_snapshot.CurrentQuestion.Category · @_snapshot.CurrentQuestion.Difficulty · @_snapshot.CurrentQuestion.LetterCount litere</span>
+                <h1>@_snapshot.CurrentQuestion.Definition</h1>
+            </article>
+            <div class="letter-board" data-word-board="@_boardId">
+                @foreach (var index in Enumerable.Range(0, _snapshot.CurrentQuestion.LetterCount))
+                {
+                    <input class="hex-cell-input @(IsRevealed(index) ? "revealed" : null)"
+                           data-word-cell
+                           data-cell-index="@index"
+                           aria-label="Litera @(index + 1)"
+                           autocomplete="off"
+                           autocapitalize="characters"
+                           autocorrect="off"
+                           inputmode="text"
+                           spellcheck="false"
+                           maxlength="1"
+                           value="@CellValue(index)"
+                           disabled="@IsRevealed(index)"
+                           @onkeydown="HandleCellKeyDown"
+                           @oninput="eventArgs => SetLetterAsync(index, eventArgs.Value?.ToString())" />
+                }
+            </div>
+            @if (_feedback?.QuestionId == _snapshot.CurrentQuestion.QuestionId)
+            {
+                <div class="feedback @(_feedback.IsCorrect ? "ok" : "bad")">
+                    @_feedback.Message<br />
+                    @_feedback.ScoreAwarded puncte
+                </div>
+            }
+            else
+            {
+                <EditForm Model="@this" OnSubmit="SubmitAnswer">
+                    <div class="actions">
+                        <button class="button accent" type="button" @onclick="RequestLetter">Litera (-100)</button>
+                    </div>
+                    <button class="button primary wide" type="submit" disabled="@(!IsAnswerComplete())">Trimite</button>
+                </EditForm>
+            }
+        }
+        else if (_snapshot.Status == GameStatus.QuestionResults && _snapshot.LastQuestionResult is not null)
+        {
+            <span class="show-logo">Rezultat</span>
+            <h1>Rezultat</h1>
+            <div class="feedback neutral">
+                Raspuns corect: <strong>@_snapshot.LastQuestionResult.CorrectAnswer</strong>
+            </div>
+            <div class="score-strip">
+                <span>Scor: @_ownScore</span>
+            </div>
+        }
+        else if (_snapshot.Status == GameStatus.Finished)
+        {
+            <span class="show-logo">Final</span>
+            <h1>Joc terminat</h1>
+            <div class="leaderboard compact">
+                @foreach (var entry in _snapshot.Leaderboard.Take(10))
+                {
+                    <div class="leader-row">
+                        <span>@entry.Rank</span>
+                        <strong>@entry.PlayerName</strong>
+                        <b>@entry.Score</b>
+                    </div>
+                }
+            </div>
+        }
+    </section>
+</main>
+
+@code {
+    [Parameter] public string RoomCode { get; set; } = string.Empty;
+    private readonly CancellationTokenSource _cts = new();
+    private readonly string _boardId = $"play-{Guid.NewGuid():N}";
+    private RoomSnapshotDto? _snapshot;
+    private string? _token;
+    private Guid _playerId;
+    private string[] _letters = [];
+    private Dictionary<int, char> _revealedLetters = [];
+    private PlayerFeedbackDto? _feedback;
+    private string _idempotencyKey = Guid.NewGuid().ToString("N");
+    private int _ownScore;
+    private bool _endingExpiredQuestion;
+    private Guid? _renderedQuestionId;
+    private bool _focusFirstEmpty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _token = HttpContextAccessor.HttpContext?.Request.Cookies[$"WordGame.Player.{RoomCode}"];
+        if (_token is null || !GuestSessionService.TryValidateToken(_token, RoomCode, out _playerId))
+        {
+            _token = null;
+            return;
+        }
+
+        await GameService.ReconnectPlayerAsync(RoomCode, _token, $"blazor:{Guid.NewGuid():N}", _cts.Token);
+        await RefreshAsync();
+        _ = RefreshLoopAsync();
+    }
+
+    private async Task RefreshLoopAsync()
+    {
+        using var timer = new PeriodicTimer(TimeSpan.FromSeconds(1));
+        while (await timer.WaitForNextTickAsync(_cts.Token))
+        {
+            await RefreshAsync();
+            await EndExpiredQuestionAsync();
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private async Task EndExpiredQuestionAsync()
+    {
+        if (_endingExpiredQuestion ||
+            _snapshot?.Status != GameStatus.Playing ||
+            _snapshot.CurrentQuestion is null ||
+            RemainingSeconds() > 0)
+        {
+            return;
+        }
+
+        try
+        {
+            _endingExpiredQuestion = true;
+            var ended = await GameService.EndQuestionAsync(RoomCode, null, _cts.Token);
+            await HubContext.Clients.Group(GameHub.RoomGroup(RoomCode)).SendAsync("QuestionEnded", ended, _cts.Token);
+            await RefreshAsync();
+        }
+        finally
+        {
+            _endingExpiredQuestion = false;
+        }
+    }
+
+    private async Task RefreshAsync()
+    {
+        _snapshot = await GameService.GetSnapshotAsync(RoomCode, _cts.Token);
+        _ownScore = _snapshot.Players.FirstOrDefault(x => x.PlayerId == _playerId)?.Score ?? _ownScore;
+        if (_snapshot.CurrentQuestion is not null && _renderedQuestionId != _snapshot.CurrentQuestion.QuestionId)
+        {
+            _idempotencyKey = Guid.NewGuid().ToString("N");
+            _feedback = null;
+            _renderedQuestionId = _snapshot.CurrentQuestion.QuestionId;
+            SyncLetters(true);
+            _focusFirstEmpty = true;
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (_focusFirstEmpty)
+        {
+            _focusFirstEmpty = false;
+            await JsRuntime.InvokeVoidAsync("wordGame.focusFirstEmptyHex", _boardId);
+        }
+    }
+
+    private void SyncLetters(bool reset = false)
+    {
+        var question = _snapshot?.CurrentQuestion;
+        if (question is null)
+        {
+            _letters = [];
+            _revealedLetters = [];
+            return;
+        }
+
+        if (reset || _letters.Length != question.LetterCount)
+        {
+            _letters = Enumerable.Repeat(string.Empty, question.LetterCount).ToArray();
+            _revealedLetters = [];
+        }
+
+        foreach (var revealed in _revealedLetters)
+        {
+            if (revealed.Key < _letters.Length)
+            {
+                _letters[revealed.Key] = revealed.Value.ToString().ToUpperInvariant();
+            }
+        }
+    }
+
+    private bool IsRevealed(int index) => _revealedLetters.ContainsKey(index);
+
+    private string CellValue(int index) => index < _letters.Length ? _letters[index] : string.Empty;
+
+    private Task SetLetterAsync(int index, string? value)
+    {
+        if (index >= _letters.Length || IsRevealed(index))
+        {
+            return Task.CompletedTask;
+        }
+
+        _letters[index] = string.IsNullOrWhiteSpace(value)
+            ? string.Empty
+            : value.Trim()[^1].ToString().ToUpperInvariant();
+
+        return Task.CompletedTask;
+    }
+
+    private async Task HandleCellKeyDown(KeyboardEventArgs eventArgs)
+    {
+        if (eventArgs.Key == "Enter" && IsAnswerComplete())
+        {
+            await SubmitAnswer();
+        }
+    }
+
+    private async Task RequestLetter()
+    {
+        if (_snapshot?.CurrentQuestion is null || _token is null || _feedback?.QuestionId == _snapshot.CurrentQuestion.QuestionId)
+        {
+            return;
+        }
+
+        var hint = await GameService.RequestLetterAsync(RoomCode, _token, _snapshot.CurrentQuestion.QuestionId, _cts.Token);
+        _revealedLetters = hint.RevealedLetters.ToDictionary(x => x.Key, x => x.Value);
+        SyncLetters();
+        _focusFirstEmpty = true;
+    }
+
+    private bool IsAnswerComplete()
+    {
+        return _letters.Length > 0 && _letters.All(letter => !string.IsNullOrWhiteSpace(letter));
+    }
+
+    private int RemainingSeconds()
+    {
+        var question = _snapshot?.CurrentQuestion;
+        if (question is null)
+        {
+            return 0;
+        }
+        var remaining = question.ServerStartedAtUtc.AddSeconds(question.TimeLimitSeconds) - DateTimeOffset.UtcNow;
+        return Math.Max(0, (int)Math.Ceiling(remaining.TotalSeconds));
+    }
+
+    private async Task SubmitAnswer()
+    {
+        if (_snapshot?.CurrentQuestion is null || _token is null)
+        {
+            return;
+        }
+
+        var request = new SubmitAnswerRequest(RoomCode, _token, _snapshot.CurrentQuestion.QuestionId, string.Concat(_letters), _idempotencyKey);
+        var result = await GameService.SubmitAnswerAsync(request, _cts.Token);
+        _feedback = result.Feedback;
+        _ownScore = result.Feedback.TotalScore;
+        await HubContext.Clients.Group(GameHub.RoomGroup(RoomCode)).SendAsync("AnswerReceived", result.AnswerReceived, _cts.Token);
+
+        if (result.ShouldAutoEndQuestion)
+        {
+            var ended = await GameService.EndQuestionAsync(RoomCode, null, _cts.Token);
+            await HubContext.Clients.Group(GameHub.RoomGroup(RoomCode)).SendAsync("QuestionEnded", ended, _cts.Token);
+        }
+
+        await RefreshAsync();
+    }
+
+    public ValueTask DisposeAsync()
+    {
+        _cts.Cancel();
+        _cts.Dispose();
+        return ValueTask.CompletedTask;
+    }
+}

@@ -1,0 +1,45 @@
+@page "/admin/leaderboards"
+@attribute [Authorize(Roles = "Admin")]
+@inject IDbContextFactory<ApplicationDbContext> DbFactory
+
+<main class="page">
+    <div class="page-heading">
+        <div>
+            <h1>Clasamente</h1>
+            <p>Top rezultate istorice pe jucator si joc.</p>
+        </div>
+    </div>
+
+    <div class="table-wrap">
+        <table>
+            <thead><tr><th>Loc</th><th>Jucator</th><th>Scor</th><th>Joc</th></tr></thead>
+            <tbody>
+            @foreach (var entry in _entries)
+            {
+                <tr>
+                    <td>@entry.Rank</td>
+                    <td>@entry.PlayerName</td>
+                    <td>@entry.Score</td>
+                    <td>@entry.GameSession?.RoomCode</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</main>
+
+@code {
+    private List<LeaderboardEntry> _entries = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        await using var db = await DbFactory.CreateDbContextAsync();
+        _entries = await db.LeaderboardEntries
+            .Include(x => x.GameSession)
+            .AsNoTracking()
+            .OrderByDescending(x => x.Score)
+            .ThenBy(x => x.Rank)
+            .Take(200)
+            .ToListAsync();
+    }
+}
