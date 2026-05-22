@@ -1,0 +1,702 @@
+[
+  {
+    "answer": "Eminescu",
+    "definition": "poet romantic, autor al poemului cu astrul indragostit de o muritoare.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Caragiale",
+    "definition": "dramaturg care satirizeaza alegerile, politica si micile ambitii burgheze.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Rebreanu",
+    "definition": "prozator al satului transilvanean si al pamantului ca obsesie.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Sadoveanu",
+    "definition": "scriitor al Moldovei arhaice, al vanatorii si al istoriei medievale.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Arghezi",
+    "definition": "poet al cuvintelor aspre, al rugaciunii si al jocului verbal.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Blaga",
+    "definition": "poet si filozof al misterului si al cunoasterii prin lumina.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Bacovia",
+    "definition": "autor al unei poezii dominata de ploaie, ceata si culoarea gri.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Barbu",
+    "definition": "poet ermetic care construieste imagini abstracte si geometrice.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Voiculescu",
+    "definition": "prozator si poet care imbina fantasticul cu temele religioase.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Stancu",
+    "definition": "autor al unei proze cu satul sarac si oamenii marunti.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Preda",
+    "definition": "romancier al familiei taranesti si al destramarii lumii vechi.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Calinescu",
+    "definition": "critic si romancier care realizeaza o fresca ampla a unei familii urbane.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Petrescu",
+    "definition": "prozator modern interesat de constiinta si analiza interiora.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Pillat",
+    "definition": "poet al elegantei aristocratice si al nostalgiei dupa trecut.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Nichita",
+    "definition": "poet al jocului cu limbajul si al metaforelor surprinzatoare.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Sorescu",
+    "definition": "autor ironic, atent la esential si la ambiguitatea cuvintelor.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Toparceanu",
+    "definition": "poet al umorului, al pastelului si al epigramei.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Ionesco",
+    "definition": "dramaturg care a facut celebru teatrul absurdului.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Cehov",
+    "definition": "autor de nuvele si piese cu tensiuni discrete si final deschis.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Poe",
+    "definition": "maestru al prozei gotice si al povestirii cu detectiv.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Hugo",
+    "definition": "romantic francez, autor al unui mare roman despre catedrala pariziana.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Balzac",
+    "definition": "creatorul unei mari fresce a societatii franceze din secolul al XIX-lea.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Zola",
+    "definition": "promotor al naturalismului, interesat de determinismul mediului.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Kafka",
+    "definition": "prozator al anxietatii, al birocratiei si al alienarii.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Camus",
+    "definition": "romancier al absurdului si al revoltei morale.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Sartre",
+    "definition": "filozof si dramaturg care pune in centru libertatea omului.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Proust",
+    "definition": "scriitor al memoriei involuntare si al timpului regasit.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Tolstoi",
+    "definition": "romancier rus al marilor drame morale si sociale.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Dostoievski",
+    "definition": "prozator al vinovatiei, al credintei si al conflictului interior.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Puskin",
+    "definition": "intemeietor al literaturii ruse moderne.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Lermontov",
+    "definition": "poet romantic al eroului singuratic si nelinistit.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Verlaine",
+    "definition": "simbolist al muzicalitatii si al sugestiei discrete.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Rimbaud",
+    "definition": "poet rebel al viziunilor intense si al rupturii de conventii.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Beckett",
+    "definition": "dramaturg al asteptarii fara raspuns si al golului existential.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Joyce",
+    "definition": "modernist al fluxului constiintei si al orasului Dublin.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Woolf",
+    "definition": "romanciera care exploreaza psihologia prin tehnici moderne.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Moliere",
+    "definition": "autor clasic de comedii care ironizeaza ipocrizia.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Racine",
+    "definition": "dramaturg clasic al pasiunilor tinute sub control strict.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Corneille",
+    "definition": "autor al conflictelor dintre onoare, datorie si iubire.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Goethe",
+    "definition": "scriitor german al cautarii absolute si al dramei filozofice.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Schiller",
+    "definition": "dramaturg al libertatii, al idealului si al eroismului.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Heine",
+    "definition": "poet german al ironiei si al melancoliei.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Byron",
+    "definition": "poet romantic al eroului exilat si arogant.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Musset",
+    "definition": "poet romantic al iubirilor fragile si al dezamagirii.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Lamartine",
+    "definition": "poet al meditatiei si al peisajului sentimental.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Malraux",
+    "definition": "prozator preocupat de istorie, eroism si actiune.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Homer",
+    "definition": "autor antic al marilor epopei grecesti.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Vergiliu",
+    "definition": "poet latin al originilor Romei si al destinului imperial.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Dante",
+    "definition": "poet italian al calatoriei prin infern, purgatoriu si paradis.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Cervantes",
+    "definition": "autor al romanului despre cavalerul care confunda idealul cu realitatea.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Morometii",
+    "definition": "roman despre satul traditional aflat in pragul destramarii.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Baltagul",
+    "definition": "roman de cautare si dreptate in lumea pastorala.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "HarapAlb",
+    "definition": "basm cult despre maturizare, probe si ajutor supranatural.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Ciuleandra",
+    "definition": "roman psihologic despre obsesie si vinovatie.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Zburatorul",
+    "definition": "balada despre iubirea trezita de o aparitie fantastica.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Testament",
+    "definition": "poezie-program despre mostenirea spirituala si rolul cuvantului.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Plumb",
+    "definition": "text simbolist dominat de moarte, apasare si izolare.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Oda",
+    "definition": "poezie de inspiratie clasica despre impacarea cu destinul.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Amintiri",
+    "definition": "evocare a copilariei prin episoade pline de farmec si umor.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Basm",
+    "definition": "specie narativa cu erou, incercari si final fericit.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Nuvela",
+    "definition": "proza concentrata, cu un singur conflict principal.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Roman",
+    "definition": "specie epica ampla, cu actiune complexa si multe personaje.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Drama",
+    "definition": "text pentru scena, cu conflict serios si final tensionat.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Comedie",
+    "definition": "piesa care provoaca rasul prin satira si situatie.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Tragedie",
+    "definition": "piesa in care eroarea si destinul duc la prabusire.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Balada",
+    "definition": "poezie narativa cu subiect eroic, fantastic sau istoric.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Elegie",
+    "definition": "poezie marcata de melancolie, regret si meditatie.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Sonet",
+    "definition": "poezie fixa alcatuita din paisprezece versuri.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Catren",
+    "definition": "strofa de patru versuri.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Strofa",
+    "definition": "grup de versuri organizat ritmic.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Rima",
+    "definition": "potrivire sonora la finalul versurilor.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Vers",
+    "definition": "unitate ritmica a poeziei.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Proza",
+    "definition": "scriere in fraze continue, fara organizare versificata.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Tema",
+    "definition": "ideea centrala a textului.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Motiv",
+    "definition": "element recurrent care poarta sens si coeziune.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Titlu",
+    "definition": "formula aflata deasupra textului, care concentreaza semnificatii.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Narator",
+    "definition": "voce care povesteste si organizeaza intamplarile.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Personaj",
+    "definition": "fiinta literara care actioneaza si vorbeste in text.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Conflict",
+    "definition": "tensiune dintre forte, idei sau personaje opuse.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Dialog",
+    "definition": "schimb de replici intre doua sau mai multe personaje.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Monolog",
+    "definition": "vorbire extinsa a unui singur personaj.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Simbol",
+    "definition": "semn concret care trimite la un sens abstract.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Metafora",
+    "definition": "figura bazata pe inlocuirea unui termen cu altul asemanator.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Epitet",
+    "definition": "atribut expresiv care contureaza plastic un substantiv.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Antiteza",
+    "definition": "figura care opune idei, imagini sau personaje.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Alegorie",
+    "definition": "idee reprezentata prin imagini dezvoltate si coerente.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Personificare",
+    "definition": "atribuire de insusiri omenesti unui element neininsufletit.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Hiperbola",
+    "definition": "exagerare expresiva folosita pentru accent.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Aliteratie",
+    "definition": "repetare a unor sunete pentru efect muzical.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Anafora",
+    "definition": "repetare la inceputul versurilor sau al frazelor.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Inversiune",
+    "definition": "rasturnare a ordinii obisnuite a cuvintelor.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Arhaism",
+    "definition": "cuvant sau forma veche pastrata in texte.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Neologism",
+    "definition": "termen nou intrat in limba prin imprumut sau creatie.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Epica",
+    "definition": "gen bazat pe naratiune si actiune.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Liric",
+    "definition": "gen orientat spre traire personala si expresivitate.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Dramatic",
+    "definition": "gen pentru scena, construit pe dialog si conflict.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Modernism",
+    "definition": "curent care favorizeaza noutatea si experimentul formal.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Simbolism",
+    "definition": "curent care cultiva sugestia, muzicalitatea si corespondentele.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Romanticism",
+    "definition": "curent care privilegiaza eul, sensibilitatea si extraordinarul.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Realism",
+    "definition": "curent orientat spre reprezentarea verosimila a vietii.",
+    "category": "literatura",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  }
+]

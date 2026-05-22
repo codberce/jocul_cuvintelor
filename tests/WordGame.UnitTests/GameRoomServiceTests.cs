@@ -182,7 +182,7 @@ public sealed class GameRoomServiceTests
                 new SubmitAnswerRequestValidator(),
                 options,
                 Options.Create(new RedisOptions()),
-                Options.Create(new SecurityOptions()));
+                Options.Create(new GuestSessionOptions()));
 
             return new ServiceFixture { Service = service, Store = store, RoomCode = roomCode, GuestToken = guest.Token, QuestionId = questionId };
         }

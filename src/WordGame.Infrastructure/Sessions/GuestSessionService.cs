@@ -2,7 +2,7 @@ using System.Text.Json;
 using Microsoft.AspNetCore.DataProtection;
 using WordGame.Application.Interfaces;
 
-namespace WordGame.Infrastructure.Identity;
+namespace WordGame.Infrastructure.Sessions;
 
 public sealed class GuestSessionService(IDataProtectionProvider dataProtectionProvider) : IGuestSessionService
 {

@@ -1,0 +1,702 @@
+[
+  {
+    "answer": "algoritm",
+    "definition": "Sir finit de pasi care conduce la rezolvarea unei probleme.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "variabila",
+    "definition": "Nume asociat unei zone de memorie al carei continut se poate schimba.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "constanta",
+    "definition": "Valoare care ramane neschimbata pe durata executiei.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "expresie",
+    "definition": "Combinatie de operanzi si operatori care poate fi evaluata.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "instructiune",
+    "definition": "Comanda elementara executata de program.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "atribuire",
+    "definition": "Operatie prin care o valoare este stocata intr-o variabila.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "selectie",
+    "definition": "Structura de control care alege o ramura in functie de o conditie.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "iteratie",
+    "definition": "Repetarea unui bloc cat timp o conditie ramane adevarata.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "bucla",
+    "definition": "Structura care repeta un set de instructiuni.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "contor",
+    "definition": "Variabila care numara repetarile sau elementele procesate.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "acumulator",
+    "definition": "Variabila in care se strang rezultate partiale pe parcursul calculelor.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tablou",
+    "definition": "Colectie de elemente de acelasi tip stocate sub acelasi nume.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "matrice",
+    "definition": "Tablou bidimensional organizat pe linii si coloane.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sir",
+    "definition": "Secventa ordonata de elemente analizate unul dupa altul.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "caracter",
+    "definition": "Simbol elementar folosit pentru reprezentarea textului.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "subprogram",
+    "definition": "Portiune reutilizabila de cod care primeste date si produce rezultat.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "parametru",
+    "definition": "Valoare primita de o rutina pentru a-i personaliza executia.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "apel",
+    "definition": "Actiunea prin care o rutina este lansata in executie.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "returnare",
+    "definition": "Transmiterea rezultatului calculat inapoi catre punctul de pornire.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "functie",
+    "definition": "Rutina care produce o valoare pe baza argumentelor primite.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "procedura",
+    "definition": "Rutina care executa pasi de lucru fara a furniza neaparat o valoare.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "modularizare",
+    "definition": "Impartirea unui program in parti mici, clare si reutilizabile.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "debugger",
+    "definition": "Instrument care permite urmarirea executiei pentru depistarea defectelor.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "eroare",
+    "definition": "Defect de scriere sau de logica ce impiedica functionarea corecta.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sintaxa",
+    "definition": "Ansamblu de reguli care spune cum trebuie scrise constructiile unui limbaj.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "semantica",
+    "definition": "Semnificatia pe care o are un enunt sau o constructie intr-un limbaj.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "biblioteca",
+    "definition": "Colectie de rutine si facilitati gata de folosit.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "fisier",
+    "definition": "Unitate logica de stocare pastrata pe un suport permanent.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "flux",
+    "definition": "Succesiune de date transferate intre un program si exterior.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "intrare",
+    "definition": "Date primite de program din exterior.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "iesire",
+    "definition": "Date produse de program si trimise catre utilizator sau sistem.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "memorie",
+    "definition": "Spatiu in care sunt pastrate instructiuni si date in timpul executiei.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "adresa",
+    "definition": "Identificator numeric al unei pozitii din memorie.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "referinta",
+    "definition": "Legatura catre o valoare sau catre o zona de memorie deja existenta.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "alocare",
+    "definition": "Rezervarea unui spatiu de memorie pentru stocarea datelor.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "complexitate",
+    "definition": "Masura a resurselor consumate de un algoritm.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "eficienta",
+    "definition": "Raportul dintre resursele consumate si rezultatul obtinut.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "liniar",
+    "definition": "Comportament in care cresterea resurselor urmeaza o proportie directa.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "logaritmic",
+    "definition": "Comportament in care numarul de pasi creste foarte lent fata de intrare.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "patratic",
+    "definition": "Comportament a carui crestere urmeaza aproximativ produsul marimii cu ea insasi.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "divide",
+    "definition": "Metoda de rezolvare in care problema este impartita in subprobleme mai mici.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "backtracking",
+    "definition": "Tehnica ce exploreaza variante si revine cand o alegere nu mai ajuta.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "greedy",
+    "definition": "Strategie care alege mereu optiunea locala cea mai avantajoasa.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dinamic",
+    "definition": "Tehnica ce stocheaza subrezultate pentru a evita recalcularile.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "memoizare",
+    "definition": "Salvarea rezultatelor intermediare pentru reutilizare ulterioara.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "parcurgere",
+    "definition": "Vizitarea elementelor unei structuri intr-o ordine stabilita.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "adiacenta",
+    "definition": "Relatie dintre doua noduri care sunt legate direct.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "incidenta",
+    "definition": "Legatura dintre un nod si o muchie care il atinge.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "muchie",
+    "definition": "Legatura dintre doua varfuri ale unei structuri de tip graf.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "nod",
+    "definition": "Element al unui graf care poate avea legaturi cu alte elemente.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "drum",
+    "definition": "Succesiune de muchii care leaga doua varfuri.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ciclu",
+    "definition": "Drum care revine la punctul de plecare.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "componenta",
+    "definition": "Subgraf in care orice doua noduri sunt legate printr-un drum.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "conex",
+    "definition": "Proprietate a unui graf in care toate nodurile pot fi atinse una din alta.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "orientat",
+    "definition": "Graf in care legaturile au sens precizat.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "neorientat",
+    "definition": "Graf in care legaturile nu au sens unic.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "arbore",
+    "definition": "Graf fara cicluri, conectat prin legaturi minime.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "radacina",
+    "definition": "Elementul de pornire al unei structuri ierarhice.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "frunza",
+    "definition": "Nod terminal dintr-o structura de tip arbore.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "heap",
+    "definition": "Arbore ordonat in care elementul prioritar se afla in varf.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "hash",
+    "definition": "Procedeu care transforma o cheie intr-o valoare folosita la acces rapid.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tabela",
+    "definition": "Structura de stocare organizata pe randuri si coloane pentru date.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cheie",
+    "definition": "Camp folosit pentru identificarea unica a unei inregistrari.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "coliziune",
+    "definition": "Situatie in care doua valori ajung sa indice acelasi loc.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "index",
+    "definition": "Pozitie numerica folosita pentru accesul la un element.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "baza",
+    "definition": "Valoare de pornire folosita intr-un sistem de numeratie.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "interogare",
+    "definition": "Cerere formulata pentru a obtine date dintr-o colectie.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tabel",
+    "definition": "Reprezentare structurata a datelor in randuri si coloane.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "camp",
+    "definition": "Coloana logica dintr-o inregistrare de date.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "inregistrare",
+    "definition": "Ansamblu de campuri care descriu un singur element dintr-o colectie.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "normalizare",
+    "definition": "Aducerea datelor la o forma ordonata pentru reducerea redundantei.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "protocol",
+    "definition": "Set de reguli care guverneaza schimbul de date intre dispozitive.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "retea",
+    "definition": "Ansamblu de calculatoare sau echipamente conectate intre ele.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "server",
+    "definition": "Sistem care ofera resurse sau servicii altor sisteme.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "client",
+    "definition": "Sistem care cere si foloseste servicii oferite de alt sistem.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pachet",
+    "definition": "Unitate de date transmisa printr-o retea.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "criptare",
+    "definition": "Transformare a datelor intr-o forma greu de citit fara acces special.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "parola",
+    "definition": "Sir secret folosit pentru confirmarea identitatii.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "autentificare",
+    "definition": "Proces prin care se verifica identitatea unui utilizator.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "bit",
+    "definition": "Unitate minima de informatie cu doua stari posibile.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "octet",
+    "definition": "Grup de opt unitati binare folosit la stocarea datelor.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "kilobyte",
+    "definition": "Unitate de masura pentru marimea datelor, formata din 1024 octeti.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "procesor",
+    "definition": "Componenta principala care executa instructiuni si calcule.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "registru",
+    "definition": "Zona foarte rapida de stocare aflata in interiorul procesorului.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "magistrala",
+    "definition": "Canal intern prin care circula date, adrese si semnale de control.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cache",
+    "definition": "Memorie foarte rapida folosita pentru acces la date frecvente.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "kernel",
+    "definition": "Nucleu de sistem care gestioneaza resursele hardware.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "proces",
+    "definition": "Program aflat in executie, cu resurse proprii.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "thread",
+    "definition": "Flux de executie independent in interiorul unui proces.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "compilare",
+    "definition": "Transformarea codului sursa in forma executabila.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "interpretare",
+    "definition": "Executarea instructiunilor direct, fara etapa de traducere completa.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "testare",
+    "definition": "Verificarea unui program prin executii controlate.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "validare",
+    "definition": "Confirmarea faptului ca o solutie respecta cerintele impuse.",
+    "category": "informatica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "recursie",
+    "definition": "Tehnica in care o rutina se apeleaza pe sine.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "stiva",
+    "definition": "Structura de date de tip LIFO, cu acces la varf.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "enumerare",
+    "definition": "Tip de date cu un numar finit de valori simbolice.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "structura",
+    "definition": "Tip compus care grupeaza mai multe campuri sub acelasi nume.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pointer",
+    "definition": "Variabila care retine adresa unei alte zone de memorie.",
+    "category": "informatica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "obiect",
+    "definition": "Instanta concreta construita dupa un model de clasa.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "clasa",
+    "definition": "Sablon care defineste datele si operatiile pentru obiecte.",
+    "category": "informatica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "answer": "monom",
+    "definition": "Expresie algebrica formata dintr-un singur termen.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "binom",
+    "definition": "Expresie algebrica alcatuita din doi termeni legati printr-o operatie.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "polinom",
+    "definition": "Suma algebrica de monoame cu variabile si exponenti intregi nenegativi.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "radical",
+    "definition": "Operatie care cauta numarul ridicat la o putere data pentru a obtine un rezultat.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "logaritm",
+    "definition": "Exponentul la care trebuie ridicata baza ca sa rezulte un numar dat.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "derivata",
+    "definition": "Marime care descrie rata instantanee de variatie a unei functii.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "integrala",
+    "definition": "Operatie folosita pentru acumulare si pentru calculul ariilor sub curbe.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "limita",
+    "definition": "Valoare spre care tinde o expresie cand argumentul se apropie de o anumita zona.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "functie",
+    "definition": "Regula care asociaza fiecarui element din domeniu un singur rezultat.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "domeniu",
+    "definition": "Multimea valorilor pe care le poate primi o variabila de intrare.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "imagine",
+    "definition": "Valoarea obtinuta cand se aplica o regula unui element de plecare.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "inversa",
+    "definition": "Transformare care readuce un rezultat la punctul de pornire.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "matrice",
+    "definition": "Aranjare dreptunghiulara de numere pe linii si coloane.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "vector",
+    "definition": "Marime caracterizata prin modul, directie si sens.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "rang",
+    "definition": "Numar maxim de linii sau coloane independente dintr-o matrice.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "minor",
+    "definition": "Determinant obtinut dintr-o submatrice patratica a unei matrice mai mari.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "determinant",
+    "definition": "Valoare asociata unei matrice patratice care ajuta la studierea ei.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ecuatie",
+    "definition": "Relatie de egalitate in care apar una sau mai multe necunoscute.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "inecuatie",
+    "definition": "Relatie numerica ce compara doua expresii printr-un semn de ordine.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sistem",
+    "definition": "Ansamblu de relatii algebrice care se rezolva impreuna.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "grafic",
+    "definition": "Reprezentare vizuala a valorilor unei relatii sau ale unei functii.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "parabola",
+    "definition": "Curba obtinuta ca imagine a unei ecuatii de gradul al doilea.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "asimptota",
+    "definition": "Dreapta de care o curba se apropie fara a o atinge in limite mari.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cerc",
+    "definition": "Multime de puncte aflate la aceeasi distanta de un centru.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "unghi",
+    "definition": "Figura formata de doua semidrepte cu aceeasi origine.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "triunghi",
+    "definition": "Poligon cu trei laturi si trei unghiuri.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "trapez",
+    "definition": "Patrulater cu o singura pereche de laturi opuse paralele.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "romb",
+    "definition": "Patrulater cu toate laturile egale.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "prisma",
+    "definition": "Corp geometric cu doua baze congruente si fete laterale paralelograme.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "piramida",
+    "definition": "Corp geometric cu o baza si fete laterale triunghiulare.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tetraedru",
+    "definition": "Poliedru cu patru fete triunghiulare.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sinus",
+    "definition": "Raport trigonometric definit intr-un triunghi dreptunghic sau pe cerc.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cosinus",
+    "definition": "Raport trigonometric legat de cateta alaturata si de cercul trigonometric.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tangenta",
+    "definition": "Raport trigonometric obtinut din raportul dintre doua laturi dintr-un triunghi dreptunghic.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cotangenta",
+    "definition": "Raport trigonometric reciproc celui folosit pentru raportul dintre catete.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "radian",
+    "definition": "Unitate de masura pentru unghiuri definita prin raportul dintre arc si raza.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "mediana",
+    "definition": "Segment care uneste un varf al unui triunghi cu mijlocul laturii opuse.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "bisectoare",
+    "definition": "Semidreapta care imparte un unghi in doua parti egale.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "inaltime",
+    "definition": "Segment perpendicular dus dintr-un varf pe latura opusa sau pe prelungirea ei.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "congruenta",
+    "definition": "Relatie intre figuri care au aceeasi forma si aceeasi marime.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "asemanare",
+    "definition": "Relatie intre figuri care pastreaza unghiurile si au laturi proportionale.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "translatie",
+    "definition": "Transformare care muta toate punctele cu acelasi vector.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "rotatie",
+    "definition": "Transformare care deplaseaza o figura in jurul unui centru fix.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "simetrie",
+    "definition": "Proprietate prin care doua parti corespund oglindit fata de o axa.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "arie",
+    "definition": "Masura suprafetei unei figuri plane.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "volum",
+    "definition": "Masura spatiului ocupat de un corp tridimensional.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "fractie",
+    "definition": "Scrierea unui numar ca raport intre numarator si numitor.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "procent",
+    "definition": "Raport exprimat la o suta.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sir",
+    "definition": "Succesiune ordonata de termeni sau de valori.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "progresie",
+    "definition": "Sir in care termenii se obtin dupa o regula fixa de constructie.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "suma",
+    "definition": "Rezultatul adunarii unor numere sau expresii.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "media",
+    "definition": "Valoare centrala obtinuta prin impartirea sumei la numarul de termeni.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "modul",
+    "definition": "Distanta dintre un numar si zero pe axa numerelor.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "varianta",
+    "definition": "Masura a imprastierii care foloseste abaterile fata de medie.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dispersie",
+    "definition": "Indicator care descrie cat de raspandite sunt valorile unui set.",
+    "category": "matematica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "probabilitate",
+    "definition": "Masura sanselor ca un eveniment sa apara.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "permutare",
+    "definition": "Aranjare a tuturor elementelor unei multimi intr-o ordine data.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "combinare",
+    "definition": "Selectare de elemente fara a tine cont de ordinea lor.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "factorial",
+    "definition": "Produsul numerelor naturale de la unu pana la un numar dat.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "interval",
+    "definition": "Multime de numere cuprinse intre doua limite alese.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "multime",
+    "definition": "Colectie de obiecte bine determinate considerate impreuna.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "submultime",
+    "definition": "Colectie ale carei elemente apartin unei colectii mai mari.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "reuniune",
+    "definition": "Operatie care aduna elementele a doua colectii intr-una singura.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "intersectie",
+    "definition": "Operatie care pastreaza doar elementele comune a doua colectii.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "diferenta",
+    "definition": "Operatie care elimina dintr-o colectie elementele prezente si in alta.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "coordonate",
+    "definition": "Numere care precizeaza pozitia unui punct intr-un sistem de axe.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "abscisa",
+    "definition": "Coordonata orizontala a unui punct din plan.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ordonata",
+    "definition": "Valoarea de pe axa verticala a unui punct.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "axa",
+    "definition": "Dreapta de referinta folosita pentru reprezentari in plan.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "origine",
+    "definition": "Punctul in care se intalnesc cele doua axe ale planului cartezian.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "punct",
+    "definition": "Obiect geometric fara dimensiuni, folosit ca reper.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "segment",
+    "definition": "Portiune dintr-o dreapta limitata de doua capete.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "semidreapta",
+    "definition": "Portiune de dreapta cu un capat si prelungire intr-un singur sens.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dreapta",
+    "definition": "Set infinit de puncte aliniate in aceeasi directie.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "plan",
+    "definition": "Suprafata infinita care se intinde in doua directii.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "poligon",
+    "definition": "Figura plana inchisa formata din segmente consecutive.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "patrulater",
+    "definition": "Poligon cu patru laturi.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "paralelogram",
+    "definition": "Patrulater ale carui laturi opuse sunt paralele doua cate doua.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dreptunghi",
+    "definition": "Paralelogram cu toate unghiurile drepte.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "patrat",
+    "definition": "Dreptunghi cu toate laturile egale.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "diagonala",
+    "definition": "Segment care uneste doua varfuri nealaturate ale unei figuri.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "perimetru",
+    "definition": "Suma lungimilor tuturor laturilor unei figuri plane.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "suprafata",
+    "definition": "Parte exterioara a unui corp sau a unei figuri plane.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "raport",
+    "definition": "Comparatie numerica intre doua marimi de acelasi fel.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "proportie",
+    "definition": "Egalitate intre doua rapoarte.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "numitor",
+    "definition": "Partea de jos a unei fractii care arata in cate parti s-a impartit intregul.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "numarator",
+    "definition": "Partea de sus a unei fractii care arata cate parti se iau.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "divizor",
+    "definition": "Numar care imparte exact un alt numar.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "multiplu",
+    "definition": "Numar obtinut prin inmultirea unui numar cu un intreg pozitiv.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "prim",
+    "definition": "Numar natural mai mare decat unu care are exact doi divizori.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "compus",
+    "definition": "Numar natural mai mare decat unu care are mai mult de doi divizori.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "putere",
+    "definition": "Scriere scurta pentru inmultirea repetata a aceluiasi numar.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "exponent",
+    "definition": "Numarul scris sus care arata de cate ori se foloseste baza.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "baza",
+    "definition": "Numarul care se inmulteste cu el insusi intr-o scriere exponentiala.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "valoare",
+    "definition": "Rezultat numeric obtinut dupa calcul.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "poliedru",
+    "definition": "Corp geometric delimitat de fete plane poligonale.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cub",
+    "definition": "Poliedru cu sase fete patrate identice.",
+    "category": "matematica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cilindru",
+    "definition": "Corp cu doua baze circulare paralele si egale.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "con",
+    "definition": "Corp cu baza circulara si varf unic.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sfera",
+    "definition": "Corpul ale carui puncte sunt toate la aceeasi distanta de centru.",
+    "category": "matematica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  }
+]

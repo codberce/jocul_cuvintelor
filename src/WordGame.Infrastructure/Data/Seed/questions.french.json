@@ -1,0 +1,702 @@
+[
+  {
+    "answer": "nom",
+    "definition": "Cuvant care desemneaza o persoana, un obiect sau o idee.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "verbe",
+    "definition": "Cuvant care exprima actiunea, starea ori devenirea.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "adjectif",
+    "definition": "Cuvant care precizeaza o insusire a unui substantiv.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "adverbe",
+    "definition": "Cuvant care modifica un verb, un adjectiv sau alt adverb.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pronom",
+    "definition": "Cuvant care tine locul unui substantiv.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "article",
+    "definition": "Cuvant scurt care insoteste substantivul si marcheaza determinarea.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "determinant",
+    "definition": "Element care precizeaza sensul unui substantiv.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sujet",
+    "definition": "Elementul despre care se spune ceva in propozitie.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "predicat",
+    "definition": "Partea care arata ce face sau ce este subiectul.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "complement",
+    "definition": "Parte secundara care completeaza sensul unui verb.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "phrase",
+    "definition": "Enunt complet care transmite o idee.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "proposition",
+    "definition": "Unitate de enunt cu un predicat propriu.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "present",
+    "definition": "Timp care plaseaza actiunea in momentul vorbirii.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "passe",
+    "definition": "Timp care raporteaza actiunea la un moment anterior.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "futur",
+    "definition": "Timp care plaseaza actiunea dupa momentul vorbirii.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "imparfait",
+    "definition": "Timp trecut care descrie o stare ori o obisnuinta.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "conditionnel",
+    "definition": "Mod care exprima o actiune dependenta de o conditie.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "subjonctif",
+    "definition": "Mod folosit pentru dorinta, dubiu sau posibilitate.",
+    "category": "franceza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "infinitif",
+    "definition": "Forma de baza a verbului, fara persoana.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "participe",
+    "definition": "Forma verbala folosita in timpuri compuse si ca adjectiv.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "accord",
+    "definition": "Potrivire gramaticala intre cuvinte.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "genre",
+    "definition": "Categorie care imparte cuvintele in masculin si feminin.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "nombre",
+    "definition": "Categorie care arata singularul sau pluralul.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "masculin",
+    "definition": "Gen gramatical asociat formei masculine.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "feminin",
+    "definition": "Gen gramatical asociat formei feminine.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "singulier",
+    "definition": "Forma care indica un singur element.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pluriel",
+    "definition": "Forma care indica mai multe elemente.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "negation",
+    "definition": "Procedeu prin care se refuza sau se contrazice o afirmatie.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "interrogation",
+    "definition": "Constructie care cere un raspuns.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "liaison",
+    "definition": "Legatura sonora intre cuvinte vecine.",
+    "category": "franceza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "elision",
+    "definition": "Inlaturarea unei vocale finale in fata altei vocale.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "accent",
+    "definition": "Semn grafic sau relief fonetic care marcheaza pronuntia.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cedille",
+    "definition": "Semn sub litera c care modifica valoarea ei sonora.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "apostrophe",
+    "definition": "Semn folosit pentru a marca eliziunea.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "synonyme",
+    "definition": "Cuvant cu sens apropiat de altul.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "antonyme",
+    "definition": "Cuvant cu sens opus altuia.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "homonyme",
+    "definition": "Cuvant cu aceeasi forma ca altul, dar cu sens diferit.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "prefixe",
+    "definition": "Element adaugat la inceputul unui cuvant.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "suffixe",
+    "definition": "Element adaugat la finalul unui cuvant.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "racine",
+    "definition": "Nucleu lexical din care pot fi formate alte cuvinte.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "expression",
+    "definition": "Grup stabil de cuvinte cu sens unitar.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "registre",
+    "definition": "Nivel de limbaj adaptat unei situatii de comunicare.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "formel",
+    "definition": "Stil potrivit situatiilor oficiale sau academice.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "informel",
+    "definition": "Stil folosit in comunicarea relaxata.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dialogue",
+    "definition": "Schimb de replici intre doua sau mai multe persoane.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "monologue",
+    "definition": "Discurs rostit de o singura voce.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "narrateur",
+    "definition": "Vocea care povesteste intamplarile dintr-un text epic.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "personnage",
+    "definition": "Persoana sau fiinta care participa la actiune.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "intrigue",
+    "definition": "Succesiunea evenimentelor care alcatuiesc actiunea.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cadre",
+    "definition": "Locul si cadrul in care se desfasoara povestea.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "theme",
+    "definition": "Ideea centrala a unei opere.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "symbole",
+    "definition": "Element concret care trimite la un sens abstract.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "metaphore",
+    "definition": "Figura care transfera sensul prin asemanare implicita.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "comparaison",
+    "definition": "Figura care compara direct doua elemente asemanatoare.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "rime",
+    "definition": "Potrivire sonora la sfarsit de vers.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "rythme",
+    "definition": "Alternanta regulata a accentelor si pauzelor.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "strophe",
+    "definition": "Grup de versuri dintr-o poezie.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "paragraphe",
+    "definition": "Fragment de text separat vizual.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "essai",
+    "definition": "Text scurt de analiza, argumentare sau reflectie.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "argument",
+    "definition": "Idee folosita pentru a sustine o opinie.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "opinion",
+    "definition": "Judecata personala asupra unei teme.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "preuve",
+    "definition": "Element care sprijina o afirmatie.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "resume",
+    "definition": "Redare scurta a ideilor esentiale.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "paraphrase",
+    "definition": "Reformulare cu alte cuvinte, fara schimbarea sensului.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "traduction",
+    "definition": "Trecere a unui text dintr-o limba in alta.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "prononciation",
+    "definition": "Felul in care sunt rostite cuvintele.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "intonation",
+    "definition": "Variatia melodica a vorbirii.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "voyelle",
+    "definition": "Sunet produs fara obstacol articulator major.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "consonne",
+    "definition": "Sunet rostit cu un obstacol articulator.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "question",
+    "definition": "Enunt care cere raspuns.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "reponse",
+    "definition": "Raspuns dat la o intrebare.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "connecteur",
+    "definition": "Element care leaga ideile intr-un text.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "coherence",
+    "definition": "Legatura logica si ordine clara a ideilor dintr-un text.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "introduction",
+    "definition": "Partea de inceput care deschide un text.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "conclusion",
+    "definition": "Partea finala care sintetizeaza ideile.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "lettre",
+    "definition": "Text adresat unei persoane anume.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "courriel",
+    "definition": "Mesaj electronic transmis prin internet.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "recit",
+    "definition": "Naratiune scurta cu actiune si personaje.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "description",
+    "definition": "Text care reda trasaturile unui obiect, loc sau fiinta.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "portrait",
+    "definition": "Prezentare concentrata a unei persoane ori a unui personaj.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "passe compose",
+    "definition": "Timp compus care exprima o actiune trecuta cu legatura spre prezent.",
+    "category": "franceza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "plus que parfait",
+    "definition": "Timp trecut care marcheaza o actiune anterioara altei actiuni trecute.",
+    "category": "franceza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "futur proche",
+    "definition": "Forma care arata o actiune foarte apropiata in timp.",
+    "category": "franceza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "article partitif",
+    "definition": "Forma folosita pentru cantitati nedefinite sau partiale.",
+    "category": "franceza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pronom relatif",
+    "definition": "Pronume care introduce o subordonata si leaga informatia de un antecedent.",
+    "category": "franceza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pronom personnel",
+    "definition": "Pronume care inlocuieste direct o persoana sau un grup.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "adjectif possessif",
+    "definition": "Adjectiv care indica apartenenta.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "adjectif demonstratif",
+    "definition": "Adjectiv care arata sau precizeaza un element anume.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "complement direct",
+    "definition": "Complement legat direct de verb fara prepozitie.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "complement indirect",
+    "definition": "Complement introdus de obicei prin prepozitie.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "discours direct",
+    "definition": "Reproducere exacta a spuselor cuiva.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "discours indirect",
+    "definition": "Redare a spuselor fara citare literala.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "temps verbal",
+    "definition": "Categorie care exprima momentul actiunii.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "mode verbal",
+    "definition": "Categorie care arata felul in care este prezentata actiunea.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "conjugaison",
+    "definition": "Flexionarea verbului dupa persoana, numar si timp.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "vocabulaire",
+    "definition": "Ansamblul cuvintelor cunoscute sau folosite intr-o limba.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "civilisation",
+    "definition": "Ansamblu de valori, obiceiuri si realizari ale unei societati.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "francophonie",
+    "definition": "Spatiu cultural si lingvistic al limbii franceze.",
+    "category": "franceza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "politesse",
+    "definition": "Comportament respectuos in comunicare.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "salutation",
+    "definition": "Formula de salut folosita la inceputul sau sfarsitul unui mesaj.",
+    "category": "franceza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  }
+]

@@ -52,10 +52,6 @@ services:
       Https__Redirect: "false"
       Database__RunMigrationsOnStartup: "true"
       SignalR__UseRedisBackplane: "true"
-      Security__AdminEmail: ${WORDGAME_ADMIN_EMAIL:?Set WORDGAME_ADMIN_EMAIL in .env}
-      Security__AdminPassword: ${WORDGAME_ADMIN_PASSWORD:?Set WORDGAME_ADMIN_PASSWORD in .env}
-      Security__HostEmail: ${WORDGAME_HOST_EMAIL:?Set WORDGAME_HOST_EMAIL in .env}
-      Security__HostPassword: ${WORDGAME_HOST_PASSWORD:?Set WORDGAME_HOST_PASSWORD in .env}
 
   cloudflared:
     image: cloudflare/cloudflared:latest

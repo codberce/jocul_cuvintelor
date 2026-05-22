@@ -1,0 +1,702 @@
+[
+  {
+    "answer": "Burebista",
+    "definition": "conducator geto-dac care a unificat triburile si a impus disciplina.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Decebal",
+    "definition": "rege dac care s-a opus cuceririi romane.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Traian",
+    "definition": "imparat roman care a cucerit Dacia.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Dacia",
+    "definition": "teritoriu antic dintre Carpati, Dunare si Nistru.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Getia",
+    "definition": "nume folosit de antici pentru tinutul locuit de geti.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Sarmizegetusa",
+    "definition": "capitala fortificata a statului dac.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Apulum",
+    "definition": "important centru roman din Transilvania.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Tapae",
+    "definition": "trecatoare montana asociata cu luptele dacice.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Adamclisi",
+    "definition": "locul unui monument roman comemorativ din Dobrogea.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Mircea",
+    "definition": "voievod al Tarii Romanesti asociat cu luptele antiotomane.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Stefan",
+    "definition": "domn al Moldovei cunoscut pentru rezistenta antiotomana si ctitoriile sale.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Basarab",
+    "definition": "nume legat de intemeierea statului medieval muntean.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Vlad",
+    "definition": "domn muntean asociat cu pedeapsa aspra si rezistenta fata de otomani.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Cuza",
+    "definition": "domnitor care a initiat reforme majore si a facut pasul spre statul modern.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Carol",
+    "definition": "primul rege al Romaniei, venit din dinastia Hohenzollern.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Ferdinand",
+    "definition": "monarh in vremea caruia s-a realizat extinderea teritoriala din 1918.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Mihai",
+    "definition": "voievod care a realizat pentru scurt timp unirea celor trei tari romanesti.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Posada",
+    "definition": "locul unei confruntari decisive intre Basarab I si regele Ungariei.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Rovine",
+    "definition": "batalie medievala in care Mircea a tinut piept unei armate otomane.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Calugareni",
+    "definition": "camp de lupta unde oastea munteana a surprins fortele otomane.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Plevna",
+    "definition": "oras si punct fortificat din razboiul ruso-romano-turc.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Independenta",
+    "definition": "iesirea statului roman de sub suzeranitatea otomana.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "MareaUnire",
+    "definition": "moment politic in care provinciile locuite majoritar de romani s-au unit intr-un stat modern.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "MicaUnire",
+    "definition": "actul din 1859 care a adus acelasi domnitor la Bucuresti si Iasi.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Regat",
+    "definition": "forma de stat condusa de un monarh.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Principat",
+    "definition": "formatiune politica medievala condusa de un domn.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Voievodat",
+    "definition": "teritoriu condus de un voievod.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Cnezat",
+    "definition": "unitate politica mica, condusa de un cneaz.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Banat",
+    "definition": "teritoriu administrat de un ban.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Dieta",
+    "definition": "adunare politica reprezentativa in statele medievale central-europene.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Divan",
+    "definition": "sfat domnesc sau adunare consultativa.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Hrisov",
+    "definition": "act domnesc prin care se acordau drepturi ori privilegii.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Edict",
+    "definition": "ordonanta solemna emisa de o autoritate suprema.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Diploma",
+    "definition": "document oficial cu valoare juridica.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Tratat",
+    "definition": "intelegere incheiata intre state.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Pact",
+    "definition": "acord politic ori militar intre parti.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Alianta",
+    "definition": "asociere de state pentru un scop comun.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Rascoala",
+    "definition": "ridicare violenta impotriva unei stapaniri sau a unei nedreptati.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Revolutie",
+    "definition": "schimbare radicala a ordinii politice si sociale.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Constitutie",
+    "definition": "lege fundamentala a unui stat.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Parlament",
+    "definition": "institutie care voteaza legi si controleaza puterea executiva.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Senat",
+    "definition": "camera superioara din legislativul modern.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Armata",
+    "definition": "totalitatea fortelor militare ale unui stat.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Legiune",
+    "definition": "unitate militara, mai ales in organizarea romana.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Tribut",
+    "definition": "plata impusa de o putere dominanta.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Vasalitate",
+    "definition": "dependenta politica fata de o putere superioara.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Autonomie",
+    "definition": "drept de autoconducere in cadrul unui stat.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Secularizare",
+    "definition": "trecere a bunurilor bisericesti in proprietatea statului.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Reforma",
+    "definition": "schimbare ampla menita sa modernizeze un sistem.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Improprietarire",
+    "definition": "atribuirea de pamant unor categorii de populatie.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Modernizare",
+    "definition": "trecere la institutii si practici noi.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Colonizare",
+    "definition": "stabilire de populatii in teritorii noi.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Migratie",
+    "definition": "deplasare de populatie dintr-un spatiu in altul.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Cruciada",
+    "definition": "expeditie militara de inspiratie religioasa.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Asediu",
+    "definition": "incercuire a unei cetati pentru a o forta sa cedeze.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Campanie",
+    "definition": "serie de operatii militare in acelasi teatru de razboi.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Fortareata",
+    "definition": "constructie defensiva puternic intarita.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Citadela",
+    "definition": "nucleu fortificat al unui oras.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Imparatie",
+    "definition": "stat condus de un imparat.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Imperiu",
+    "definition": "formatiune politica extinsa, guvernata de un monarh suprem.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Ducat",
+    "definition": "teritoriu condus de un duce.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Bucuresti",
+    "definition": "capitala din sudul tarii, devenita centru politic si administrativ modern.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Iasi",
+    "definition": "vechi centru domnesc si cultural al Moldovei.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "AlbaIulia",
+    "definition": "oras transilvanean legat de actul politic din 1918.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Suceava",
+    "definition": "fosta capitala medievala a Moldovei.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Targoviste",
+    "definition": "oras de curte domneasca in Tara Romaneasca.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Brasov",
+    "definition": "oras transilvanean important in comertul medieval.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Sibiu",
+    "definition": "centru urban cu puternica traditie saseasca.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Cluj",
+    "definition": "mare centru universitar si politic din Transilvania.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Chisinau",
+    "definition": "oras din spatiul basarabean care a fost capitala unui important teritoriu romanesc.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Timisoara",
+    "definition": "oras banatean cu rol major in evenimentele din decembrie 1989.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Oradea",
+    "definition": "oras vest-transilvanean cu traditie politica si culturala puternica.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Craiova",
+    "definition": "oras important al Olteniei, centru administrativ si cultural.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Galati",
+    "definition": "port la Dunare cu rol comercial si strategic.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Braila",
+    "definition": "port dunarean cunoscut pentru comertul cerealelor.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Constanta",
+    "definition": "oras de la Marea Neagra cu importanta romana si moderna.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Oltenia",
+    "definition": "provincie istorica din partea de sud-vest a tarii.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Muntenia",
+    "definition": "provincie istorica din sudul tarii, centrata pe vechiul spatiu muntean.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Moldova",
+    "definition": "principat romanesc din est, cu capitala medievala la Suceava si apoi la Iasi.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Transilvania",
+    "definition": "provincie istorica intracarpatica, cu structura sociala si politica aparte.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Dobrogea",
+    "definition": "teritoriu dintre Dunare si Marea Neagra, cu trecut multiculturor.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Brancoveanu",
+    "definition": "domn muntean cunoscut pentru ctitorii si pentru sfarsitul sau martiric.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Cantacuzino",
+    "definition": "nume de familie boiereasca influenta in viata politica romaneasca.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Sturdza",
+    "definition": "nume de familie legat de domnia si politica Moldovei.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Ghica",
+    "definition": "nume de familie domnitoare si boiereasca din spatiul romanesc.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Bibescu",
+    "definition": "domn muntean dinaintea marilor reforme moderne.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Rosetti",
+    "definition": "publicist si revolutionar al generatiei pasoptiste.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Kogalniceanu",
+    "definition": "om politic si ideolog al reformelor moderne din secolul al XIX-lea.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Bratianu",
+    "definition": "lider liberal implicat in modernizarea statului roman.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Maniu",
+    "definition": "om politic al perioadei interbelice, asociat cu opozitia democratica.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Iorga",
+    "definition": "istoric si om politic, autor de studii fundamentale.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Muresanu",
+    "definition": "autor al versurilor care au devenit imn national.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ReginaMaria",
+    "definition": "suverana care a sprijinit cauza romaneasca in razboi si diplomatie.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "CarolII",
+    "definition": "monarh asociat cu autoritarismul interbelic.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "MihaiI",
+    "definition": "ultimul rege al Romaniei.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Antonescu",
+    "definition": "conducator militar si politic din vremea celui de-al Doilea Razboi Mondial.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Ceausescu",
+    "definition": "lider comunist asociat cu perioada tarzie a regimului.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Brukenthal",
+    "definition": "guvernator transilvanean si nume legat de colectii culturale importante.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Dimitrie",
+    "definition": "erudit si domn moldovean legat de cronici si studii orientale.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Viteazul",
+    "definition": "domn care a reusit pentru scurt timp sa puna sub aceeasi stapanire cele trei tari romanesti.",
+    "category": "istorie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  }
+]

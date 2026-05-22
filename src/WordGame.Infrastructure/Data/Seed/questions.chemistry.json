@@ -1,0 +1,702 @@
+[
+  {
+    "answer": "atom",
+    "definition": "Cea mai mica unitate a unui element care ii pastreaza identitatea chimica.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "molecula",
+    "definition": "Ansamblu stabil de atomi legati intre ei.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ion",
+    "definition": "Particula incarcata electric rezultata prin pierdere sau castig de electroni.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cation",
+    "definition": "Ion cu sarcina pozitiva.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "anion",
+    "definition": "Ion cu sarcina negativa.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "izotop",
+    "definition": "Varietate a aceluiasi element cu acelasi numar atomic si masa diferita.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "orbital",
+    "definition": "Zona din jurul nucleului in care este foarte probabil sa se afle electronul.",
+    "category": "chimie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "electron",
+    "definition": "Particula subatomica cu sarcina electrica negativa.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "proton",
+    "definition": "Particula subatomica cu sarcina pozitiva din nucleu.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "neutron",
+    "definition": "Particula subatomica fara sarcina electrica din nucleu.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "nucleu",
+    "definition": "Partea centrala a atomului unde se gasesc protonii si neutronii.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "invelis",
+    "definition": "Zona atomului in care se afla electronii.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "valenta",
+    "definition": "Capacitatea unui atom de a forma legaturi chimice.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "legatura ionica",
+    "definition": "Legatura formata prin atractia dintre ioni cu sarcini opuse.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "legatura covalenta",
+    "definition": "Legatura realizata prin punerea in comun a unor perechi de electroni.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "legatura metalica",
+    "definition": "Legatura specifica metalelor, cu electroni delocalizati.",
+    "category": "chimie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "mole",
+    "definition": "Unitate de masura pentru cantitatea de substanta.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "masa molara",
+    "definition": "Masa corespunzatoare unui mol de substanta.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "numar atomic",
+    "definition": "Numarul de protoni din nucleul unui atom.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tabel periodic",
+    "definition": "Aranjarea elementelor dupa numar atomic si proprietati repetate.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "grupa",
+    "definition": "Coloana din tabelul periodic in care elementele au proprietati asemanatoare.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "perioada",
+    "definition": "Rand din tabelul periodic.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "metal",
+    "definition": "Element bun conducator de caldura si electricitate, cu luciu specific.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "nemetal",
+    "definition": "Element care conduce slab si nu are proprietatile tipice metalelor.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "metaloid",
+    "definition": "Element cu proprietati intermediare intre metal si nemetal.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "oxid",
+    "definition": "Compus al oxigenului cu un alt element.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "acid",
+    "definition": "Compus care in apa elibereaza ioni de hidrogen.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "baza",
+    "definition": "Compus care in apa elibereaza ioni hidroxid.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sare",
+    "definition": "Compus ionic rezultat frecvent dintr-o neutralizare.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "hidroxid",
+    "definition": "Compus care contine gruparea OH si are caracter bazic.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "reactie",
+    "definition": "Transformare chimica in care substantele initiale devin alte substante.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "reactant",
+    "definition": "Substanta care participa initial la o transformare chimica.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "produs",
+    "definition": "Substanta obtinuta in urma unei transformari chimice.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "catalizator",
+    "definition": "Substanta care accelereaza o reactie fara sa fie consumata.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "inhibitor",
+    "definition": "Substanta care incetineste sau blocheaza desfasurarea unei reactii.",
+    "category": "chimie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "oxidare",
+    "definition": "Proces chimic asociat de obicei cu pierderea electronilor.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "reducere",
+    "definition": "Proces chimic asociat de obicei cu castigul de electroni.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "redox",
+    "definition": "Reactie in care au loc simultan oxidare si reducere.",
+    "category": "chimie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "electroliza",
+    "definition": "Descompunere chimica produsa de curentul electric.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "neutralizare",
+    "definition": "Reactie dintre un acid si o baza, cu formare de sare si apa.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "hidroliza",
+    "definition": "Descompunere a unei substante prin reactie cu apa.",
+    "category": "chimie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "precipitat",
+    "definition": "Solid insolubil format in urma unei reactii in solutie.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "solutie",
+    "definition": "Amestec omogen format din solvent si solvat.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "solvent",
+    "definition": "Componenta care dizolva o alta substanta intr-un amestec omogen.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "solvat",
+    "definition": "Substanta dizolvata intr-o solutie.",
+    "category": "chimie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "concentratie",
+    "definition": "Marime care arata cata substanta este dizolvata intr-un volum dat.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "molaritate",
+    "definition": "Concentratie exprimata ca moli de solut pe litru de solutie.",
+    "category": "chimie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dilutie",
+    "definition": "Reducerea concentratiei unei solutii prin adaugare de solvent.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ph",
+    "definition": "Marime care exprima aciditatea sau basicitatea unei solutii.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "indicator",
+    "definition": "Substanta care isi schimba culoarea in functie de pH.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tampon",
+    "definition": "Amestec care mentine aproape constanta aciditatea unei solutii.",
+    "category": "chimie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "echilibru",
+    "definition": "Stare in care vitezele reactiilor opuse devin egale.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "constanta",
+    "definition": "Marime numerica fixa ce caracterizeaza un echilibru chimic.",
+    "category": "chimie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "entalpie",
+    "definition": "Marime termodinamica legata de continutul de energie al sistemului.",
+    "category": "chimie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "exoterm",
+    "definition": "Proces care elibereaza caldura in mediu.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "endoterm",
+    "definition": "Proces care absoarbe caldura din mediu.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "combustie",
+    "definition": "Reactie rapida cu oxigenul, insotita de degajare de energie.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "polimer",
+    "definition": "Molecula mare formata din repetarea unor unitati mici.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "monomer",
+    "definition": "Unitate de baza care poate forma un polimer.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "hidrocarbura",
+    "definition": "Compus organic format numai din carbon si hidrogen.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "alcan",
+    "definition": "Hidrocarbura saturata cu legaturi simple.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "alchena",
+    "definition": "Hidrocarbura cu cel putin o legatura dubla.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "alchina",
+    "definition": "Hidrocarbura cu cel putin o legatura tripla.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "benzen",
+    "definition": "Compus aromatic cu inel stabil format din sase atomi de carbon.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "alcool",
+    "definition": "Compus organic care contine gruparea hidroxil legata de un radical carbonic.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "aldehida",
+    "definition": "Compus organic cu gruparea carbonil la capatul lantului.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cetona",
+    "definition": "Compus organic cu gruparea carbonil in interiorul lantului.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "acid carboxilic",
+    "definition": "Compus organic care contine gruparea carboxil.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ester",
+    "definition": "Compus organic obtinut frecvent din acid si alcool.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "amina",
+    "definition": "Compus organic derivat al amoniacului.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "amida",
+    "definition": "Derivat organic al acidului carboxilic, cu grupare amidica.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "glucoza",
+    "definition": "Zahar simplu folosit frecvent ca sursa de energie.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "amidon",
+    "definition": "Substanta de rezerva a plantelor, formata din lanturi de glucoza.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "celuloza",
+    "definition": "Polizaharid structural din peretii celulari vegetali.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "proteina",
+    "definition": "Macromolecula formata din lanturi de aminoacizi.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "lipida",
+    "definition": "Clasa de substante organice hidrofobe cu rol energetic sau structural.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sapune",
+    "definition": "Produs de curatare obtinut prin reactie de saponificare.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "detergent",
+    "definition": "Agent tensioactiv folosit la spalare si indepartarea grasimilor.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cristal",
+    "definition": "Solid cu structura ordonata si repetitiva a particulelor.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "aliaj",
+    "definition": "Amestec solid obtinut din doua sau mai multe metale ori din metal si alt element.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "otel",
+    "definition": "Aliaj de fier cu carbon, foarte folosit in constructii.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "fonta",
+    "definition": "Aliaj de fier cu continut mai mare de carbon decat otelul.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "corozie",
+    "definition": "Distrugere lenta a metalelor prin reactie cu mediul.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "electrod",
+    "definition": "Conductor prin care curentul intra sau iese dintr-un sistem electrochimic.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "anod",
+    "definition": "Electrod la care are loc oxidarea.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "catod",
+    "definition": "Electrod la care are loc reducerea.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "baterie",
+    "definition": "Sursa electrochimica ce transforma energia chimica in energie electrica.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "lichid",
+    "definition": "Stare de agregare cu volum propriu, dar fara forma proprie.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "solid",
+    "definition": "Stare de agregare cu forma si volum propriu.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "evaporare",
+    "definition": "Trecerea unui lichid in stare de vapori de la suprafata.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "condensare",
+    "definition": "Trecerea vaporilor in stare lichida.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sublimare",
+    "definition": "Trecerea directa din stare solida in stare gazoasa.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "distilare",
+    "definition": "Metoda de separare bazata pe diferente de punct de fierbere.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "filtrare",
+    "definition": "Metoda de separare a unui solid dintr-un lichid printr-un material poros.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "decantare",
+    "definition": "Separare prin sedimentare si turnare atenta a lichidului.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cromatografie",
+    "definition": "Metoda de separare bazata pe migratia diferita a componentelor.",
+    "category": "chimie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "titrare",
+    "definition": "Metoda de determinare a concentratiei prin reactie controlata cu o solutie etalon.",
+    "category": "chimie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "reactiv",
+    "definition": "Substanta folosita pentru a pune in evidenta sau a transforma alta substanta.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "formula",
+    "definition": "Scriere simbolica ce arata compozitia unei substante.",
+    "category": "chimie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "electrolit",
+    "definition": "Substanta care conduce curentul in solutie sau topitura datorita ionilor mobili.",
+    "category": "chimie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  }
+]

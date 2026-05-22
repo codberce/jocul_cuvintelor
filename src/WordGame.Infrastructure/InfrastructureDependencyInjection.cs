@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,10 +7,10 @@ using StackExchange.Redis;
 using WordGame.Application.Interfaces;
 using WordGame.Application.Options;
 using WordGame.Infrastructure.Health;
-using WordGame.Infrastructure.Identity;
 using WordGame.Infrastructure.Persistence;
 using WordGame.Infrastructure.Qr;
 using WordGame.Infrastructure.Redis;
+using WordGame.Infrastructure.Sessions;
 
 namespace WordGame.Infrastructure;
 
@@ -23,38 +21,15 @@ public static class InfrastructureDependencyInjection
         services.Configure<GameOptions>(configuration.GetSection("Game"));
         services.Configure<RedisOptions>(configuration.GetSection("Redis"));
         services.Configure<QrOptions>(configuration.GetSection("Qr"));
-        services.Configure<SecurityOptions>(configuration.GetSection("Security"));
         services.Configure<RateLimitOptions>(configuration.GetSection("RateLimits"));
         services.Configure<SignalROptions>(configuration.GetSection("SignalR"));
+        services.Configure<GuestSessionOptions>(configuration.GetSection("GuestSessions"));
 
         var connectionString = configuration.GetConnectionString("DefaultConnection")
             ?? throw new InvalidOperationException("ConnectionStrings:DefaultConnection lipseste.");
 
         services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connectionString));
         services.AddDbContextFactory<ApplicationDbContext>(options => options.UseNpgsql(connectionString), ServiceLifetime.Scoped);
-
-        services
-            .AddIdentity<ApplicationUser, IdentityRole<Guid>>(options =>
-            {
-                options.User.RequireUniqueEmail = true;
-                options.Password.RequiredLength = 10;
-                options.Password.RequireDigit = true;
-                options.Password.RequireUppercase = true;
-                options.Password.RequireLowercase = true;
-                options.Password.RequireNonAlphanumeric = false;
-            })
-            .AddEntityFrameworkStores<ApplicationDbContext>()
-            .AddDefaultTokenProviders();
-
-        services.ConfigureApplicationCookie(options =>
-        {
-            options.LoginPath = "/login";
-            options.AccessDeniedPath = "/login";
-            options.Cookie.Name = "WordGame.Auth";
-            options.Cookie.HttpOnly = true;
-            options.Cookie.SameSite = SameSiteMode.Lax;
-            options.SlidingExpiration = true;
-        });
 
         services.AddSingleton<IConnectionMultiplexer>(sp =>
         {

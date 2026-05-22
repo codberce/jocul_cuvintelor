@@ -1,0 +1,702 @@
+[
+  {
+    "answer": "celula",
+    "definition": "Unitatea structurala si functionala de baza a organismelor vii.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "membrana",
+    "definition": "Invelis selectiv care separa interiorul celulei de mediul exterior.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "citoplasma",
+    "definition": "Substanta gelatinoasa din interiorul celulei in care se afla organitele.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "nucleu",
+    "definition": "Organit care coordoneaza activitatea celulara si contine materialul genetic.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ribozom",
+    "definition": "Structura celulara unde sunt asamblate proteinele.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "mitocondrie",
+    "definition": "Organit in care are loc productia principala de energie a celulei.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cloroplast",
+    "definition": "Organit vegetal in care se realizeaza captarea energiei luminoase.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "vacuola",
+    "definition": "Compartiment celular in care se depoziteaza apa si diferite substante.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "osmoza",
+    "definition": "Trecerea apei printr-o membrana semipermeabila spre solutia mai concentrata.",
+    "category": "biologie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "enzima",
+    "definition": "Molecula care accelereaza o reactie fara sa se consume in proces.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "metabolism",
+    "definition": "Totalitatea transformarilor chimice dintr-un organism.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "anabolism",
+    "definition": "Ansamblul reactiilor de sinteza care consuma energie.",
+    "category": "biologie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "catabolism",
+    "definition": "Ansamblul reactiilor de degradare care elibereaza energie.",
+    "category": "biologie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "respiratie",
+    "definition": "Proces prin care celulele obtin energie din substante organice.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "fotosinteza",
+    "definition": "Procesul prin care plantele folosesc lumina pentru a produce substante organice.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "transpiratie",
+    "definition": "Eliminarea apei sub forma de vapori prin organele aeriene ale plantelor.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "nutritie",
+    "definition": "Ansamblul proceselor prin care organismele obtin si folosesc substantele necesare.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "excretie",
+    "definition": "Eliminarea substantelor nefolositoare rezultate din metabolism.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "reproducere",
+    "definition": "Procesul prin care apar indivizi noi ai aceleiasi specii.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "mitoza",
+    "definition": "Diviziune celulara care produce doua celule-fiice identice genetic.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "meioza",
+    "definition": "Diviziune celulara care reduce la jumatate numarul de cromozomi.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "gamet",
+    "definition": "Celula sexuala implicata in fecundatie.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "zigot",
+    "definition": "Prima celula a unui nou organism, formata dupa unirea gametilor.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "embrion",
+    "definition": "Stadiul timpuriu de dezvoltare al organismului dupa fecundatie.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "gena",
+    "definition": "Segment de ADN care controleaza un caracter ereditar.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "alela",
+    "definition": "Varianta alternativa a aceleiasi gene.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cromozom",
+    "definition": "Structura care poarta materialul genetic in celula.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "adn",
+    "definition": "Molecula care stocheaza informatia ereditara.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "arn",
+    "definition": "Acid nucleic implicat in exprimarea informatiei genetice.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "mutatie",
+    "definition": "Schimbare stabila a materialului genetic.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "genotip",
+    "definition": "Totalitatea genelor unui organism pentru un caracter sau pentru ansamblu.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "fenotip",
+    "definition": "Totalitatea trasaturilor observabile ale unui organism.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dominant",
+    "definition": "Caracter care se manifesta si in prezenta unei singure alele.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "recesiv",
+    "definition": "Caracter care se manifesta doar cand lipseste alela dominanta.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ereditate",
+    "definition": "Transmiterea caracterelor de la parinti la urmasi.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "adaptare",
+    "definition": "Insusire care creste sansele de supravietuire intr-un mediu.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "specie",
+    "definition": "Grup de indivizi care se pot incrucisa si dau urmasi fertili.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "populatie",
+    "definition": "Totalitatea indivizilor aceleiasi specii dintr-un areal dat.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ecosistem",
+    "definition": "Ansamblu format din organisme si mediul lor abiotic.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "biotop",
+    "definition": "Componenta nevie a unui ecosistem.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "biocenoza",
+    "definition": "Totalitatea organismelor care traiesc impreuna intr-un biotop.",
+    "category": "biologie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "nisa",
+    "definition": "Rolul si locul unei specii in ecosistem.",
+    "category": "biologie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "habitat",
+    "definition": "Locul in care o specie isi gaseste conditiile de viata.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "lant",
+    "definition": "Succesiune liniara de organisme legate prin hranire.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "retea",
+    "definition": "Ansamblu de lanturi trofice care se intersecteaza.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "producator",
+    "definition": "Organism care isi sintetizeaza singur hrana, de regula prin fotosinteza.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "consumator",
+    "definition": "Organism care se hraneste cu alte organisme sau cu parti ale lor.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "descompunator",
+    "definition": "Organism care transforma resturile organice in substante simple.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "parazitism",
+    "definition": "Relatie in care un organism profita, iar celalalt este dezavantajat.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "simbioza",
+    "definition": "Relatie stransa intre doua organisme, benefica pentru ambele.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "competitie",
+    "definition": "Interactie in care organismele concureaza pentru aceleasi resurse.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "predator",
+    "definition": "Organism care captureaza si ucide alta vietuitoare pentru hrana.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "prada",
+    "definition": "Vietuitoare urmarita si capturata de un animal care se hraneste cu ea.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "biodiversitate",
+    "definition": "Varietatea formelor de viata dintr-un areal sau de pe glob.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "succesiune",
+    "definition": "Schimbare treptata a comunitatilor intr-un ecosistem.",
+    "category": "biologie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "poluare",
+    "definition": "Alterare daunatoare a mediului prin introducerea de substante sau energie.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "conservare",
+    "definition": "Protectie si mentinere a speciilor, habitatelor si resurselor naturale.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "evolutie",
+    "definition": "Transformare treptata a speciilor de-a lungul generatiilor.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "virus",
+    "definition": "Agen infectios care se poate multiplica doar in celule vii.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "bacterie",
+    "definition": "Microorganism unicelular fara nucleu delimitat.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "fung",
+    "definition": "Organism heterotrof care absoarbe substantele din mediu.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "protist",
+    "definition": "Organism eucariot simplu, care nu apartine plantelor, animalelor sau fungilor.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "alga",
+    "definition": "Organism fotosintetic de mediu acvatic, cu structura simpla.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "planta",
+    "definition": "Organism autotrof cu celule ce contin cloroplaste.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "animal",
+    "definition": "Organism heterotrof capabil de miscare activa.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "vertebrat",
+    "definition": "Animal cu schelet intern si coloana vertebrala.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "nevertebrat",
+    "definition": "Animal lipsit de coloana vertebrala.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "mamifer",
+    "definition": "Vertebrat care isi hraneste puii cu lapte.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pasare",
+    "definition": "Vertebrat acoperit cu pene si adaptat de obicei la zbor.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "reptila",
+    "definition": "Vertebrat cu piele uscata, acoperita cu solzi.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "amfibian",
+    "definition": "Vertebrat care traieste atat in apa, cat si pe uscat.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "peste",
+    "definition": "Vertebrat acvatic care respira prin branhii.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "radacina",
+    "definition": "Organ vegetal care fixeaza planta si absoarbe apa si saruri.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tulpina",
+    "definition": "Organ vegetal care sustine frunzele si transporta seva.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "frunza",
+    "definition": "Organ vegetal in care au loc frecvent fotosinteza si schimburile gazoase.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "floare",
+    "definition": "Organ de reproducere al plantelor angiosperme.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "samanta",
+    "definition": "Structura care contine embrionul si rezerve de hrana.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "fruct",
+    "definition": "Organ rezultat din ovar, care protejeaza si raspandeste semintele.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "stomata",
+    "definition": "Orificiu microscopic din epiderma frunzei, folosit la schimbul de gaze.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "xilem",
+    "definition": "Tesut vegetal care transporta apa si sarurile minerale.",
+    "category": "biologie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "floem",
+    "definition": "Tesut vegetal care transporta substantele organice produse in frunze.",
+    "category": "biologie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sange",
+    "definition": "Tesut lichid care transporta gaze, nutrienti si deseuri in organism.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "inima",
+    "definition": "Organ muscular care pompeaza sangele prin vase.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "plaman",
+    "definition": "Organ respirator in care are loc schimbul de gaze.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "rinichi",
+    "definition": "Organ care filtreaza sangele si formeaza urina.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ficat",
+    "definition": "Glanda mare cu rol in metabolism si detoxifiere.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pancreas",
+    "definition": "Glanda cu rol dublu, digestiv si endocrin.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "intestin",
+    "definition": "Tub digestiv in care se absorb majoritatea nutrientilor.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "neuron",
+    "definition": "Celula specializata in transmiterea impulsurilor nervoase.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sinapsa",
+    "definition": "Zona de contact functional dintre doua celule nervoase sau intre neuron si efector.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "reflex",
+    "definition": "Raspuns rapid, automat si involuntar la un stimul.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "hormon",
+    "definition": "Mesager chimic produs de glande si transportat prin sange.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "glanda",
+    "definition": "Organ care produce si elibereaza substante cu rol de reglare sau secretie.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "organ",
+    "definition": "Structura a corpului alcatuita din mai multe tesuturi cu functie precisa.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "muschi",
+    "definition": "Tesut contractil care produce miscare.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "piele",
+    "definition": "Invelis extern al corpului, cu rol de protectie.",
+    "category": "biologie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "eritrocit",
+    "definition": "Globula rosie care transporta oxigenul prin hemoglobina.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "leucocit",
+    "definition": "Celula sanguina implicata in apararea organismului.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "trombocit",
+    "definition": "Fragment celular cu rol in coagularea sangelui.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "antigen",
+    "definition": "Structura recunoscuta de sistemul imunitar ca straine.",
+    "category": "biologie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  }
+]

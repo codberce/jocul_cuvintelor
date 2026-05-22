@@ -1,0 +1,702 @@
+[
+  {
+    "answer": "piata",
+    "definition": "Spatiul in care se intalnesc cererea si oferta pentru bunuri si servicii.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cerere",
+    "definition": "Cantitatea dorita de cumparatori la un anumit pret.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "oferta",
+    "definition": "Cantitatea pe care vanzatorii o pun la dispozitie la un pret dat.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pret",
+    "definition": "Suma platita pentru a obtine un bun sau un serviciu.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cost",
+    "definition": "Cheltuiala necesara pentru a produce sau a cumpara ceva.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "profit",
+    "definition": "Castigul ramas dupa scaderea cheltuielilor.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "venit",
+    "definition": "Suma de bani care intra intr-o gospodarie, firma sau stat.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cheltuiala",
+    "definition": "Suma care iese din buget pentru plata unor nevoi.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "buget",
+    "definition": "Planul de repartizare a veniturilor si cheltuielilor.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "economisire",
+    "definition": "Actiunea de a pastra o parte din bani pentru mai tarziu.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "investitie",
+    "definition": "Plasarea banilor intr-o activitate cu speranta de castig viitor.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "capital",
+    "definition": "Resurse financiare sau materiale folosite pentru a obtine venit.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "munca",
+    "definition": "Factor de productie reprezentat de efortul uman.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "resurse",
+    "definition": "Totalitatea mijloacelor folosite pentru producerea bunurilor.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "productie",
+    "definition": "Procesul prin care se creeaza bunuri sau servicii.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "consum",
+    "definition": "Folosirea bunurilor si serviciilor pentru satisfacerea nevoilor.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "consumator",
+    "definition": "Persoana sau agentul care cumpara si foloseste produse.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "producator",
+    "definition": "Agentul economic care realizeaza bunuri ori servicii.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "firma",
+    "definition": "Unitate economica organizata pentru a produce si a vinde.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "antreprenor",
+    "definition": "Persoana care initiaza si conduce o afacere.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "salariu",
+    "definition": "Plata primita pentru munca depusa.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dobanda",
+    "definition": "Suma platita pentru folosirea banilor imprumutati.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "credit",
+    "definition": "Imprumut acordat pentru o perioada de timp.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "debit",
+    "definition": "Pozitia inregistrata pe partea din stanga a unui cont.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "moneda",
+    "definition": "Unitatea monetara folosita intr-o tara sau zona.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "banca",
+    "definition": "Institutie care intermediaza plati, economisiri si imprumuturi.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "inflatie",
+    "definition": "Cresterea generalizata si sustinuta a preturilor.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "deflatie",
+    "definition": "Scaderea generala si prelungita a preturilor.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "taxa",
+    "definition": "Plata impusa pentru un serviciu sau un drept.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "impozit",
+    "definition": "Contributie obligatorie catre bugetul public.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tva",
+    "definition": "Impozit indirect aplicat asupra valorii adaugate.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "acciza",
+    "definition": "Taxa speciala aplicata unor produse precum alcoolul sau carburantul.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "subventie",
+    "definition": "Ajutor financiar oferit de stat anumitor activitati.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "buget public",
+    "definition": "Plan anual al veniturilor si cheltuielilor statului.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "deficit",
+    "definition": "Situatia in care cheltuielile depasesc veniturile.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "excedent",
+    "definition": "Situatia in care veniturile depasesc cheltuielile.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "datorie",
+    "definition": "Obligatie financiara ce trebuie rambursata.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "export",
+    "definition": "Vanzarea de bunuri sau servicii catre alte tari.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "import",
+    "definition": "Cumpararea de bunuri sau servicii din alte tari.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "balanta",
+    "definition": "Raport care compara intrari si iesiri economice.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "curs valutar",
+    "definition": "Raportul la care o moneda se schimba cu alta.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "schimb",
+    "definition": "Operatiunea de inlocuire a unei monede cu alta.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "piata muncii",
+    "definition": "Mediul economic al cererii si ofertei de forta de lucru.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "somaj",
+    "definition": "Situatia persoanelor apte de lucru dar fara loc de munca.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "productivitate",
+    "definition": "Raportul dintre rezultatul obtinut si resursele folosite.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "eficienta",
+    "definition": "Capacitatea de a obtine rezultate bune cu consum redus de resurse.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "concurenta",
+    "definition": "Rivalitatea dintre agentii care urmaresc aceeasi clientela.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "monopol",
+    "definition": "Situatie in care un singur vanzator domina intreaga piata.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "oligopol",
+    "definition": "Structura in care cativa vanzatori controleaza oferta.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "elasticitate",
+    "definition": "Masura in care cererea sau oferta reactioneaza la schimbari.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "utilitate",
+    "definition": "Gradul in care un bun satisface o nevoie.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "raritate",
+    "definition": "Caracterul limitat al resurselor in raport cu nevoile.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "alegere",
+    "definition": "Decizia dintre mai multe variante posibile.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cost oportunitate",
+    "definition": "Valoarea celei mai bune alternative la care se renunta.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "risc",
+    "definition": "Posibilitatea unui rezultat nefavorabil.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "asigurare",
+    "definition": "Mecanism prin care o pierdere este compensata contra unei prime.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dividend",
+    "definition": "Partea din profit distribuita actionarilor.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "actiune",
+    "definition": "Titlu care atesta detinerea unei parti dintr-o societate.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "obligatiune",
+    "definition": "Titlu de datorie prin care emitentul se imprumuta.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "bursa",
+    "definition": "Piata organizata pentru tranzactionarea titlurilor financiare.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "indice",
+    "definition": "Indicator numeric care sintetizeaza evolutia unei piete.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "portofoliu",
+    "definition": "Ansamblul de plasamente detinute de un investitor.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "lichiditate",
+    "definition": "Usurinta cu care un activ se transforma in bani.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "solvabilitate",
+    "definition": "Capacitatea de a achita datoriile la scadenta.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "amortizare",
+    "definition": "Recuperarea treptata a valorii unui bun sau a unei datorii.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "stoc",
+    "definition": "Cantitate de marfuri sau resurse pastrate pentru utilizare ulterioara.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "flux",
+    "definition": "Miscarea continua a intrarilor si iesirilor de resurse.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "contabilitate",
+    "definition": "Sistem de inregistrare si analiza a operatiunilor financiare.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "bilant",
+    "definition": "Document care arata activul, pasivul si capitalul unei organizatii.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "active",
+    "definition": "Elemente care aduc beneficii economice unei entitati.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pasive",
+    "definition": "Surse de finantare si obligatii ale unei entitati.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "capital propriu",
+    "definition": "Partea de finantare care apartine proprietarilor.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "patrimoniu",
+    "definition": "Totalitatea bunurilor, drepturilor si obligatiilor unei entitati.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "contract",
+    "definition": "Acord scris sau verbal cu efecte juridice.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "leasing",
+    "definition": "Finantare prin folosirea unui bun in schimbul unor plati periodice.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "franciza",
+    "definition": "Model de afacere bazat pe folosirea unei marci si a unui format.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "marketing",
+    "definition": "Set de activitati prin care produsele sunt promovate si vandute.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "publicitate",
+    "definition": "Forma de promovare platita a unui produs sau serviciu.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "brand",
+    "definition": "Identitate comerciala care diferentiaza o oferta.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "segmentare",
+    "definition": "Impartirea pietei in grupuri de consumatori asemanatori.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "globalizare",
+    "definition": "Interconectarea tot mai stransa a economiilor lumii.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dezvoltare",
+    "definition": "Proces de crestere calitativa si cantitativa a economiei.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "recesiune",
+    "definition": "Perioada de scadere a activitatii economice.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "crestere",
+    "definition": "Majorarea productiei, a veniturilor sau a indicatorilor economici.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pib",
+    "definition": "Valoarea totala a bunurilor si serviciilor finale produse intr-o economie.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pnb",
+    "definition": "Indicator care masoara productia obtinuta de factorii nationali.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "venit national",
+    "definition": "Totalul veniturilor obtinute intr-o economie intr-o perioada.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "politica fiscala",
+    "definition": "Utilizarea taxelor si cheltuielilor publice pentru influentarea economiei.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "politica monetara",
+    "definition": "Folosirea masei monetare si a dobanzilor pentru stabilitate economica.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "banca centrala",
+    "definition": "Institutia care emite moneda si supravegheaza sistemul financiar la nivel national.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "rezerva",
+    "definition": "Suma pastrata pentru siguranta sau pentru interventii viitoare.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dobanda cheie",
+    "definition": "Rata de referinta stabilita de banca centrala.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "investitor",
+    "definition": "Persoana care plaseaza capital in speranta unui castig.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "creditor",
+    "definition": "Parte care acorda un imprumut sau are de incasat o suma.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "debitor",
+    "definition": "Parte care datoreaza o suma sau are de rambursat un imprumut.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "garantie",
+    "definition": "Asigurare data pentru respectarea unei obligatii.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ipoteca",
+    "definition": "Gaj asupra unui bun imobil pentru garantarea unei datorii.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "audit",
+    "definition": "Verificare independenta a conturilor si a situatiilor financiare.",
+    "category": "economie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "strategie",
+    "definition": "Plan de actiune gandit pentru atingerea unor obiective economice.",
+    "category": "economie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "planificare",
+    "definition": "Stabilirea din timp a pasilor si resurselor necesare.",
+    "category": "economie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  }
+]

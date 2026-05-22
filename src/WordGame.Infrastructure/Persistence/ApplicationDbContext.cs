@@ -1,13 +1,10 @@
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using WordGame.Domain.Entities;
-using WordGame.Infrastructure.Identity;
 
 namespace WordGame.Infrastructure.Persistence;
 
 public sealed class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-    : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>(options)
+    : DbContext(options)
 {
     public DbSet<Category> Categories => Set<Category>();
     public DbSet<Subject> Subjects => Set<Subject>();
@@ -23,11 +20,6 @@ public sealed class ApplicationDbContext(DbContextOptions<ApplicationDbContext> 
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
-
-        builder.Entity<ApplicationUser>(entity =>
-        {
-            entity.Property(x => x.DisplayName).HasMaxLength(80);
-        });
 
         builder.Entity<Category>(entity =>
         {

@@ -1,24 +1,14 @@
-<CascadingAuthenticationState>
-    <Router AppAssembly="@typeof(Program).Assembly">
-        <Found Context="routeData">
-            <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(Layout.MainLayout)">
-                <NotAuthorized>
-                    <main class="page narrow">
-                        <h1>Acces restrictionat</h1>
-                        <p>Autentifica-te cu un cont de host sau admin pentru aceasta zona.</p>
-                        <a class="button primary" href="/login">Login</a>
-                    </main>
-                </NotAuthorized>
-            </AuthorizeRouteView>
-            <FocusOnNavigate RouteData="@routeData" Selector="h1" />
-        </Found>
-        <NotFound>
-            <LayoutView Layout="@typeof(Layout.MainLayout)">
-                <main class="page narrow">
-                    <h1>Pagina nu exista</h1>
-                    <a class="button" href="/">Inapoi acasa</a>
-                </main>
-            </LayoutView>
-        </NotFound>
-    </Router>
-</CascadingAuthenticationState>
+<Router AppAssembly="@typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(Layout.MainLayout)" />
+        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+    </Found>
+    <NotFound>
+        <LayoutView Layout="@typeof(Layout.MainLayout)">
+            <main class="page narrow">
+                <h1>Pagina nu exista</h1>
+                <a class="button" href="/">Inapoi acasa</a>
+            </main>
+        </LayoutView>
+    </NotFound>
+</Router>

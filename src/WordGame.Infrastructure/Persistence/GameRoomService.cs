@@ -28,11 +28,11 @@ public sealed class GameRoomService(
     IValidator<SubmitAnswerRequest> submitAnswerValidator,
     IOptions<GameOptions> gameOptions,
     IOptions<RedisOptions> redisOptions,
-    IOptions<SecurityOptions> securityOptions) : IGameRoomService
+    IOptions<GuestSessionOptions> guestSessionOptions) : IGameRoomService
 {
     private readonly GameOptions _gameOptions = gameOptions.Value;
     private readonly RedisOptions _redisOptions = redisOptions.Value;
-    private readonly SecurityOptions _securityOptions = securityOptions.Value;
+    private readonly GuestSessionOptions _guestSessionOptions = guestSessionOptions.Value;
 
     public async Task<RoomCreatedDto> CreateRoomAsync(Guid hostUserId, CreateRoomRequest request, CancellationToken cancellationToken = default)
     {
@@ -140,10 +140,10 @@ public sealed class GameRoomService(
 
         if (!string.IsNullOrWhiteSpace(connectionId))
         {
-            await activeRoomStore.SetConnectionMappingAsync(connectionId, new ConnectionMapping(state.RoomCode, player.Id), TimeSpan.FromMinutes(_securityOptions.GuestTokenLifetimeMinutes), cancellationToken);
+            await activeRoomStore.SetConnectionMappingAsync(connectionId, new ConnectionMapping(state.RoomCode, player.Id), TimeSpan.FromMinutes(_guestSessionOptions.GuestTokenLifetimeMinutes), cancellationToken);
         }
 
-        var token = guestSessionService.CreateToken(state.RoomCode, player.Id, DateTimeOffset.UtcNow.AddMinutes(_securityOptions.GuestTokenLifetimeMinutes));
+        var token = guestSessionService.CreateToken(state.RoomCode, player.Id, DateTimeOffset.UtcNow.AddMinutes(_guestSessionOptions.GuestTokenLifetimeMinutes));
         return new JoinRoomResult(state.RoomId, state.RoomCode, player.Id, player.DisplayName, token);
     }
 
@@ -172,7 +172,7 @@ public sealed class GameRoomService(
             await dbContext.SaveChangesAsync(cancellationToken);
         }
 
-        await activeRoomStore.SetConnectionMappingAsync(connectionId, new ConnectionMapping(roomCode, playerId), TimeSpan.FromMinutes(_securityOptions.GuestTokenLifetimeMinutes), cancellationToken);
+        await activeRoomStore.SetConnectionMappingAsync(connectionId, new ConnectionMapping(roomCode, playerId), TimeSpan.FromMinutes(_guestSessionOptions.GuestTokenLifetimeMinutes), cancellationToken);
         await activeRoomStore.SaveAsync(state, cancellationToken);
 
         return new ReconnectResult(playerId, player.DisplayName, BuildSnapshot(state));

@@ -121,7 +121,7 @@ public sealed class GameFlowIntegrationTests
                 new SubmitAnswerRequestValidator(),
                 options,
                 Options.Create(new RedisOptions()),
-                Options.Create(new SecurityOptions()));
+                Options.Create(new GuestSessionOptions()));
 
             return new FlowFixture { Db = db, Service = service, HostUserId = Guid.NewGuid(), RoomCode = string.Empty, GuestToken = string.Empty };
         }

@@ -564,7 +564,7 @@
           <div class="step"><span>2</span><strong>Validare</strong><p><code>SubjectCatalog</code> acceptă doar materii cunoscute.</p></div>
           <div class="step"><span>3</span><strong>Sesiune</strong><p>Slug-urile sunt salvate în cameră sau sesiune.</p></div>
           <div class="step"><span>4</span><strong>Selector</strong><p><code>QuestionSelector</code> interoghează doar întrebările active din materiile alese.</p></div>
-          <div class="step"><span>5</span><strong>Seeder</strong><p>Seed-ul creează materiile și întrebări pe teme de liceu.</p></div>
+          <div class="step"><span>5</span><strong>Seeder</strong><p>Seed-ul citește fișiere JSON și sincronizează întrebările pe teme de liceu.</p></div>
         </div>
       </div>
     </section>
@@ -576,7 +576,7 @@
         <div class="layers">
           <div class="layer"><strong>Web</strong><p>Blazor Server, pagini Razor, SignalR hub, middleware, endpoint-uri HTTP, CSS și JavaScript pentru experiența de joc.</p></div>
           <div class="layer"><strong>Application</strong><p>DTO-uri, opțiuni, validatori, contracte și logica de joc care nu depinde direct de baza de date.</p></div>
-          <div class="layer"><strong>Infrastructure</strong><p>EF Core, PostgreSQL, Redis, Identity, QR, seeding, health checks și implementările serviciilor.</p></div>
+          <div class="layer"><strong>Infrastructure</strong><p>EF Core, PostgreSQL, Redis, sesiuni temporare de invitați, QR, seeding, health checks și implementările serviciilor.</p></div>
           <div class="layer"><strong>Domain</strong><p>Entitățile jocului: întrebări, materii, camere, sesiuni, jucători, răspunsuri și clasamente.</p></div>
         </div>
       </div>
@@ -589,18 +589,18 @@
         <div class="pipeline">
           <div class="panel">
             <div class="line-list">
-              <div class="line-item"><span class="num">1</span><p>Se configurează Serilog, Razor Components, SignalR, Identity, EF Core, Redis și serviciile de joc.</p></div>
+              <div class="line-item"><span class="num">1</span><p>Se configurează Serilog, Razor Components, SignalR, EF Core, Redis și serviciile de joc.</p></div>
               <div class="line-item"><span class="num">2</span><p>Se activează antetele redirecționate pentru traficul venit prin Cloudflare Tunnel.</p></div>
-              <div class="line-item"><span class="num">3</span><p>Rate limiting protejează login, creare cameră, join și submit answer.</p></div>
-              <div class="line-item"><span class="num">4</span><p>Se mapează <code>/health</code>, <code>/gameHub</code>, <code>/host/create</code>, <code>/join/{roomCode}/enter</code> și exporturile admin.</p></div>
-              <div class="line-item"><span class="num">5</span><p>La startup, migrațiile și seed-ul pot rula automat pentru baza de date.</p></div>
+              <div class="line-item"><span class="num">3</span><p>Rate limiting protejează creare cameră, join și submit answer.</p></div>
+              <div class="line-item"><span class="num">4</span><p>Se mapează <code>/health</code>, <code>/gameHub</code>, <code>/host/create</code> și <code>/join/{roomCode}/enter</code>.</p></div>
+              <div class="line-item"><span class="num">5</span><p>La startup, migrațiile și seed-ul pot rula automat și mențin 100 întrebări active pe materie.</p></div>
             </div>
           </div>
           <div class="dark-panel panel">
             <h3>Flux HTTP</h3>
             <ul>
               <li>Cloudflare trimite cererea către containerul <code>web</code>.</li>
-              <li>ASP.NET Core aplică middleware: erori, static files, auth, rate limiting, antiforgery.</li>
+              <li>ASP.NET Core aplică middleware: erori, static files, rate limiting și antiforgery.</li>
               <li>Razor Components livrează interfața, iar SignalR păstrează conexiunile live.</li>
               <li>Serviciile de aplicație folosesc PostgreSQL și Redis prin infrastructură.</li>
             </ul>
@@ -649,9 +649,9 @@
           <h2>PostgreSQL</h2>
           <ul>
             <li>Schema este creată prin migrații EF Core.</li>
-            <li>Stochează utilizatori, întrebări, materii, camere, sesiuni și clasamente.</li>
-            <li>Seeder-ul creează date inițiale și actualizează materiile existente.</li>
-            <li>Exportul admin poate produce JSON sau CSV cu subiect, categorie și dificultate.</li>
+            <li>Stochează întrebări, materii, camere, sesiuni, răspunsuri și clasamente.</li>
+            <li>Seeder-ul citește `questions.*.json` și menține 100 întrebări active pe fiecare materie.</li>
+            <li>Întrebările sunt alese din PostgreSQL prin stratul de servicii, nu hardcodate în interfață.</li>
           </ul>
         </div>
         <div class="panel">
@@ -684,19 +684,19 @@
     </section>
 
     <section class="slide">
-      <span class="kicker">Securitate și administrare</span>
+      <span class="kicker">Securitate și acces</span>
       <div class="content grid-3">
         <div class="panel">
-          <h3>Autentificare</h3>
-          <p>ASP.NET Core Identity gestionează conturile admin și gazdă, create din variabile de mediu.</p>
+          <h3>Fără conturi</h3>
+          <p>Aplicația nu are pagini admin, login sau utilizatori pe bază de e-mail; jucătorii intră ca invitați temporari.</p>
         </div>
         <div class="panel">
           <h3>Protecții web</h3>
-          <p>Antiforgery, rate limiting, cookie-uri HTTP-only și header-e de securitate reduc riscurile de abuz.</p>
+          <p>Antiforgery, rate limiting și header-e de securitate reduc riscurile de abuz.</p>
         </div>
         <div class="panel">
-          <h3>Administrare</h3>
-          <p>Pagini pentru întrebări, categorii, lecții, jocuri și clasamente; import/export JSON sau CSV.</p>
+          <h3>Sesiuni invitat</h3>
+          <p>Tokenurile protejate confirmă că un jucător aparține camerei fără sistem de autentificare permanent.</p>
         </div>
       </div>
     </section>

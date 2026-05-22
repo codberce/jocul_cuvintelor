@@ -14,12 +14,3 @@ public sealed record SubmitAnswerRequest(
     Guid QuestionId,
     string Answer,
     string IdempotencyKey);
-
-public sealed record ImportQuestionDto(
-    string Answer,
-    string Definition,
-    string Subject,
-    string Category,
-    string Difficulty,
-    int? TimeLimitSeconds,
-    bool IsActive = true);

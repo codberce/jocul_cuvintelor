@@ -1,0 +1,702 @@
+[
+  {
+    "answer": "noun",
+    "definition": "Cuvant care denumeste o persoana, un lucru sau o idee.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "verb",
+    "definition": "Cuvant care exprima actiunea, starea sau existenta.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "adjective",
+    "definition": "Cuvant care arata o insusire a unui substantiv.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "adverb",
+    "definition": "Cuvant care exprima modul, timpul sau intensitatea unei actiuni.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pronoun",
+    "definition": "Cuvant care tine locul unui substantiv.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "preposition",
+    "definition": "Cuvant care leaga un complement de termenul determinat.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "conjunction",
+    "definition": "Cuvant care leaga cuvinte, propozitii sau fraze.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "article",
+    "definition": "Cuvant scurt care insoteste un substantiv si ii marcheaza determinarea.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "determiner",
+    "definition": "Element care limiteaza sau precizeaza referinta unui substantiv.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "subject",
+    "definition": "Partea despre care se spune ceva in propozitie.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "predicate",
+    "definition": "Partea care arata ce face sau ce este subiectul.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "object",
+    "definition": "Complement care completeaza sensul unui verb.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "clause",
+    "definition": "Grup de cuvinte cu subiect si predicat.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "phrase",
+    "definition": "Grup de cuvinte care functioneaza ca un tot.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sentence",
+    "definition": "Enunt complet care transmite o idee.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tense",
+    "definition": "Forma verbului care arata momentul actiunii.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "present",
+    "definition": "Timp care plaseaza actiunea in clipa vorbirii.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "past",
+    "definition": "Timp care plaseaza actiunea inaintea prezentului.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "future",
+    "definition": "Timp care proiecteaza actiunea dupa momentul vorbirii.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "perfect",
+    "definition": "Aspect care leaga o actiune trecuta de un rezultat actual.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "continuous",
+    "definition": "Forma care prezinta actiunea ca fiind in desfasurare.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "passive",
+    "definition": "Constructie in care subiectul primeste actiunea.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "active",
+    "definition": "Constructie in care subiectul face actiunea.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "reported speech",
+    "definition": "Redare indirecta a spuselor cuiva.",
+    "category": "engleza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "conditional",
+    "definition": "Forma verbala care exprima o ipoteza ori o dependenta.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "modal",
+    "definition": "Verb auxiliar care exprima posibilitate, obligatie sau permisiune.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "infinitive",
+    "definition": "Forma de baza a verbului, fara flexiune de persoana.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "gerund",
+    "definition": "Forma verbala folosita ca substantiv.",
+    "category": "engleza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "participle",
+    "definition": "Forma verbala folosita in alcatuirea timpurilor compuse.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "plural",
+    "definition": "Forma care indica mai multe elemente.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "singular",
+    "definition": "Forma care indica un singur element.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "countable",
+    "definition": "Substantiv care poate fi numarat individual.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "uncountable",
+    "definition": "Substantiv care nu se foloseste usor la numarare.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "comparative",
+    "definition": "Forma care compara doua grade ale aceleiasi insusiri.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "superlative",
+    "definition": "Forma care exprima gradul cel mai inalt.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "synonym",
+    "definition": "Cuvant cu sens apropiat de altul.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "antonym",
+    "definition": "Cuvant cu sens opus altuia.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "homonym",
+    "definition": "Cuvant cu aceeasi forma ca altul, dar cu sens diferit.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "prefix",
+    "definition": "Element adaugat la inceputul unui cuvant.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "suffix",
+    "definition": "Element adaugat la finalul unui cuvant.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "root",
+    "definition": "Nucleu lexical din care pot fi formate alte cuvinte.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "collocation",
+    "definition": "Asociere obisnuita de cuvinte care apar frecvent impreuna.",
+    "category": "engleza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "idiom",
+    "definition": "Expresie stabila al carei sens nu se deduce literal.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "phrasal verb",
+    "definition": "Combinatie dintre un verb si o particula cu sens propriu.",
+    "category": "engleza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "register",
+    "definition": "Nivel de limbaj adaptat unei situatii de comunicare.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "formal",
+    "definition": "Stil potrivit situatiilor oficiale sau academice.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "informal",
+    "definition": "Stil folosit in comunicarea relaxata.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dialogue",
+    "definition": "Schimb de replici intre doua sau mai multe persoane.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "monologue",
+    "definition": "Discurs rostit de o singura voce.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "narrator",
+    "definition": "Vocea care povesteste intamplarile dintr-un text epic.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "character",
+    "definition": "Persoana sau fiinta care participa la actiune.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "plot",
+    "definition": "Succesiunea evenimentelor care alcatuiesc actiunea.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "setting",
+    "definition": "Locul si cadrul in care se desfasoara povestea.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "theme",
+    "definition": "Ideea centrala a unei opere.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "symbol",
+    "definition": "Element concret care trimite la un sens abstract.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "metaphor",
+    "definition": "Figura care transfera sensul prin asemanare implicita.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "simile",
+    "definition": "Figura care compara direct doua elemente asemanatoare.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "alliteration",
+    "definition": "Repetare de sunete initiale pentru efect expresiv.",
+    "category": "engleza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "rhyme",
+    "definition": "Potrivire sonora la sfarsit de vers.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "rhythm",
+    "definition": "Alternanta regulata a accentelor si pauzelor.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "stanza",
+    "definition": "Grup de versuri dintr-o poezie.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "paragraph",
+    "definition": "Fragment de text separat vizual.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "essay",
+    "definition": "Text scurt de analiza, argumentare sau reflectie.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "argument",
+    "definition": "Idee folosita pentru a sustine o opinie.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "opinion",
+    "definition": "Judecata personala asupra unei teme.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "evidence",
+    "definition": "Element care sprijina o afirmatie.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "summary",
+    "definition": "Redare scurta a ideilor esentiale.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "paraphrase",
+    "definition": "Reformulare cu alte cuvinte, fara schimbarea sensului.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "translation",
+    "definition": "Trecere a unui text dintr-o limba in alta.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pronunciation",
+    "definition": "Felul in care sunt rostite cuvintele.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "intonation",
+    "definition": "Variatia melodica a vorbirii.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "stress",
+    "definition": "Accentul de intensitate pus pe o silaba.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "vowel",
+    "definition": "Sunet produs fara obstacol articulator major.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "consonant",
+    "definition": "Sunet rostit cu un obstacol articulator.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "diphthong",
+    "definition": "Alaturare de doua vocale rostite intr-o singura silaba.",
+    "category": "engleza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "question",
+    "definition": "Enunt care cere raspuns.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "negation",
+    "definition": "Procedeu prin care se neaga o informatie.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "agreement",
+    "definition": "Potrivire gramaticala intre cuvinte.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "article zero",
+    "definition": "Lipsa determinantului in contexte in care nu este necesar.",
+    "category": "engleza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "relative clause",
+    "definition": "Propozitie secundara introdusa de un pronume care leaga informatia de un antecedent.",
+    "category": "engleza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "direct speech",
+    "definition": "Redare exacta a spuselor cuiva.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "indirect speech",
+    "definition": "Redare a spuselor fara citare exacta.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "linking word",
+    "definition": "Cuvant care leaga ideile intr-un text.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "connector",
+    "definition": "Element de legatura care marcheaza relatii logice.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cohesion",
+    "definition": "Legare gramaticala si lexica a enunturilor.",
+    "category": "engleza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "coherence",
+    "definition": "Claritate si ordine logica a ideilor dintr-un text.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "topic sentence",
+    "definition": "Propozitie care anunta ideea principala a unui paragraf.",
+    "category": "engleza",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "conclusion",
+    "definition": "Partea finala care sintetizeaza ideile.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "introduction",
+    "definition": "Partea de inceput care deschide un text.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "body",
+    "definition": "Sectiunea centrala in care se dezvolta argumentele.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "message",
+    "definition": "Text scurt transmis pentru a comunica rapid o informatie.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "letter",
+    "definition": "Text adresat unei persoane anume.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "review",
+    "definition": "Text scurt in care o opera sau un produs este evaluat.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "report",
+    "definition": "Text informativ care prezinta fapte sau rezultate.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "story",
+    "definition": "Naratiune scurta cu personaje si actiune.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "description",
+    "definition": "Text care reda trasaturile unui obiect, loc sau fiinta.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "comparison",
+    "definition": "Text sau enunt care pune alaturi doua elemente pentru a vedea asemanari si diferente.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "contrast",
+    "definition": "Accent pe deosebirile dintre doua elemente.",
+    "category": "engleza",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cause",
+    "definition": "Factor care produce un efect.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "effect",
+    "definition": "Rezultat al unei actiuni sau al unui fenomen.",
+    "category": "engleza",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  }
+]

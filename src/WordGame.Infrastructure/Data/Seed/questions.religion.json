@@ -1,0 +1,702 @@
+[
+  {
+    "answer": "Biblia",
+    "definition": "cartea sfanta a crestinilor, alcatuita din Vechiul si Noul Testament.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Geneza",
+    "definition": "prima carte a scripturii, cu relatarea creatiei si a inceputurilor.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Exodul",
+    "definition": "cartea despre iesirea lui Israel din Egipt.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Levitic",
+    "definition": "scriere cu legi, jertfe si reguli pentru preoti.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Numeri",
+    "definition": "cartea ce urmareste recensamintele si calatoria prin pustie.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Deuter",
+    "definition": "carte in care legea este reluata inainte de intrarea in tara fagaduintei.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Psalmii",
+    "definition": "culegere de cantari si rugaciuni atribuite traditiei davidice.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Isaia",
+    "definition": "profet major cunoscut pentru mesajul despre dreptate si speranta.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Ieremia",
+    "definition": "profet care a vestit caderea Ierusalimului si a plans pentru popor.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Ezechiel",
+    "definition": "profet cu viziuni simbolice despre judecata si refacerea poporului.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Daniel",
+    "definition": "tinerel credincios din exil, cunoscut pentru vise si probe in curte.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Osea",
+    "definition": "profet care a folosit imaginea casniciei pentru legatura dintre Dumnezeu si popor.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Amos",
+    "definition": "profet al dreptatii sociale si al criticii fata de abuzuri.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Iona",
+    "definition": "profet care fuge de misiune si ajunge in pantecele unui peste urias.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Matei",
+    "definition": "evanghelist care pune accent pe invatatura si pe implinirea profetiilor.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Marcu",
+    "definition": "evanghelistul cel mai concis, cu ritm alert al relatarii.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Luca",
+    "definition": "evanghelist atent la milostivire, la parabole si la istoria mantuirii.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Ioan",
+    "definition": "evanghelist al cuvintelor despre lumina, adevar si viata.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Petru",
+    "definition": "apostol considerat piatra de temelie a comunitatii crestine.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Pavel",
+    "definition": "apostol misionar care a raspandit credinta in lumea greco-romana.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Iacov",
+    "definition": "apostol si autor de epistola adresata comunitatilor credincioase.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Toma",
+    "definition": "apostol asociat cu indoiala si cu marturisirea ulterioara.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Filip",
+    "definition": "apostol amintit in lista celor apropiati de invatator.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Andrei",
+    "definition": "apostol considerat aducator al mesajului crestin in spatiul romanesc.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Maria",
+    "definition": "nume central in traditia crestina, legat de maternitatea sfanta.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Iosif",
+    "definition": "tutorele pamantesc al lui Iisus, model de ascultare si discretie.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Iisus",
+    "definition": "figura centrala a crestinismului, vazuta ca mantuitor al oamenilor.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Moise",
+    "definition": "lider care scoate poporul din robie si primeste legea pe munte.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Avraam",
+    "definition": "patriarh socotit inceput al poporului ales.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Isaac",
+    "definition": "fiu al patriarhului si veriga in promisiunea divina.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Noe",
+    "definition": "drept care construieste o corabie pentru a salva viata in timpul potopului.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "David",
+    "definition": "rege si psalmist, model al credintei si al pocaintei.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Solomon",
+    "definition": "rege asociat cu intelepciunea si cu ridicarea templului.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Ilie",
+    "definition": "profet cunoscut pentru ravna si pentru lupta cu idolatria.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Elisei",
+    "definition": "succesorul profetului Ilie, legat de minuni si vindecari.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Ruth",
+    "definition": "femeie credincioasa care devine model de loialitate si blandete.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Esdra",
+    "definition": "invatat care readuce legea in centrul vietii poporului.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Neemia",
+    "definition": "om care reconstruise zidurile orasului sfant dupa exil.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Zaharia",
+    "definition": "profet care vesteste reintoarcerea si speranta refacerii.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Gabriel",
+    "definition": "inger mesager care anunta nasterea si planul divin.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Mihail",
+    "definition": "arhanghel asociat cu lupta impotriva raului.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Mesia",
+    "definition": "unsul asteptat, figura care implineste speranta mantuirii.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Calvar",
+    "definition": "locul rastignirii, devenit simbol al suferintei si al jertfei.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Golgota",
+    "definition": "colina asociata cu patimile si moartea mantuitorului.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Betleem",
+    "definition": "oras legat de nasterea lui Iisus.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Nazaret",
+    "definition": "oras in care a trait in tinerete Iisus.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Ierusalim",
+    "definition": "oras sfant in care se concentreaza multe momente biblice.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Eden",
+    "definition": "gradina originara a primilor oameni.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Sinai",
+    "definition": "munte pe care legea este primita de la Dumnezeu.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Arca",
+    "definition": "corabia de salvare din povestea potopului.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Mana",
+    "definition": "hrana miraculoasa oferita in pustie celor aflati in drum.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Apostol",
+    "definition": "trimis al invataturii, apropiat al lui Iisus.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Profet",
+    "definition": "vestitor al mesajului divin si al dreptatii.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Mucenic",
+    "definition": "martor al credintei care sufera pentru convingerile sale.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Episcop",
+    "definition": "slujitor al bisericii care pastoreste o eparhie.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Diacon",
+    "definition": "slujitor bisericesc aflat in treapta de sub preot.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Preot",
+    "definition": "slujitor care oficiaza tainele si pastoreste comunitatea.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Patriarh",
+    "definition": "cel mai inalt ierarh intr-o biserica autocefala.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Monah",
+    "definition": "vietuitor retras in manastire, dedicat rugaciunii.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Schit",
+    "definition": "asezamant monastic mic si retras.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Manastire",
+    "definition": "loc de viata comuna pentru calugari sau calugarite.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Altar",
+    "definition": "spatiu central al cultului crestin din interiorul bisericii.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Icoana",
+    "definition": "chip sfant reprezentat pentru venerare si meditatie.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Candela",
+    "definition": "lampa mica folosita la rugaciune si la cinstirea sfintilor.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Liturghie",
+    "definition": "slujba centrala a cultului crestin.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Euharistie",
+    "definition": "taina impartasirii cu paine si vin sfintite.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Botez",
+    "definition": "rit de intrare in comunitatea crestina.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Mirungere",
+    "definition": "ungere cu untdelemn sfintit dupa botez.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Spovedanie",
+    "definition": "marturisire a pacatelor inaintea duhovnicului.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Cununie",
+    "definition": "taina unirii in fata lui Dumnezeu a unui cuplu.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Maslu",
+    "definition": "slujba de ungere pentru alinare si vindecare.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Rugaciune",
+    "definition": "vorbire smerita adresata lui Dumnezeu.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Parastas",
+    "definition": "slujba de pomenire pentru cei trecuti din viata.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Acatist",
+    "definition": "imn de lauda si cerere adresat lui Hristos, Maicii sau unui sfant.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Psaltire",
+    "definition": "carte liturgica alcatuita din psalmi.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Craciun",
+    "definition": "sarbatoare a nasterii lui Iisus.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Pasti",
+    "definition": "sarbatoarea invierii lui Iisus.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Rusalii",
+    "definition": "sarbatoare legata de coborarea Duhului Sfant.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Boboteaza",
+    "definition": "sarbatoare a botezului in Iordan.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Florii",
+    "definition": "duminica ce aminteste intrarea lui Iisus in Ierusalim.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Adormire",
+    "definition": "sarbatoare dedicata sfarsitului pamantesc al Maicii Domnului.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Catedrala",
+    "definition": "biserica principala a unei eparhii.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Paraclis",
+    "definition": "loc de rugaciune mai mic, anexat de obicei unui asezamant.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Iertare",
+    "definition": "actul prin care vina este ridicata si relatia se reface.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Mila",
+    "definition": "compasiune fata de cel aflat in suferinta.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Har",
+    "definition": "ajutor divin oferit fara merite omului.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Credinta",
+    "definition": "acceptare a adevarului divin si incredere in el.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Speranta",
+    "definition": "asteptare increzatoare a binelui promis.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Iubire",
+    "definition": "atitudine suprema de daruire fata de Dumnezeu si aproapele.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Pocainta",
+    "definition": "intoarcere interioara dupa recunoasterea greselii.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Sfintenie",
+    "definition": "stare de curatie morala si apropiere de divin.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Post",
+    "definition": "abtinere rituala menita sa curete trupul si sufletul.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Veghe",
+    "definition": "stare de rugaciune si atentie dinaintea unei mari sarbatori.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Binecuvantare",
+    "definition": "rostire prin care se cheama binele asupra cuiva.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Sfintire",
+    "definition": "act prin care un loc sau un obiect este consacrat lui Dumnezeu.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Marturisire",
+    "definition": "spunere deschisa a adevarului sau a pacatelor.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Venerare",
+    "definition": "cinstire profunda acordata celor socotiti sfinti.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Evanghelie",
+    "definition": "scriere care vesteste viata si invatatura mantuitorului.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Testament",
+    "definition": "nume dat celor doua mari parti ale scripturii crestine.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "Parabola",
+    "definition": "povestire scurta cu inteles moral si spiritual.",
+    "category": "religie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  }
+]

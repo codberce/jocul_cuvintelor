@@ -1,0 +1,702 @@
+[
+  {
+    "answer": "relief",
+    "definition": "Ansamblul formelor de la suprafata terestra, de la campii la munti.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "clima",
+    "definition": "Evolutia pe termen lung a vremii intr-o regiune.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "delta",
+    "definition": "Depozit de aluviuni la varsarea unui fluviu in mai multe brate.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "estuar",
+    "definition": "Gura de varsare larga, modelata de maree si curenti.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "izvor",
+    "definition": "Punctul de unde porneste la suprafata apa unui curs.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "afluent",
+    "definition": "Curs de apa care se varsa intr-un rau mai mare.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "bazin",
+    "definition": "Suprafata din care apele se aduna spre acelasi rau principal.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "meridian",
+    "definition": "Linie imaginara care uneste polii si ajuta la masurarea longitudinii.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "paralela",
+    "definition": "Cerc imaginar paralel cu Ecuatorul, folosit la masurarea latitudinii.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ecuator",
+    "definition": "Cercul imaginar care imparte Pamantul in doua emisfere egale.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tropic",
+    "definition": "Paralela care marcheaza limita zonei calde dintre Ecuator si regiunile desertice.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ocean",
+    "definition": "Intindere foarte mare de apa sarata care separa continente.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "continent",
+    "definition": "Masa foarte mare de uscat inconjurata in mare parte de ape.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "peninsula",
+    "definition": "Parte de uscat inaintata in apa si legata de continent.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "arhipelag",
+    "definition": "Grup de insule apropiate, privite ca un ansamblu.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "vulcan",
+    "definition": "Deschidere a scoartei prin care pot iesi lava, gaze si cenusa.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cutremur",
+    "definition": "Miscare brusca a scoartei terestre produsa de eliberarea de energie.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "subductie",
+    "definition": "Scufundare a unei placi sub alta la marginea lor de contact.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "rift",
+    "definition": "Zona lunga si ingusta unde scoarta se rupe si se deschide.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "podis",
+    "definition": "Forma de relief intinsa, inalta si slab fragmentata.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "campie",
+    "definition": "Forma de relief joasa, neteda si slab inclinata.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "vale",
+    "definition": "Depresiune alungita dintre doua culmi, adesea strabatuta de un curs.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "canion",
+    "definition": "Vale foarte adanca, cu versanti abrupti, sapata de apa.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "chei",
+    "definition": "Sectiune ingusta de vale, cu pereti stancosi apropiati.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ghetar",
+    "definition": "Masa de gheata care se deplaseaza lent sub propria greutate.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "litoral",
+    "definition": "Fasie de contact dintre uscat si mare.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "alizee",
+    "definition": "Vanturi permanente ce bat in zona tropicala spre Ecuator.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "muson",
+    "definition": "Vant sezonier care isi schimba directia intre vara si iarna.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ciclon",
+    "definition": "Sistem atmosferic cu presiune scazuta in centru si vanturi convergente.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "anticiclon",
+    "definition": "Zona atmosferica inalta, asociata cu vreme stabila si uscata.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "urbanizare",
+    "definition": "Procesul de crestere a ponderii populatiei si a spatiului urban.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "metropola",
+    "definition": "Oras foarte mare, cu influenta regionala sau nationala.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "aglomerare",
+    "definition": "Grupare densa de asezari si activitati in jurul unui oras central.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "migratie",
+    "definition": "Deplasare a populatiei dintr-un loc in altul, temporar sau definitiv.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "natalitate",
+    "definition": "Numarul nasterilor raportat la populatie intr-un interval dat.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "mortalitate",
+    "definition": "Numarul deceselor raportat la populatie intr-o anumita perioada.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "densitate",
+    "definition": "Numar de locuitori raportat la unitatea de suprafata.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "industrie",
+    "definition": "Ramura economica bazata pe prelucrarea materiilor prime.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "agricultura",
+    "definition": "Activitate economica prin care se cultiva plante si se cresc animale.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "turism",
+    "definition": "Deplasare a oamenilor in afara localitatii pentru odihna sau vizite.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "resurse",
+    "definition": "Elemente ale mediului care pot fi folosite pentru nevoile societatii.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "petrol",
+    "definition": "Lichid combustibil extras din subsol si rafinat in multe produse.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "gaz",
+    "definition": "Combustibil fosil folosit la energie si incalzire, extras din subsol.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "carbune",
+    "definition": "Roca sedimentara combustibila formata din resturi vegetale fosilizate.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "minereu",
+    "definition": "Roca din care se pot extrage in mod rentabil metale.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sol",
+    "definition": "Stratul fertil de la suprafata uscatului, indispensabil plantelor.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "padure",
+    "definition": "Formatie vegetala dominata de arbori.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "stepa",
+    "definition": "Zona vegetala de campie cu ierburi, fara arbori inalte.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "savana",
+    "definition": "Formatie tropicala cu iarba inalta si arbori raspanditi.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "desert",
+    "definition": "Regiune foarte uscata, cu precipitatii reduse si vegetatie rara.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "taiga",
+    "definition": "Banda de paduri boreale de conifere din emisfera nordica.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tundra",
+    "definition": "Zona rece fara arbori, cu muschi, licheni si sol inghetat.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "mediteranean",
+    "definition": "Tip de clima cu veri calde si uscate si ierni blande, umede.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "harta",
+    "definition": "Reprezentare plana a unei suprafete geografice, la scara.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "scara",
+    "definition": "Raportul dintre distanta de pe harta si distanta reala.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "legenda",
+    "definition": "Ansamblul semnelor si explicatiilor care ajuta la citirea hartii.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "azimut",
+    "definition": "Unghiul masurat de la nord spre o directie data.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "orientare",
+    "definition": "Stabilirea pozitiei unui punct sau a unei directii in teren.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "longitudine",
+    "definition": "Coarda geografica ce exprima departarea est-vest fata de meridianul de origine.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "latitudine",
+    "definition": "Distanta unghiulara fata de Ecuator, masurata spre nord sau sud.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "fus",
+    "definition": "Banda de pe glob in care se foloseste acelasi timp civil.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "oras",
+    "definition": "Asezare umana mai mare si mai densa decat satul.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sat",
+    "definition": "Asezare rurala cu populatie redusa si activitati agricole dominante.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "capitala",
+    "definition": "Orasul in care se afla institutiile centrale ale unui stat.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dunare",
+    "definition": "Fluviu european care strabate mai multe capitale in drumul spre mare.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "carpati",
+    "definition": "Lant muntos in arc care traverseaza centrul si nordul Romaniei.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dobrogea",
+    "definition": "Regiune istorica romaneasca situata intre Dunare si Marea Neagra.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "transilvania",
+    "definition": "Regiune intracarpatica romaneasca, cunoscuta pentru depresiuni si podisuri.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "moldova",
+    "definition": "Regiune istorica din estul Romaniei, drenata in mare parte de Siret.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "muntenia",
+    "definition": "Regiune istorica din sudul Romaniei, situata intre Carpati si Dunare.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "oltenia",
+    "definition": "Regiune istorica din sud-vestul Romaniei, cu Jiul ca axa principala.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "banat",
+    "definition": "Regiune istorica din vestul Romaniei, cu influente central-europene.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "crisana",
+    "definition": "Regiune istorica din nord-vestul Romaniei, apropiata de Campia de Vest.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "maramures",
+    "definition": "Regiune istorica din nordul Romaniei, cunoscuta pentru depresiuni si traditii.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "fiord",
+    "definition": "Golf ingust si adanc, format prin eroziunea ghetarilor.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "golf",
+    "definition": "Apropiere a marii de uscat, delimitata partial de tarmuri.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "istm",
+    "definition": "Fasie ingusta de uscat care uneste doua mase continentale.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "versant",
+    "definition": "Fata inclinata a unui relief sau a unui deal.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "culme",
+    "definition": "Partea superioara si alungita a unui relief inalt.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "platou",
+    "definition": "Suprafata intinsa si relativ neteda, situata la altitudine.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "meandru",
+    "definition": "Curbura accentuata a unui rau in campie.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "albie",
+    "definition": "Culcusul prin care curge in mod obisnuit un rau.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tarm",
+    "definition": "Linia de contact dintre uscat si apa unei mari sau unui lac.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "promontoriu",
+    "definition": "Cap de uscat care inainteaza in mare.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "insula",
+    "definition": "Portiune de uscat inconjurata complet de apa.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "laguna",
+    "definition": "Bazin costier separat partial de mare printr-un cordon nisipos.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "oaza",
+    "definition": "Loc fertil cu apa in mijlocul unei regiuni aride.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "periglacial",
+    "definition": "Zona de la marginea gheturilor, cu procese de inghet si dezghet.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "glacial",
+    "definition": "Format sau modelat de actiunea ghetii.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "fluvial",
+    "definition": "Legat de apele curgatoare si de actiunea lor.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "eolian",
+    "definition": "Modelat de vant sau produs prin actiunea vantului.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "carst",
+    "definition": "Relief format prin dizolvarea rocilor solubile.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dolina",
+    "definition": "Depresiune rotunjita din relief carstic.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "aven",
+    "definition": "Put adanc care patrunde vertical in masivul calcaros.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dorsala",
+    "definition": "Aliniament submarin inalt, format de multe ori la contactul placilor.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "platforma",
+    "definition": "Suprafata continentala joasa si stabila, formata din roci vechi.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "depresiune",
+    "definition": "Forma de relief mai joasa decat teritoriul inconjurator.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "regiune",
+    "definition": "Unitate teritoriala cu trasaturi naturale si umane comune.",
+    "category": "geografie",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "enclava",
+    "definition": "Teritoriu separat complet de zona principala pe care o apartine.",
+    "category": "geografie",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "bazalt",
+    "definition": "Roca vulcanica bazica, inchisa la culoare si foarte densa.",
+    "category": "geografie",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  }
+]

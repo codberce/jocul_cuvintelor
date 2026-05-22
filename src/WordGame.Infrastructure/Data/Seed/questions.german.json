@@ -1,0 +1,702 @@
+[
+  {
+    "answer": "nomen",
+    "definition": "Cuvant care numeste o persoana, un lucru sau o idee.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "verb",
+    "definition": "Cuvant care exprima actiunea, starea sau existenta.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "adjektiv",
+    "definition": "Cuvant care arata o insusire a unui substantiv.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "adverb",
+    "definition": "Cuvant care exprima modul, timpul sau intensitatea unei actiuni.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pronomen",
+    "definition": "Cuvant care tine locul unui substantiv.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "artikel",
+    "definition": "Cuvant scurt care insoteste substantivul si il determina.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "subjekt",
+    "definition": "Partea despre care se spune ceva in enunt.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pradikat",
+    "definition": "Partea care arata ce face sau ce este subiectul.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "objekt",
+    "definition": "Complement care completeaza sensul verbului.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "satz",
+    "definition": "Enunt complet cu sens autonom.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ebensatz",
+    "definition": "Propozitie secundara dependenta de alta propozitie.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "hauptsatz",
+    "definition": "Propozitie principala care poate sta singura.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "prasens",
+    "definition": "Timp care plaseaza actiunea in prezent.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "prateritum",
+    "definition": "Timp trecut folosit mai ales in naratiuni scrise.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "perfekt",
+    "definition": "Timp compus care exprima o actiune trecuta cu rezultat prezent.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "plusquamperfekt",
+    "definition": "Timp trecut anterior altei actiuni trecute.",
+    "category": "germana",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "futur",
+    "definition": "Timp care proiecteaza actiunea in viitor.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "infinitiv",
+    "definition": "Forma de baza a verbului, fara persoana.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "partizip",
+    "definition": "Forma verbala folosita in timpuri compuse sau ca adjectiv.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "konjunktiv",
+    "definition": "Mod care exprima ipoteza, dorinta sau discursul indirect.",
+    "category": "germana",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "imperativ",
+    "definition": "Mod al ordinului sau al indemnului.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "nominativ",
+    "definition": "Cazul subiectului.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "akkusativ",
+    "definition": "Cazul complementului direct.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dativ",
+    "definition": "Cazul destinatarului sau al beneficiarului.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "genitiv",
+    "definition": "Cazul posesiei sau al apartenentei.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "kasus",
+    "definition": "Sistemul cazurilor gramaticale.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "genus",
+    "definition": "Categorie care imparte substantivele in trei clase.",
+    "category": "germana",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "numerus",
+    "definition": "Categorie care indica singular sau plural.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "singular",
+    "definition": "Forma care indica un singur element.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "plural",
+    "definition": "Forma care indica mai multe elemente.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "maskulin",
+    "definition": "Gen gramatical asociat formei masculine.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "feminin",
+    "definition": "Gen gramatical asociat formei feminine.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "neutrum",
+    "definition": "Gen gramatical al cuvintelor neutre.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "bestimmt",
+    "definition": "Forma care arata determinarea clara a substantivului.",
+    "category": "germana",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "unbestimmt",
+    "definition": "Forma care arata o referire nedefinita.",
+    "category": "germana",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "verneinung",
+    "definition": "Procedeu prin care se neaga o afirmatie.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "frage",
+    "definition": "Enunt care cere raspuns.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "antwort",
+    "definition": "Raspuns dat la o intrebare.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "wortstellung",
+    "definition": "Ordinea cuvintelor intr-un enunt.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "trennbar",
+    "definition": "Element verbal care poate fi separat in propozitie.",
+    "category": "germana",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "untrennbar",
+    "definition": "Element verbal care ramane lipit de baza.",
+    "category": "germana",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "modalverb",
+    "definition": "Verb auxiliar care exprima posibilitate, obligatie sau vointa.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "hilfsverb",
+    "definition": "Verb auxiliar folosit la formarea timpurilor.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "reflexiv",
+    "definition": "Forma in care actiunea se intoarce asupra subiectului.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "passiv",
+    "definition": "Constructie in care subiectul primeste actiunea.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "aktiv",
+    "definition": "Constructie in care subiectul efectueaza actiunea.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "komparativ",
+    "definition": "Grad care compara doua niveluri ale unei insusiri.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "superlativ",
+    "definition": "Grad care exprima nivelul cel mai inalt.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "synonym",
+    "definition": "Cuvant cu sens apropiat de altul.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "antonym",
+    "definition": "Cuvant cu sens opus.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "homonym",
+    "definition": "Cuvant cu aceeasi forma ca altul, dar cu alt sens.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "prafix",
+    "definition": "Element adaugat la inceputul unui cuvant.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "suffix",
+    "definition": "Element adaugat la sfarsitul unui cuvant.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "stamm",
+    "definition": "Nucleu lexical din care se pot forma alte cuvinte.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ausdruck",
+    "definition": "Grup de cuvinte cu sens expresiv stabil.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "redewendung",
+    "definition": "Expresie stabila care nu se traduce literal.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "register",
+    "definition": "Nivel de limbaj adaptat unei situatii.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "formell",
+    "definition": "Stil potrivit cadrului oficial.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "informell",
+    "definition": "Stil folosit in contexte relaxate.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dialog",
+    "definition": "Schimb de replici intre doua sau mai multe persoane.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "monolog",
+    "definition": "Discurs rostit de o singura voce.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "erzahler",
+    "definition": "Vocea care povesteste actiunea.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "figur",
+    "definition": "Personaj care participa la actiune.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "handlung",
+    "definition": "Succesiunea evenimentelor dintr-o opera.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "schauplatz",
+    "definition": "Locul si cadrul in care se desfasoara actiunea.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "thema",
+    "definition": "Ideea centrala a operei.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "symbol",
+    "definition": "Element concret care trimite la un sens abstract.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "metapher",
+    "definition": "Figura care transfera sensul prin asemanare implicita.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "vergleich",
+    "definition": "Figura care compara direct doua elemente.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "reim",
+    "definition": "Potrivire sonora la sfarsit de vers.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "rhythmus",
+    "definition": "Alternanta regulata a accentelor in poezie.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "strophe",
+    "definition": "Grup de versuri care formeaza o unitate.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "absatz",
+    "definition": "Fragment de text separat vizual.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "aufsatz",
+    "definition": "Text scurt de analiza sau argumentare.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "argument",
+    "definition": "Idee folosita pentru a sustine o opinie.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "meinung",
+    "definition": "Judecata personala asupra unei teme.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "beleg",
+    "definition": "Dovada care sustine o afirmatie.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "zusammenfassung",
+    "definition": "Redare scurta a ideilor esentiale.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ubersetzung",
+    "definition": "Trecere a unui text dintr-o limba in alta.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "aussprache",
+    "definition": "Felul in care sunt rostite cuvintele.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "intonation",
+    "definition": "Variatie melodica a vorbirii.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "vokal",
+    "definition": "Sunet produs fara obstacol articulator major.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "konsonant",
+    "definition": "Sunet rostit cu obstacol articulator.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "umlaut",
+    "definition": "Semn diacritic german care modifica valoarea unei vocale.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "satzklammer",
+    "definition": "Constructie in care partile verbului incadreaza restul enuntului.",
+    "category": "germana",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "konnektor",
+    "definition": "Element care leaga ideile dintr-un text.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "koharenz",
+    "definition": "Legatura logica si coerenta interna a ideilor.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "einleitung",
+    "definition": "Partea de inceput care deschide un text.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "schluss",
+    "definition": "Partea finala care sintetizeaza ideile.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "brief",
+    "definition": "Text adresat unei persoane anume.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "nachricht",
+    "definition": "Mesaj scurt transmis rapid.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "bericht",
+    "definition": "Text informativ despre fapte sau rezultate.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "geschichte",
+    "definition": "Naratiune scurta cu actiune si personaje.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "beschreibung",
+    "definition": "Text care reda trasaturile unui obiect, loc sau fiinta.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "portrat",
+    "definition": "Prezentare concentrata a unei persoane ori a unui personaj.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "relativsatz",
+    "definition": "Propozitie secundara care adauga informatii despre un antecedent.",
+    "category": "germana",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "indirekte rede",
+    "definition": "Redare a spuselor fara citare exacta.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "direkte rede",
+    "definition": "Reproducere exacta a spuselor cuiva.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "wortschatz",
+    "definition": "Totalitatea cuvintelor cunoscute sau folosite intr-o limba.",
+    "category": "germana",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "landeskunde",
+    "definition": "Studiul culturii, societatii si vietii din spatiul german.",
+    "category": "germana",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "answer": "masa",
+    "definition": "Marime scalara care masoara cantitatea de materie a unui corp.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "greutate",
+    "definition": "Forta cu care un corp este atras de un astru.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "deplasare",
+    "definition": "Vector care uneste pozitia initiala si cea finala a miscarii.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "distanta",
+    "definition": "Lungimea traseului parcurs de un corp.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "viteza",
+    "definition": "Marime care arata cat spatiu se parcurge in unitatea de timp.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "acceleratie",
+    "definition": "Modificarea vitezei in unitatea de timp.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "impuls",
+    "definition": "Marime care masoara efectul miscarii asupra unui corp.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "inertie",
+    "definition": "Tendinta unui corp de a-si pastra starea de repaus sau miscare.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "frecare",
+    "definition": "Forta care se opune miscarii relative dintre suprafete.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "elasticitate",
+    "definition": "Proprietatea unui corp de a reveni la forma initiala dupa deformare.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "oscilatie",
+    "definition": "Miscare repetitiva in jurul unei pozitii de echilibru.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pendul",
+    "definition": "Corp suspendat care poate oscila sub actiunea gravitatiei.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "rezonanta",
+    "definition": "Amplificarea oscilatiei cand frecventa excitatiei coincide cu una proprie.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "unda",
+    "definition": "Perturbatie care transporta energie fara transport de materie.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "frecventa",
+    "definition": "Numarul de repetari intr-o secunda.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "perioada",
+    "definition": "Durata unei oscilatii complete.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "amplitudine",
+    "definition": "Deplasarea maxima fata de pozitia de echilibru.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "lucru",
+    "definition": "Produsul dintre forta si deplasarea pe directia ei.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "energie",
+    "definition": "Capacitatea unui sistem de a produce lucru.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "randament",
+    "definition": "Raportul dintre efectul util si efectul consumat.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "caldura",
+    "definition": "Transfer de energie termica de la un corp la altul.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "temperatura",
+    "definition": "Marime care exprima starea termica a unui sistem.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dilatare",
+    "definition": "Cresterea dimensiunilor unui corp la incalzire.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "conductie",
+    "definition": "Transfer termic realizat prin ciocniri intre particule.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "convectie",
+    "definition": "Transfer termic produs de miscarea unui fluid.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "radiatie",
+    "definition": "Transfer energetic prin unde electromagnetice.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "calorimetrie",
+    "definition": "Studiul schimbarilor de caldura in procese fizice.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "gaz",
+    "definition": "Stare de agregare fara forma si volum proprii.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "presiune",
+    "definition": "Forta exercitata pe unitatea de suprafata.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "volum",
+    "definition": "Spatiul ocupat de un corp.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "izoterma",
+    "definition": "Proces in care temperatura ramane constanta.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "izobara",
+    "definition": "Proces la presiune constanta.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "izocora",
+    "definition": "Proces la volum constant.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "entropie",
+    "definition": "Marime care descrie gradul de dezordine al unui sistem.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "sarcina",
+    "definition": "Proprietate a particulelor care participa la interactii electrice.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "electron",
+    "definition": "Particula elementara cu sarcina negativa.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "proton",
+    "definition": "Particula din nucleu cu sarcina pozitiva.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "camp",
+    "definition": "Regiune in care asupra unui corp actioneaza forte la distanta.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "potential",
+    "definition": "Energie raportata la unitatea de sarcina electrica.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tensiune",
+    "definition": "Diferenta de potential dintre doua puncte.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "curent",
+    "definition": "Miscarea ordonata a sarcinilor electrice.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "rezistor",
+    "definition": "Componenta care limiteaza trecerea curentului.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "condensator",
+    "definition": "Componenta ce stocheaza sarcina si energie electrica.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "circuit",
+    "definition": "Ansamblu inchis de componente prin care poate circula curentul.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "ohm",
+    "definition": "Unitate de masura pentru rezistenta electrica.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "putere",
+    "definition": "Lucrul efectuat in unitatea de timp.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "magnet",
+    "definition": "Corp care atrage anumite metale si creeaza un camp propriu.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "inductie",
+    "definition": "Fenomen prin care variatia campului magnetic genereaza curent.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "flux",
+    "definition": "Marime care masoara cate linii de camp strabat o suprafata.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "transformator",
+    "definition": "Dispozitiv care schimba tensiunea unui curent alternativ.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "alternator",
+    "definition": "Masina care produce curent alternativ prin rotatie.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dioptru",
+    "definition": "Suprafata de separare dintre doua medii transparente.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "oglinda",
+    "definition": "Suprafata care produce reflexia luminii.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "lentila",
+    "definition": "Corp transparent care modifica directia razelor de lumina.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "focar",
+    "definition": "Punct in care se strang razele paralele dupa trecerea printr-un sistem optic.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "focala",
+    "definition": "Distanta dintre centrul optic si punctul de convergenta.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "refractie",
+    "definition": "Schimbarea directiei luminii la trecerea intre medii diferite.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "reflexie",
+    "definition": "Intoarcerea luminii la suprafata unui mediu.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dispersie",
+    "definition": "Descompunerea luminii in culori componente.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "interferenta",
+    "definition": "Suprapunerea undelor care poate amplifica sau slabi efectul rezultat.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "difractie",
+    "definition": "Devierea undelor in jurul obstacolelor sau prin deschideri inguste.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "polarizare",
+    "definition": "Selectarea unei singure directii de oscilatie a luminii.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "spectru",
+    "definition": "Ansamblul culorilor sau radiatiilor obtinute din descompunere.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "foton",
+    "definition": "Cuanta de lumina.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "atom",
+    "definition": "Cea mai mica parte a unui element chimic care ii pastreaza proprietatile.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "nucleu",
+    "definition": "Zona centrala a atomului unde se afla protonii si neutronii.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "izotop",
+    "definition": "Variante ale aceluiasi element cu numar diferit de neutroni.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "radioactivitate",
+    "definition": "Transformare spontana a unor nuclee instabile cu emitere de radiatii.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "fisiune",
+    "definition": "Descompunere a unui nucleu greu in nuclee mai usoare.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "fuziune",
+    "definition": "Unire a unor nuclee usoare intr-un nucleu mai greu.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "semiconductor",
+    "definition": "Material cu conductivitate intermediara, folosit in componente electronice.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "dioda",
+    "definition": "Componenta care lasa curentul sa treaca preponderent intr-un singur sens.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tranzistor",
+    "definition": "Componenta electronica folosita la comutare si amplificare.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "laser",
+    "definition": "Sursa de lumina foarte directionata si aproape monocromatica.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "plasma",
+    "definition": "Gaz ionizat aflat la temperaturi mari.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "densitate",
+    "definition": "Raportul dintre masa si volum.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "debit",
+    "definition": "Volumul de fluid care trece printr-o sectiune intr-un timp dat.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "vascozitate",
+    "definition": "Proprietatea unui fluid de a se opune curgerii.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "arhimede",
+    "definition": "Principiu care explica forta de impingere exercitata de fluide asupra corpurilor.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "pascal",
+    "definition": "Unitate de masura pentru presiune.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "newton",
+    "definition": "Unitate de masura pentru forta.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "joule",
+    "definition": "Unitate de masura pentru lucru si energie.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "watt",
+    "definition": "Unitate de masura pentru putere.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "volt",
+    "definition": "Unitate de masura pentru tensiune electrica.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "amper",
+    "definition": "Unitate de masura pentru intensitatea curentului.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "tesla",
+    "definition": "Unitate de masura pentru inductia campului magnetic.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "hertz",
+    "definition": "Unitate de masura pentru frecventa.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "kelvin",
+    "definition": "Unitate de masura pentru temperatura termodinamica.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "coulomb",
+    "definition": "Unitate de masura pentru sarcina electrica.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "gravitate",
+    "definition": "Interactiunea de atractie dintre corpurile cu masa.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "orbita",
+    "definition": "Traiectoria parcursa de un corp in jurul altuia.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "satelit",
+    "definition": "Corp care se roteste in jurul unui astru mai mare.",
+    "category": "fizica",
+    "difficulty": "Easy",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "mecanica",
+    "definition": "Ramura care studiaza miscarea si fortele asupra corpurilor.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "termodinamica",
+    "definition": "Ramura care analizeaza caldura si transformarea ei in lucru.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "electricitate",
+    "definition": "Ramura care studiaza sarcinile, curentul si tensiunea.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "optica",
+    "definition": "Ramura care analizeaza lumina si formarea imaginilor.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "atomica",
+    "definition": "Ramura care examineaza structura atomului.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "nucleara",
+    "definition": "Ramura care studiaza nucleul si reactiile lui.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "acustica",
+    "definition": "Ramura care studiaza sunetul si propagarea lui.",
+    "category": "fizica",
+    "difficulty": "Medium",
+    "timeLimitSeconds": 25
+  },
+  {
+    "answer": "cinematica",
+    "definition": "Parte a mecanicii care descrie miscarea fara a analiza cauzele.",
+    "category": "fizica",
+    "difficulty": "Hard",
+    "timeLimitSeconds": 25
+  }
+]
